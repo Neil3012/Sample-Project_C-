@@ -1,0 +1,511 @@
+C:\Users\Nehal\source\repos\Sample Projectt\Sample Projectt\bin\Debug\Sample Projectt.exe.config
+C:\Users\Nehal\source\repos\Sample Projectt\Sample Projectt\bin\Debug\Sample Projectt.exe
+C:\Users\Nehal\source\repos\Sample Projectt\Sample Projectt\bin\Debug\Sample Projectt.pdb
+C:\Users\Nehal\source\repos\Sample Projectt\Sample Projectt\obj\Debug\Sample Projectt.csprojResolveAssemblyReference.cache
+C:\Users\Nehal\source\repos\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Form1.resources
+C:\Users\Nehal\source\repos\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Properties.Resources.resources
+C:\Users\Nehal\source\repos\Sample Projectt\Sample Projectt\obj\Debug\Sample Projectt.csproj.GenerateResource.cache
+C:\Users\Nehal\source\repos\Sample Projectt\Sample Projectt\obj\Debug\Sample Projectt.csproj.CoreCompileInputs.cache
+C:\Users\Nehal\source\repos\Sample Projectt\Sample Projectt\obj\Debug\Sample Projectt.exe
+C:\Users\Nehal\source\repos\Sample Projectt\Sample Projectt\obj\Debug\Sample Projectt.pdb
+C:\Users\Nehal\source\repos\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Product.resources
+C:\Users\Nehal\source\repos\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Inventory.resources
+C:\Users\Nehal\source\repos\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Purchase.resources
+C:\Users\Nehal\source\repos\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Login.resources
+C:\Users\Nehal\source\repos\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.AdminWindow.resources
+D:\Sample Projectt\Sample Projectt\bin\Debug\Sample Projectt.exe.config
+D:\Sample Projectt\Sample Projectt\bin\Debug\Sample Projectt.exe
+D:\Sample Projectt\Sample Projectt\bin\Debug\Sample Projectt.pdb
+D:\Sample Projectt\Sample Projectt\obj\Debug\Sample Projectt.csprojAssemblyReference.cache
+D:\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.AdminWindow.resources
+D:\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Inventory.resources
+D:\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Form1.resources
+D:\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Login.resources
+D:\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Product.resources
+D:\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Properties.Resources.resources
+D:\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Purchase.resources
+D:\Sample Projectt\Sample Projectt\obj\Debug\Sample Projectt.csproj.GenerateResource.cache
+D:\Sample Projectt\Sample Projectt\obj\Debug\Sample Projectt.csproj.CoreCompileInputs.cache
+D:\Sample Projectt\Sample Projectt\obj\Debug\Sample Projectt.exe
+D:\Sample Projectt\Sample Projectt\obj\Debug\Sample Projectt.pdb
+C:\Users\Amit\Desktop\neil\Sample Projectt\Sample Projectt\bin\Debug\Sample Projectt.exe.config
+C:\Users\Amit\Desktop\neil\Sample Projectt\Sample Projectt\bin\Debug\Sample Projectt.exe
+C:\Users\Amit\Desktop\neil\Sample Projectt\Sample Projectt\bin\Debug\Sample Projectt.pdb
+C:\Users\Amit\Desktop\neil\Sample Projectt\Sample Projectt\obj\Debug\Sample Projectt.csprojResolveAssemblyReference.cache
+C:\Users\Amit\Desktop\neil\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.AdminWindow.resources
+C:\Users\Amit\Desktop\neil\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Inventory.resources
+C:\Users\Amit\Desktop\neil\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Form1.resources
+C:\Users\Amit\Desktop\neil\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Login.resources
+C:\Users\Amit\Desktop\neil\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Product.resources
+C:\Users\Amit\Desktop\neil\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Properties.Resources.resources
+C:\Users\Amit\Desktop\neil\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Purchase.resources
+C:\Users\Amit\Desktop\neil\Sample Projectt\Sample Projectt\obj\Debug\Sample Projectt.csproj.GenerateResource.Cache
+C:\Users\Amit\Desktop\neil\Sample Projectt\Sample Projectt\obj\Debug\Sample Projectt.csproj.CoreCompileInputs.cache
+C:\Users\Amit\Desktop\neil\Sample Projectt\Sample Projectt\obj\Debug\Sample Projectt.exe
+C:\Users\Amit\Desktop\neil\Sample Projectt\Sample Projectt\obj\Debug\Sample Projectt.pdb
+C:\Users\Amit\Desktop\neil\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Report.resources
+C:\Users\Nehal\Desktop\Sample Projectt\Sample Projectt\bin\Debug\Sample Projectt.exe.config
+C:\Users\Nehal\Desktop\Sample Projectt\Sample Projectt\bin\Debug\Sample Projectt.exe
+C:\Users\Nehal\Desktop\Sample Projectt\Sample Projectt\bin\Debug\Sample Projectt.pdb
+C:\Users\Nehal\Desktop\Sample Projectt\Sample Projectt\obj\Debug\Sample Projectt.csprojResolveAssemblyReference.cache
+C:\Users\Nehal\Desktop\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.AdminWindow.resources
+C:\Users\Nehal\Desktop\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Inventory.resources
+C:\Users\Nehal\Desktop\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Form1.resources
+C:\Users\Nehal\Desktop\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Login.resources
+C:\Users\Nehal\Desktop\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Product.resources
+C:\Users\Nehal\Desktop\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Properties.Resources.resources
+C:\Users\Nehal\Desktop\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Purchase.resources
+C:\Users\Nehal\Desktop\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Report.resources
+C:\Users\Nehal\Desktop\Sample Projectt\Sample Projectt\obj\Debug\Sample Projectt.csproj.GenerateResource.cache
+C:\Users\Nehal\Desktop\Sample Projectt\Sample Projectt\obj\Debug\Sample Projectt.csproj.CoreCompileInputs.cache
+C:\Users\Nehal\Desktop\Sample Projectt\Sample Projectt\obj\Debug\Sample Projectt.exe
+C:\Users\Nehal\Desktop\Sample Projectt\Sample Projectt\obj\Debug\Sample Projectt.pdb
+C:\Users\Nehal\Desktop\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Customer.resources
+C:\Users\Nehal\Desktop\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.ParentClient.resources
+C:\Users\USER\Desktop\Sample Projectt\Sample Projectt\bin\Debug\Sample Projectt.exe.config
+C:\Users\USER\Desktop\Sample Projectt\Sample Projectt\bin\Debug\Sample Projectt.exe
+C:\Users\USER\Desktop\Sample Projectt\Sample Projectt\bin\Debug\Sample Projectt.pdb
+C:\Users\USER\Desktop\Sample Projectt\Sample Projectt\obj\Debug\Sample Projectt.csprojAssemblyReference.cache
+C:\Users\USER\Desktop\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.AdminWindow.resources
+C:\Users\USER\Desktop\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Form1.resources
+C:\Users\USER\Desktop\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Login.resources
+C:\Users\USER\Desktop\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.ParentClient.resources
+C:\Users\USER\Desktop\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Product.resources
+C:\Users\USER\Desktop\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Properties.Resources.resources
+C:\Users\USER\Desktop\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Report.resources
+C:\Users\USER\Desktop\Sample Projectt\Sample Projectt\obj\Debug\Sample Projectt.csproj.GenerateResource.cache
+C:\Users\USER\Desktop\Sample Projectt\Sample Projectt\obj\Debug\Sample Projectt.csproj.CoreCompileInputs.cache
+C:\Users\USER\Desktop\Sample Projectt\Sample Projectt\obj\Debug\Sample Projectt.exe
+C:\Users\USER\Desktop\Sample Projectt\Sample Projectt\obj\Debug\Sample Projectt.pdb
+C:\Users\Imran\Desktop\Imy\WORK\Sample Projectt\Sample Projectt\bin\Debug\Sample Projectt.exe.config
+C:\Users\Imran\Desktop\Imy\WORK\Sample Projectt\Sample Projectt\bin\Debug\Sample Projectt.exe
+C:\Users\Imran\Desktop\Imy\WORK\Sample Projectt\Sample Projectt\bin\Debug\Sample Projectt.pdb
+C:\Users\Imran\Desktop\Imy\WORK\Sample Projectt\Sample Projectt\obj\Debug\Sample Projectt.csprojResolveAssemblyReference.cache
+C:\Users\Imran\Desktop\Imy\WORK\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.AdminWindow.resources
+C:\Users\Imran\Desktop\Imy\WORK\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Customer.resources
+C:\Users\Imran\Desktop\Imy\WORK\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Inventory.resources
+C:\Users\Imran\Desktop\Imy\WORK\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Form1.resources
+C:\Users\Imran\Desktop\Imy\WORK\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Login.resources
+C:\Users\Imran\Desktop\Imy\WORK\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.ParentClient.resources
+C:\Users\Imran\Desktop\Imy\WORK\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Product.resources
+C:\Users\Imran\Desktop\Imy\WORK\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Properties.Resources.resources
+C:\Users\Imran\Desktop\Imy\WORK\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Report.resources
+C:\Users\Imran\Desktop\Imy\WORK\Sample Projectt\Sample Projectt\obj\Debug\Sample Projectt.csproj.GenerateResource.cache
+C:\Users\Imran\Desktop\Imy\WORK\Sample Projectt\Sample Projectt\obj\Debug\Sample Projectt.csproj.CoreCompileInputs.cache
+C:\Users\Imran\Desktop\Imy\WORK\Sample Projectt\Sample Projectt\obj\Debug\Sample Projectt.exe
+C:\Users\Imran\Desktop\Imy\WORK\Sample Projectt\Sample Projectt\obj\Debug\Sample Projectt.pdb
+C:\Users\Imran\Desktop\Imy\WORK\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.TransectionSupplier.resources
+D:\Common Data\Voices\Sample Projectt\Sample Projectt\bin\Debug\Sample Projectt.exe.config
+D:\Common Data\Voices\Sample Projectt\Sample Projectt\bin\Debug\Sample Projectt.exe
+D:\Common Data\Voices\Sample Projectt\Sample Projectt\bin\Debug\Sample Projectt.pdb
+D:\Common Data\Voices\Sample Projectt\Sample Projectt\obj\Debug\Sample Projectt.csprojResolveAssemblyReference.cache
+D:\Common Data\Voices\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.AdminWindow.resources
+D:\Common Data\Voices\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Customer.resources
+D:\Common Data\Voices\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Inventory.resources
+D:\Common Data\Voices\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Form1.resources
+D:\Common Data\Voices\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Login.resources
+D:\Common Data\Voices\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.ParentClient.resources
+D:\Common Data\Voices\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Product.resources
+D:\Common Data\Voices\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Properties.Resources.resources
+D:\Common Data\Voices\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Purchase.resources
+D:\Common Data\Voices\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Report.resources
+D:\Common Data\Voices\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Suppiler_Payment.resources
+D:\Common Data\Voices\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.TransectionSupplier.resources
+D:\Common Data\Voices\Sample Projectt\Sample Projectt\obj\Debug\Sample Projectt.csproj.GenerateResource.cache
+D:\Common Data\Voices\Sample Projectt\Sample Projectt\obj\Debug\Sample Projectt.csproj.CoreCompileInputs.cache
+D:\Common Data\Voices\Sample Projectt\Sample Projectt\obj\Debug\Sample Projectt.exe
+D:\Common Data\Voices\Sample Projectt\Sample Projectt\obj\Debug\Sample Projectt.pdb
+E:\Sample Projectt\Sample Projectt\bin\Debug\Sample Projectt.exe.config
+E:\Sample Projectt\Sample Projectt\bin\Debug\Sample Projectt.exe
+E:\Sample Projectt\Sample Projectt\bin\Debug\Sample Projectt.pdb
+E:\Sample Projectt\Sample Projectt\obj\Debug\Sample Projectt.csprojAssemblyReference.cache
+E:\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.AdminWindow.resources
+E:\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Customer.resources
+E:\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Inventory.resources
+E:\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Form1.resources
+E:\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Login.resources
+E:\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.ParentClient.resources
+E:\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Product.resources
+E:\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Properties.Resources.resources
+E:\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Purchase.resources
+E:\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Report.resources
+E:\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Suppiler_Payment.resources
+E:\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.TransectionSupplier.resources
+E:\Sample Projectt\Sample Projectt\obj\Debug\Sample Projectt.csproj.GenerateResource.cache
+E:\Sample Projectt\Sample Projectt\obj\Debug\Sample Projectt.csproj.CoreCompileInputs.cache
+E:\Sample Projectt\Sample Projectt\obj\Debug\Sample Projectt.exe
+E:\Sample Projectt\Sample Projectt\obj\Debug\Sample Projectt.pdb
+E:\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.ClientReport.resources
+C:\Users\Nehal\Desktop\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.ClientReport.resources
+C:\Users\Nehal\Desktop\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Suppiler_Payment.resources
+C:\Users\Nehal\Desktop\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.TransectionSupplier.resources
+C:\Users\Imran\Desktop\Imy\WORK\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.ClientReport.resources
+C:\Users\Nehal\Desktop\New folder\Sample Projectt\Sample Projectt\bin\Debug\Sample Projectt.exe.config
+C:\Users\Nehal\Desktop\New folder\Sample Projectt\Sample Projectt\bin\Debug\Sample Projectt.exe
+C:\Users\Nehal\Desktop\New folder\Sample Projectt\Sample Projectt\bin\Debug\Sample Projectt.pdb
+C:\Users\Nehal\Desktop\New folder\Sample Projectt\Sample Projectt\obj\Debug\Sample Projectt.csprojResolveAssemblyReference.cache
+C:\Users\Nehal\Desktop\New folder\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.AdminWindow.resources
+C:\Users\Nehal\Desktop\New folder\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.ClientReport.resources
+C:\Users\Nehal\Desktop\New folder\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Customer.resources
+C:\Users\Nehal\Desktop\New folder\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Inventory.resources
+C:\Users\Nehal\Desktop\New folder\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Form1.resources
+C:\Users\Nehal\Desktop\New folder\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Login.resources
+C:\Users\Nehal\Desktop\New folder\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.ParentClient.resources
+C:\Users\Nehal\Desktop\New folder\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Product.resources
+C:\Users\Nehal\Desktop\New folder\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Properties.Resources.resources
+C:\Users\Nehal\Desktop\New folder\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Purchase.resources
+C:\Users\Nehal\Desktop\New folder\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Report.resources
+C:\Users\Nehal\Desktop\New folder\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Suppiler_Payment.resources
+C:\Users\Nehal\Desktop\New folder\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.TransectionSupplier.resources
+C:\Users\Nehal\Desktop\New folder\Sample Projectt\Sample Projectt\obj\Debug\Sample Projectt.csproj.GenerateResource.cache
+C:\Users\Nehal\Desktop\New folder\Sample Projectt\Sample Projectt\obj\Debug\Sample Projectt.csproj.CoreCompileInputs.cache
+C:\Users\Nehal\Desktop\New folder\Sample Projectt\Sample Projectt\obj\Debug\Sample Projectt.exe
+C:\Users\Nehal\Desktop\New folder\Sample Projectt\Sample Projectt\obj\Debug\Sample Projectt.pdb
+D:\COMMON DATA\Neil\exe\Sample Projectt\Sample Projectt\bin\Debug\Sample Projectt.exe.config
+D:\COMMON DATA\Neil\exe\Sample Projectt\Sample Projectt\bin\Debug\Sample Projectt.exe
+D:\COMMON DATA\Neil\exe\Sample Projectt\Sample Projectt\bin\Debug\Sample Projectt.pdb
+D:\COMMON DATA\Neil\exe\Sample Projectt\Sample Projectt\obj\Debug\Sample Projectt.csprojResolveAssemblyReference.cache
+D:\COMMON DATA\Neil\exe\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.AdminWindow.resources
+D:\COMMON DATA\Neil\exe\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.ClientReport.resources
+D:\COMMON DATA\Neil\exe\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Customer.resources
+D:\COMMON DATA\Neil\exe\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Inventory.resources
+D:\COMMON DATA\Neil\exe\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Form1.resources
+D:\COMMON DATA\Neil\exe\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Login.resources
+D:\COMMON DATA\Neil\exe\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.ParentClient.resources
+D:\COMMON DATA\Neil\exe\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Product.resources
+D:\COMMON DATA\Neil\exe\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Properties.Resources.resources
+D:\COMMON DATA\Neil\exe\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Purchase.resources
+D:\COMMON DATA\Neil\exe\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Report.resources
+D:\COMMON DATA\Neil\exe\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Suppiler_Payment.resources
+D:\COMMON DATA\Neil\exe\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.TransectionSupplier.resources
+D:\COMMON DATA\Neil\exe\Sample Projectt\Sample Projectt\obj\Debug\Sample Projectt.csproj.GenerateResource.cache
+D:\COMMON DATA\Neil\exe\Sample Projectt\Sample Projectt\obj\Debug\Sample Projectt.csproj.CoreCompileInputs.cache
+D:\COMMON DATA\Neil\exe\Sample Projectt\Sample Projectt\obj\Debug\Sample Projectt.exe
+D:\COMMON DATA\Neil\exe\Sample Projectt\Sample Projectt\obj\Debug\Sample Projectt.pdb
+D:\COMMON DATA\Neil\exe\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.rcas.resources
+C:\Users\Nehal\Desktop\New folder\New folder\Sample Projectt\Sample Projectt\bin\Debug\Sample Projectt.exe.config
+C:\Users\Nehal\Desktop\New folder\New folder\Sample Projectt\Sample Projectt\bin\Debug\Sample Projectt.exe
+C:\Users\Nehal\Desktop\New folder\New folder\Sample Projectt\Sample Projectt\bin\Debug\Sample Projectt.pdb
+C:\Users\Nehal\Desktop\New folder\New folder\Sample Projectt\Sample Projectt\obj\Debug\Sample Projectt.csprojResolveAssemblyReference.cache
+C:\Users\Nehal\Desktop\New folder\New folder\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.AdminWindow.resources
+C:\Users\Nehal\Desktop\New folder\New folder\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.ClientReport.resources
+C:\Users\Nehal\Desktop\New folder\New folder\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Customer.resources
+C:\Users\Nehal\Desktop\New folder\New folder\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Inventory.resources
+C:\Users\Nehal\Desktop\New folder\New folder\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Form1.resources
+C:\Users\Nehal\Desktop\New folder\New folder\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Login.resources
+C:\Users\Nehal\Desktop\New folder\New folder\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.ParentClient.resources
+C:\Users\Nehal\Desktop\New folder\New folder\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Product.resources
+C:\Users\Nehal\Desktop\New folder\New folder\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Properties.Resources.resources
+C:\Users\Nehal\Desktop\New folder\New folder\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Purchase.resources
+C:\Users\Nehal\Desktop\New folder\New folder\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.rcas.resources
+C:\Users\Nehal\Desktop\New folder\New folder\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Report.resources
+C:\Users\Nehal\Desktop\New folder\New folder\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Suppiler_Payment.resources
+C:\Users\Nehal\Desktop\New folder\New folder\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.TransectionSupplier.resources
+C:\Users\Nehal\Desktop\New folder\New folder\Sample Projectt\Sample Projectt\obj\Debug\Sample Projectt.csproj.GenerateResource.cache
+C:\Users\Nehal\Desktop\New folder\New folder\Sample Projectt\Sample Projectt\obj\Debug\Sample Projectt.csproj.CoreCompileInputs.cache
+C:\Users\Nehal\Desktop\New folder\New folder\Sample Projectt\Sample Projectt\obj\Debug\Sample Projectt.exe
+C:\Users\Nehal\Desktop\New folder\New folder\Sample Projectt\Sample Projectt\obj\Debug\Sample Projectt.pdb
+C:\Users\USER\Desktop\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.ClientReport.resources
+C:\Users\USER\Desktop\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.TransectionSupplier.resources
+C:\Users\Nehal\Desktop\Senthil\Sample Projectt\Sample Projectt\bin\Debug\Sample Projectt.exe.config
+C:\Users\Nehal\Desktop\Senthil\Sample Projectt\Sample Projectt\bin\Debug\Sample Projectt.exe
+C:\Users\Nehal\Desktop\Senthil\Sample Projectt\Sample Projectt\bin\Debug\Sample Projectt.pdb
+C:\Users\Nehal\Desktop\Senthil\Sample Projectt\Sample Projectt\obj\Debug\Sample Projectt.csprojResolveAssemblyReference.cache
+C:\Users\Nehal\Desktop\Senthil\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.AdminWindow.resources
+C:\Users\Nehal\Desktop\Senthil\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.ClientReport.resources
+C:\Users\Nehal\Desktop\Senthil\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Customer.resources
+C:\Users\Nehal\Desktop\Senthil\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Inventory.resources
+C:\Users\Nehal\Desktop\Senthil\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Form1.resources
+C:\Users\Nehal\Desktop\Senthil\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Login.resources
+C:\Users\Nehal\Desktop\Senthil\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.ParentClient.resources
+C:\Users\Nehal\Desktop\Senthil\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Product.resources
+C:\Users\Nehal\Desktop\Senthil\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Properties.Resources.resources
+C:\Users\Nehal\Desktop\Senthil\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.rcas.resources
+C:\Users\Nehal\Desktop\Senthil\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Report.resources
+C:\Users\Nehal\Desktop\Senthil\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.TransectionSupplier.resources
+C:\Users\Nehal\Desktop\Senthil\Sample Projectt\Sample Projectt\obj\Debug\Sample Projectt.csproj.GenerateResource.cache
+C:\Users\Nehal\Desktop\Senthil\Sample Projectt\Sample Projectt\obj\Debug\Sample Projectt.csproj.CoreCompileInputs.cache
+C:\Users\Nehal\Desktop\Senthil\Sample Projectt\Sample Projectt\obj\Debug\Sample Projectt.exe
+C:\Users\Nehal\Desktop\Senthil\Sample Projectt\Sample Projectt\obj\Debug\Sample Projectt.pdb
+C:\Users\Imran\Desktop\Imy\WORK\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.rcas.resources
+C:\Users\Nehal\Desktop\Senthil\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.PopupClientForm.resources
+\\nehal-pc\Common Data\Voices\Sample Projectt\Sample Projectt\bin\Debug\Sample Projectt.exe.config
+\\nehal-pc\Common Data\Voices\Sample Projectt\Sample Projectt\bin\Debug\Sample Projectt.exe
+\\nehal-pc\Common Data\Voices\Sample Projectt\Sample Projectt\bin\Debug\Sample Projectt.pdb
+\\nehal-pc\Common Data\Voices\Sample Projectt\Sample Projectt\obj\Debug\Sample Projectt.csprojResolveAssemblyReference.cache
+\\nehal-pc\Common Data\Voices\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.AdminWindow.resources
+\\nehal-pc\Common Data\Voices\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.ClientReport.resources
+\\nehal-pc\Common Data\Voices\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Customer.resources
+\\nehal-pc\Common Data\Voices\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Inventory.resources
+\\nehal-pc\Common Data\Voices\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Form1.resources
+\\nehal-pc\Common Data\Voices\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Login.resources
+\\nehal-pc\Common Data\Voices\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.ParentClient.resources
+\\nehal-pc\Common Data\Voices\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.PopupClientForm.resources
+\\nehal-pc\Common Data\Voices\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Product.resources
+\\nehal-pc\Common Data\Voices\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Properties.Resources.resources
+\\nehal-pc\Common Data\Voices\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.rcas.resources
+\\nehal-pc\Common Data\Voices\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Report.resources
+\\nehal-pc\Common Data\Voices\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.TransectionSupplier.resources
+\\nehal-pc\Common Data\Voices\Sample Projectt\Sample Projectt\obj\Debug\Sample Projectt.csproj.GenerateResource.cache
+\\nehal-pc\Common Data\Voices\Sample Projectt\Sample Projectt\obj\Debug\Sample Projectt.csproj.CoreCompileInputs.cache
+\\nehal-pc\Common Data\Voices\Sample Projectt\Sample Projectt\obj\Debug\Sample Projectt.exe
+\\nehal-pc\Common Data\Voices\Sample Projectt\Sample Projectt\obj\Debug\Sample Projectt.pdb
+D:\COMMON DATA\CAMRY\Sample Projectt\Sample Projectt\bin\Debug\Sample Projectt.exe.config
+D:\COMMON DATA\CAMRY\Sample Projectt\Sample Projectt\bin\Debug\Sample Projectt.exe
+D:\COMMON DATA\CAMRY\Sample Projectt\Sample Projectt\bin\Debug\Sample Projectt.pdb
+D:\COMMON DATA\CAMRY\Sample Projectt\Sample Projectt\obj\Debug\Sample Projectt.csprojResolveAssemblyReference.cache
+D:\COMMON DATA\CAMRY\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.AdminWindow.resources
+D:\COMMON DATA\CAMRY\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.ClientReport.resources
+D:\COMMON DATA\CAMRY\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Customer.resources
+D:\COMMON DATA\CAMRY\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Inventory.resources
+D:\COMMON DATA\CAMRY\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Form1.resources
+D:\COMMON DATA\CAMRY\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Login.resources
+D:\COMMON DATA\CAMRY\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.ParentClient.resources
+D:\COMMON DATA\CAMRY\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.PopupClientForm.resources
+D:\COMMON DATA\CAMRY\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Product.resources
+D:\COMMON DATA\CAMRY\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Properties.Resources.resources
+D:\COMMON DATA\CAMRY\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.rcas.resources
+D:\COMMON DATA\CAMRY\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Report.resources
+D:\COMMON DATA\CAMRY\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.TransectionSupplier.resources
+D:\COMMON DATA\CAMRY\Sample Projectt\Sample Projectt\obj\Debug\Sample Projectt.csproj.GenerateResource.cache
+D:\COMMON DATA\CAMRY\Sample Projectt\Sample Projectt\obj\Debug\Sample Projectt.csproj.CoreCompileInputs.cache
+D:\COMMON DATA\CAMRY\Sample Projectt\Sample Projectt\obj\Debug\Sample Projectt.exe
+D:\COMMON DATA\CAMRY\Sample Projectt\Sample Projectt\obj\Debug\Sample Projectt.pdb
+C:\Users\USER\Desktop\Sample Projectt 15\Sample Projectt\Sample Projectt\bin\Debug\Sample Projectt.exe.config
+C:\Users\USER\Desktop\Sample Projectt 15\Sample Projectt\Sample Projectt\bin\Debug\Sample Projectt.exe
+C:\Users\USER\Desktop\Sample Projectt 15\Sample Projectt\Sample Projectt\bin\Debug\Sample Projectt.pdb
+C:\Users\USER\Desktop\Sample Projectt 15\Sample Projectt\Sample Projectt\obj\Debug\Sample Projectt.csprojAssemblyReference.cache
+C:\Users\USER\Desktop\Sample Projectt 15\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.AdminWindow.resources
+C:\Users\USER\Desktop\Sample Projectt 15\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.ClientReport.resources
+C:\Users\USER\Desktop\Sample Projectt 15\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Customer.resources
+C:\Users\USER\Desktop\Sample Projectt 15\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Inventory.resources
+C:\Users\USER\Desktop\Sample Projectt 15\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Form1.resources
+C:\Users\USER\Desktop\Sample Projectt 15\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Login.resources
+C:\Users\USER\Desktop\Sample Projectt 15\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.ParentClient.resources
+C:\Users\USER\Desktop\Sample Projectt 15\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.PopupClientForm.resources
+C:\Users\USER\Desktop\Sample Projectt 15\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Product.resources
+C:\Users\USER\Desktop\Sample Projectt 15\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Properties.Resources.resources
+C:\Users\USER\Desktop\Sample Projectt 15\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.rcas.resources
+C:\Users\USER\Desktop\Sample Projectt 15\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Report.resources
+C:\Users\USER\Desktop\Sample Projectt 15\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.TransectionSupplier.resources
+C:\Users\USER\Desktop\Sample Projectt 15\Sample Projectt\Sample Projectt\obj\Debug\Sample Projectt.csproj.GenerateResource.cache
+C:\Users\USER\Desktop\Sample Projectt 15\Sample Projectt\Sample Projectt\obj\Debug\Sample Projectt.csproj.CoreCompileInputs.cache
+C:\Users\USER\Desktop\Sample Projectt 15\Sample Projectt\Sample Projectt\obj\Debug\Sample Projectt.exe
+C:\Users\USER\Desktop\Sample Projectt 15\Sample Projectt\Sample Projectt\obj\Debug\Sample Projectt.pdb
+C:\Users\USER\Desktop\Sample Projectt 15\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.SuppilerPopUP.resources
+D:\Tutorials\Sample Projectt 15\Sample Projectt\Sample Projectt\bin\Debug\Sample Projectt.exe.config
+D:\Tutorials\Sample Projectt 15\Sample Projectt\Sample Projectt\bin\Debug\Sample Projectt.exe
+D:\Tutorials\Sample Projectt 15\Sample Projectt\Sample Projectt\bin\Debug\Sample Projectt.pdb
+D:\Tutorials\Sample Projectt 15\Sample Projectt\Sample Projectt\obj\Debug\Sample Projectt.csprojResolveAssemblyReference.cache
+D:\Tutorials\Sample Projectt 15\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.AdminWindow.resources
+D:\Tutorials\Sample Projectt 15\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.ClientReport.resources
+D:\Tutorials\Sample Projectt 15\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Customer.resources
+D:\Tutorials\Sample Projectt 15\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Inventory.resources
+D:\Tutorials\Sample Projectt 15\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Form1.resources
+D:\Tutorials\Sample Projectt 15\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Login.resources
+D:\Tutorials\Sample Projectt 15\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.ParentClient.resources
+D:\Tutorials\Sample Projectt 15\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.PopupClientForm.resources
+D:\Tutorials\Sample Projectt 15\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Product.resources
+D:\Tutorials\Sample Projectt 15\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Properties.Resources.resources
+D:\Tutorials\Sample Projectt 15\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.rcas.resources
+D:\Tutorials\Sample Projectt 15\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Report.resources
+D:\Tutorials\Sample Projectt 15\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.SuppilerPopUP.resources
+D:\Tutorials\Sample Projectt 15\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.TransectionSupplier.resources
+D:\Tutorials\Sample Projectt 15\Sample Projectt\Sample Projectt\obj\Debug\Sample Projectt.csproj.GenerateResource.cache
+D:\Tutorials\Sample Projectt 15\Sample Projectt\Sample Projectt\obj\Debug\Sample Projectt.csproj.CoreCompileInputs.cache
+D:\Tutorials\Sample Projectt 15\Sample Projectt\Sample Projectt\obj\Debug\Sample Projectt.exe
+D:\Tutorials\Sample Projectt 15\Sample Projectt\Sample Projectt\obj\Debug\Sample Projectt.pdb
+D:\Tutorials\Sample Projectt 15\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Summery.resources
+C:\Users\USER\Desktop\Sample Projectt 15\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Summery.resources
+D:\Projects\Sample Projectt\Sample Projectt\obj\Debug\Sample Projectt.csprojAssemblyReference.cache
+D:\Projects\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.AdminWindow.resources
+D:\Projects\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Cashout.resources
+D:\Projects\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.ClientReport.resources
+D:\Projects\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Form1.resources
+D:\Projects\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Login.resources
+D:\Projects\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.ParentClient.resources
+D:\Projects\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.PopupClientForm.resources
+D:\Projects\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Product.resources
+D:\Projects\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Properties.Resources.resources
+D:\Projects\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Report.resources
+D:\Projects\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Summery.resources
+D:\Projects\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.SuppilerPopUP.resources
+D:\Projects\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.TransectionSupplier.resources
+D:\Projects\Sample Projectt\Sample Projectt\obj\Debug\Sample Projectt.csproj.GenerateResource.cache
+D:\Projects\Sample Projectt\Sample Projectt\obj\Debug\Sample Projectt.csproj.CoreCompileInputs.cache
+D:\Projects\Sample Projectt\Sample Projectt\obj\Debug\Sample Projectt.exe
+D:\Projects\Sample Projectt\Sample Projectt\obj\Debug\Sample Projectt.pdb
+D:\Projects\Sample Projectt\Sample Projectt\bin\Debug\Sample Projectt.exe.config
+D:\Projects\Sample Projectt\Sample Projectt\bin\Debug\Sample Projectt.exe
+D:\Projects\Sample Projectt\Sample Projectt\bin\Debug\Sample Projectt.pdb
+C:\Users\USER\Desktop\13 JAn\Sample Projectt 15\Sample Projectt\Sample Projectt\bin\Debug\Sample Projectt.exe.config
+C:\Users\USER\Desktop\13 JAn\Sample Projectt 15\Sample Projectt\Sample Projectt\bin\Debug\Sample Projectt.exe
+C:\Users\USER\Desktop\13 JAn\Sample Projectt 15\Sample Projectt\Sample Projectt\bin\Debug\Sample Projectt.pdb
+C:\Users\USER\Desktop\13 JAn\Sample Projectt 15\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.AdminWindow.resources
+C:\Users\USER\Desktop\13 JAn\Sample Projectt 15\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Cashout.resources
+C:\Users\USER\Desktop\13 JAn\Sample Projectt 15\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.ClientReport.resources
+C:\Users\USER\Desktop\13 JAn\Sample Projectt 15\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Form1.resources
+C:\Users\USER\Desktop\13 JAn\Sample Projectt 15\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Login.resources
+C:\Users\USER\Desktop\13 JAn\Sample Projectt 15\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.ParentClient.resources
+C:\Users\USER\Desktop\13 JAn\Sample Projectt 15\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.PopupClientForm.resources
+C:\Users\USER\Desktop\13 JAn\Sample Projectt 15\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Product.resources
+C:\Users\USER\Desktop\13 JAn\Sample Projectt 15\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Properties.Resources.resources
+C:\Users\USER\Desktop\13 JAn\Sample Projectt 15\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Report.resources
+C:\Users\USER\Desktop\13 JAn\Sample Projectt 15\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Summery.resources
+C:\Users\USER\Desktop\13 JAn\Sample Projectt 15\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.SuppilerPopUP.resources
+C:\Users\USER\Desktop\13 JAn\Sample Projectt 15\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.TransectionSupplier.resources
+C:\Users\USER\Desktop\13 JAn\Sample Projectt 15\Sample Projectt\Sample Projectt\obj\Debug\Sample Projectt.csproj.GenerateResource.cache
+C:\Users\USER\Desktop\13 JAn\Sample Projectt 15\Sample Projectt\Sample Projectt\obj\Debug\Sample Projectt.csproj.CoreCompileInputs.cache
+C:\Users\USER\Desktop\13 JAn\Sample Projectt 15\Sample Projectt\Sample Projectt\obj\Debug\Sample Projectt.exe
+C:\Users\USER\Desktop\13 JAn\Sample Projectt 15\Sample Projectt\Sample Projectt\obj\Debug\Sample Projectt.pdb
+C:\Users\USER\Desktop\13 JAn\Sample Projectt 15\Sample Projectt\Sample Projectt\obj\Debug\Sample Projectt.csprojAssemblyReference.cache
+G:\New folder\Sample Projectt 15\Sample Projectt\Sample Projectt\bin\Debug\Sample Projectt.exe.config
+G:\New folder\Sample Projectt 15\Sample Projectt\Sample Projectt\bin\Debug\Sample Projectt.exe
+G:\New folder\Sample Projectt 15\Sample Projectt\Sample Projectt\bin\Debug\Sample Projectt.pdb
+G:\New folder\Sample Projectt 15\Sample Projectt\Sample Projectt\obj\Debug\Sample Projectt.csprojAssemblyReference.cache
+G:\New folder\Sample Projectt 15\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.AdminWindow.resources
+G:\New folder\Sample Projectt 15\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Cashout.resources
+G:\New folder\Sample Projectt 15\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.ClientReport.resources
+G:\New folder\Sample Projectt 15\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Form1.resources
+G:\New folder\Sample Projectt 15\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Login.resources
+G:\New folder\Sample Projectt 15\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.ParentClient.resources
+G:\New folder\Sample Projectt 15\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.PopupClientForm.resources
+G:\New folder\Sample Projectt 15\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Product.resources
+G:\New folder\Sample Projectt 15\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Properties.Resources.resources
+G:\New folder\Sample Projectt 15\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Report.resources
+G:\New folder\Sample Projectt 15\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Summery.resources
+G:\New folder\Sample Projectt 15\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.SuppilerPopUP.resources
+G:\New folder\Sample Projectt 15\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.TransectionSupplier.resources
+G:\New folder\Sample Projectt 15\Sample Projectt\Sample Projectt\obj\Debug\Sample Projectt.csproj.GenerateResource.cache
+G:\New folder\Sample Projectt 15\Sample Projectt\Sample Projectt\obj\Debug\Sample Projectt.csproj.CoreCompileInputs.cache
+G:\New folder\Sample Projectt 15\Sample Projectt\Sample Projectt\obj\Debug\Sample Projectt.exe
+G:\New folder\Sample Projectt 15\Sample Projectt\Sample Projectt\obj\Debug\Sample Projectt.pdb
+D:\New folder\Sample Projectt 15\Sample Projectt\Sample Projectt\bin\Debug\Sample Projectt.exe.config
+D:\New folder\Sample Projectt 15\Sample Projectt\Sample Projectt\obj\Debug\Sample Projectt.exe
+D:\New folder\Sample Projectt 15\Sample Projectt\Sample Projectt\obj\Debug\Sample Projectt.pdb
+D:\New folder\Sample Projectt 15\Sample Projectt\Sample Projectt\bin\Debug\Sample Projectt.exe
+D:\New folder\Sample Projectt 15\Sample Projectt\Sample Projectt\bin\Debug\Sample Projectt.pdb
+D:\New folder\Sample Projectt 15\Sample Projectt\Sample Projectt\obj\Debug\Sample Projectt.csprojResolveAssemblyReference.cache
+D:\New folder\Sample Projectt 15\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.AdminWindow.resources
+D:\New folder\Sample Projectt 15\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Cashout.resources
+D:\New folder\Sample Projectt 15\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.ClientReport.resources
+D:\New folder\Sample Projectt 15\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Form1.resources
+D:\New folder\Sample Projectt 15\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Login.resources
+D:\New folder\Sample Projectt 15\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.ParentClient.resources
+D:\New folder\Sample Projectt 15\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.PopupClientForm.resources
+D:\New folder\Sample Projectt 15\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Product.resources
+D:\New folder\Sample Projectt 15\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Properties.Resources.resources
+D:\New folder\Sample Projectt 15\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Report.resources
+D:\New folder\Sample Projectt 15\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Summery.resources
+D:\New folder\Sample Projectt 15\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.SuppilerPopUP.resources
+D:\New folder\Sample Projectt 15\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.TransectionSupplier.resources
+D:\New folder\Sample Projectt 15\Sample Projectt\Sample Projectt\obj\Debug\Sample Projectt.csproj.GenerateResource.Cache
+D:\Projects\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.SplassScreen.resources
+C:\Users\USER\Desktop\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Cashout.resources
+C:\Users\USER\Desktop\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.PopupClientForm.resources
+C:\Users\USER\Desktop\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.SplassScreen.resources
+C:\Users\USER\Desktop\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Summery.resources
+C:\Users\USER\Desktop\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.SuppilerPopUP.resources
+D:\Projects\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.ClientStatement.resources
+D:\Deploy\Sample Projectt\Sample Projectt\bin\Debug\Sample Projectt.exe.config
+D:\Deploy\Sample Projectt\Sample Projectt\obj\Debug\Sample Projectt.exe
+D:\Deploy\Sample Projectt\Sample Projectt\obj\Debug\Sample Projectt.pdb
+D:\Deploy\Sample Projectt\Sample Projectt\bin\Debug\Sample Projectt.exe
+D:\Deploy\Sample Projectt\Sample Projectt\bin\Debug\Sample Projectt.pdb
+D:\Deploy\Sample Projectt\Sample Projectt\obj\Debug\Sample Projectt.csprojResolveAssemblyReference.cache
+D:\Deploy\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.AdminWindow.resources
+D:\Deploy\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Cashout.resources
+D:\Deploy\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.ClientReport.resources
+D:\Deploy\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.ClientStatement.resources
+D:\Deploy\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Form1.resources
+D:\Deploy\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Login.resources
+D:\Deploy\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.ParentClient.resources
+D:\Deploy\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.PopupClientForm.resources
+D:\Deploy\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Product.resources
+D:\Deploy\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Properties.Resources.resources
+D:\Deploy\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Report.resources
+D:\Deploy\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.SplassScreen.resources
+D:\Deploy\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Summery.resources
+D:\Deploy\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.SuppilerPopUP.resources
+D:\Deploy\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.TransectionSupplier.resources
+D:\Deploy\Sample Projectt\Sample Projectt\obj\Debug\Sample Projectt.csproj.GenerateResource.Cache
+C:\Users\USER\Desktop\office\Sample Projectt\Sample Projectt\bin\Debug\Sample Projectt.exe.config
+C:\Users\USER\Desktop\office\Sample Projectt\Sample Projectt\bin\Debug\Sample Projectt.exe
+C:\Users\USER\Desktop\office\Sample Projectt\Sample Projectt\bin\Debug\Sample Projectt.pdb
+C:\Users\USER\Desktop\office\Sample Projectt\Sample Projectt\obj\Debug\Sample Projectt.csprojAssemblyReference.cache
+C:\Users\USER\Desktop\office\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.AdminWindow.resources
+C:\Users\USER\Desktop\office\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Cashout.resources
+C:\Users\USER\Desktop\office\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.ClientReport.resources
+C:\Users\USER\Desktop\office\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.ClientStatement.resources
+C:\Users\USER\Desktop\office\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Form1.resources
+C:\Users\USER\Desktop\office\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Login.resources
+C:\Users\USER\Desktop\office\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.ParentClient.resources
+C:\Users\USER\Desktop\office\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.PopupClientForm.resources
+C:\Users\USER\Desktop\office\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Product.resources
+C:\Users\USER\Desktop\office\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Properties.Resources.resources
+C:\Users\USER\Desktop\office\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Report.resources
+C:\Users\USER\Desktop\office\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.SplassScreen.resources
+C:\Users\USER\Desktop\office\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Summery.resources
+C:\Users\USER\Desktop\office\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.SuppilerPopUP.resources
+C:\Users\USER\Desktop\office\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.TransectionSupplier.resources
+C:\Users\USER\Desktop\office\Sample Projectt\Sample Projectt\obj\Debug\Sample Projectt.csproj.GenerateResource.cache
+C:\Users\USER\Desktop\office\Sample Projectt\Sample Projectt\obj\Debug\Sample Projectt.csproj.CoreCompileInputs.cache
+C:\Users\USER\Desktop\office\Sample Projectt\Sample Projectt\obj\Debug\Sample Projectt.exe
+C:\Users\USER\Desktop\office\Sample Projectt\Sample Projectt\obj\Debug\Sample Projectt.pdb
+C:\Users\USER\Desktop\office\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.SupplierStatement.resources
+C:\Users\USER\Desktop\office\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.CashoutClint.resources
+D:\office\Sample Projectt\Sample Projectt\bin\Debug\Sample Projectt.exe.config
+D:\office\Sample Projectt\Sample Projectt\obj\Debug\Sample Projectt.exe
+D:\office\Sample Projectt\Sample Projectt\obj\Debug\Sample Projectt.pdb
+D:\office\Sample Projectt\Sample Projectt\obj\Debug\Sample Projectt.csprojResolveAssemblyReference.cache
+D:\office\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.AdminWindow.resources
+D:\office\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Cashout.resources
+D:\office\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.CashoutClint.resources
+D:\office\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.ClientReport.resources
+D:\office\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.ClientStatement.resources
+D:\office\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Form1.resources
+D:\office\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Login.resources
+D:\office\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.ParentClient.resources
+D:\office\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.PopupClientForm.resources
+D:\office\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Product.resources
+D:\office\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Properties.Resources.resources
+D:\office\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Report.resources
+D:\office\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.SplassScreen.resources
+D:\office\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Summery.resources
+D:\office\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.SuppilerPopUP.resources
+D:\office\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.SupplierStatement.resources
+D:\office\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.TransectionSupplier.resources
+D:\office\Sample Projectt\Sample Projectt\obj\Debug\Sample Projectt.csproj.GenerateResource.Cache
+D:\office\Sample Projectt\Sample Projectt\bin\Debug\Sample Projectt.exe
+D:\office\Sample Projectt\Sample Projectt\bin\Debug\Sample Projectt.pdb
+C:\Users\USER\Desktop\office\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.GoldLive_Popup.resources
+E:\Sumit Project 26 oct\Sample Projectt\Sample Projectt\obj\Debug\Sample Projectt.csprojAssemblyReference.cache
+E:\Sumit Project 26 oct\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.AdminWindow.resources
+E:\Sumit Project 26 oct\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Cashout.resources
+E:\Sumit Project 26 oct\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.CashoutClint.resources
+E:\Sumit Project 26 oct\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.ClientReport.resources
+E:\Sumit Project 26 oct\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.ClientStatement.resources
+E:\Sumit Project 26 oct\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Form1.resources
+E:\Sumit Project 26 oct\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.GoldLive_Popup.resources
+E:\Sumit Project 26 oct\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Login.resources
+E:\Sumit Project 26 oct\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.ParentClient.resources
+E:\Sumit Project 26 oct\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.PopupClientForm.resources
+E:\Sumit Project 26 oct\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Product.resources
+E:\Sumit Project 26 oct\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Properties.Resources.resources
+E:\Sumit Project 26 oct\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Report.resources
+E:\Sumit Project 26 oct\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.SplassScreen.resources
+E:\Sumit Project 26 oct\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Summery.resources
+E:\Sumit Project 26 oct\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.SuppilerPopUP.resources
+E:\Sumit Project 26 oct\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.SupplierStatement.resources
+E:\Sumit Project 26 oct\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.TransectionSupplier.resources
+E:\Sumit Project 26 oct\Sample Projectt\Sample Projectt\obj\Debug\Sample Projectt.csproj.GenerateResource.cache
+E:\Sumit Project 26 oct\Sample Projectt\Sample Projectt\obj\Debug\Sample Projectt.csproj.CoreCompileInputs.cache
+E:\Sumit Project 26 oct\Sample Projectt\Sample Projectt\obj\Debug\Sample Projectt.exe
+E:\Sumit Project 26 oct\Sample Projectt\Sample Projectt\obj\Debug\Sample Projectt.pdb
+E:\Sumit Project 26 oct\Sample Projectt\Sample Projectt\bin\Debug\Sample Projectt.exe.config
+E:\Sumit Project 26 oct\Sample Projectt\Sample Projectt\bin\Debug\Sample Projectt.exe.manifest
+E:\Sumit Project 26 oct\Sample Projectt\Sample Projectt\bin\Debug\Sample Projectt.application
+E:\Sumit Project 26 oct\Sample Projectt\Sample Projectt\bin\Debug\Sample Projectt.exe
+E:\Sumit Project 26 oct\Sample Projectt\Sample Projectt\bin\Debug\Sample Projectt.pdb
+E:\Sumit Project 26 oct\Sample Projectt\Sample Projectt\obj\Debug\Sample Projectt.exe.manifest
+E:\Sumit Project 26 oct\Sample Projectt\Sample Projectt\obj\Debug\Sample Projectt.application

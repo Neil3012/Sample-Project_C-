@@ -1,0 +1,324 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3FE0503C-7531-4EAE-9517-0994DE574F7F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Sample_Projectt</RootNamespace>
+    <AssemblyName>Sample Projectt</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>2</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>A64C6D5872AA5204E7D22749FD58C0102BBE4605</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Sample Projectt_1_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Sm.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdminWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminWindow.Designer.cs">
+      <DependentUpon>AdminWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cashout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cashout.Designer.cs">
+      <DependentUpon>Cashout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CashoutClint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CashoutClint.Designer.cs">
+      <DependentUpon>CashoutClint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClientReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientReport.Designer.cs">
+      <DependentUpon>ClientReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClientStatement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientStatement.Designer.cs">
+      <DependentUpon>ClientStatement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GoldDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GoldDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="GoldDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GoldDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="GoldLive_Popup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GoldLive_Popup.Designer.cs">
+      <DependentUpon>GoldLive_Popup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ParentClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ParentClient.Designer.cs">
+      <DependentUpon>ParentClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PopupClientForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PopupClientForm.Designer.cs">
+      <DependentUpon>PopupClientForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Product.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Product.Designer.cs">
+      <DependentUpon>Product.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report.Designer.cs">
+      <DependentUpon>Report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SplassScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SplassScreen.Designer.cs">
+      <DependentUpon>SplassScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Summery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Summery.Designer.cs">
+      <DependentUpon>Summery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SuppilerPopUP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SuppilerPopUP.Designer.cs">
+      <DependentUpon>SuppilerPopUP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SupplierStatement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SupplierStatement.Designer.cs">
+      <DependentUpon>SupplierStatement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TransectionSupplier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TransectionSupplier.Designer.cs">
+      <DependentUpon>TransectionSupplier.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AdminWindow.resx">
+      <DependentUpon>AdminWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cashout.resx">
+      <DependentUpon>Cashout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CashoutClint.resx">
+      <DependentUpon>CashoutClint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientReport.resx">
+      <DependentUpon>ClientReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientStatement.resx">
+      <DependentUpon>ClientStatement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GoldLive_Popup.resx">
+      <DependentUpon>GoldLive_Popup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ParentClient.resx">
+      <DependentUpon>ParentClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PopupClientForm.resx">
+      <DependentUpon>PopupClientForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Product.resx">
+      <DependentUpon>Product.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Report.resx">
+      <DependentUpon>Report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SplassScreen.resx">
+      <DependentUpon>SplassScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Summery.resx">
+      <DependentUpon>Summery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SuppilerPopUP.resx">
+      <DependentUpon>SuppilerPopUP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SupplierStatement.resx">
+      <DependentUpon>SupplierStatement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TransectionSupplier.resx">
+      <DependentUpon>TransectionSupplier.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="GoldDataSet.xsc">
+      <DependentUpon>GoldDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="GoldDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>GoldDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="GoldDataSet.xss">
+      <DependentUpon>GoldDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="GoldDataSet1.xsc">
+      <DependentUpon>GoldDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="GoldDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>GoldDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="GoldDataSet1.xss">
+      <DependentUpon>GoldDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Sample Projectt_1_TemporaryKey.pfx" />
+    <None Include="Sample Projectt_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\heading.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1071022-vertical-black-gold-background-2240x1702-for-android-40.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pexels-photo-933148.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button-4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\metallic-effect-in-photoshop-4b1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PHOTO-2019-02-12-22-16-43.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\SM.jpg" />
+    <Content Include="Sm.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
