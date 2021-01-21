@@ -191,7 +191,7 @@ namespace Sample_Projectt
             using (con = new SqlConnection(conn))
                 {
                     con.Open();
-                    select = "select Name from Supplier where Name='" + txtName.Text + "'";
+                    select = "select Name from Supplier where Name='" + txtName.Text + "' and Supplier_ID !='"+ UpdateID + "'";
                     cmd = new SqlCommand(select, con);
                     rdr = cmd.ExecuteReader();
 
@@ -208,16 +208,16 @@ namespace Sample_Projectt
                 count = 0;
                 if (dialogResult == DialogResult.OK)
                 {
-                    using (con = new SqlConnection(conn))
-                    {
-                        string update = "update Supplier set Name='" + txtName.Text + "',Contact=" + txtContact.Text + ",Email='" + txtEmail.Text + "',Location='" + txtLoaction.Text + "'where Supplier_ID='" + UpdateID + "'";
-                        cmd = new SqlCommand(update, con);
-                        con.Open();
-                        cmd.ExecuteNonQuery();
+                    //using (con = new SqlConnection(conn))
+                    //{
+                    //    string update = "update Supplier set Name='" + txtName.Text + "',Contact=" + txtContact.Text + ",Email='" + txtEmail.Text + "',Location='" + txtLoaction.Text + "'where Supplier_ID='" + UpdateID + "'";
+                    //    cmd = new SqlCommand(update, con);
+                    //    con.Open();
+                    //    cmd.ExecuteNonQuery();
                         dataGridSupplier.DataSource = "";
                      
 
-                    }
+                    //}
                     btnAdd.Enabled = true;
                     btnDisplay .Enabled = true;
                     btnCancel .Enabled = true;

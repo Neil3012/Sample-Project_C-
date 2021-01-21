@@ -153,23 +153,23 @@
             // 
             this.supplierToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.supplierToolStripMenuItem.Name = "supplierToolStripMenuItem";
-            this.supplierToolStripMenuItem.Size = new System.Drawing.Size(121, 25);
-            this.supplierToolStripMenuItem.Text = "Add Supplier";
+            this.supplierToolStripMenuItem.Size = new System.Drawing.Size(86, 25);
+            this.supplierToolStripMenuItem.Text = "Supplier";
             this.supplierToolStripMenuItem.Click += new System.EventHandler(this.supplierToolStripMenuItem_Click);
             // 
             // InventoryToolStrip
             // 
             this.InventoryToolStrip.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.InventoryToolStrip.Name = "InventoryToolStrip";
-            this.InventoryToolStrip.Size = new System.Drawing.Size(132, 25);
-            this.InventoryToolStrip.Text = "Add Inventory";
+            this.InventoryToolStrip.Size = new System.Drawing.Size(97, 25);
+            this.InventoryToolStrip.Text = "Inventory";
             this.InventoryToolStrip.Click += new System.EventHandler(this.InventoryToolStrip_Click);
             // 
             // ProductToolStrip
             // 
             this.ProductToolStrip.Name = "ProductToolStrip";
-            this.ProductToolStrip.Size = new System.Drawing.Size(121, 25);
-            this.ProductToolStrip.Text = "ADD Product";
+            this.ProductToolStrip.Size = new System.Drawing.Size(82, 25);
+            this.ProductToolStrip.Text = "Product";
             this.ProductToolStrip.Click += new System.EventHandler(this.ProductToolStrip_Click);
             // 
             // reportToolStripMenuItem
