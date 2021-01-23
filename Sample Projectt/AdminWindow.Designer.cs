@@ -30,7 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdminWindow));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.supplierToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.InventoryToolStrip = new System.Windows.Forms.ToolStripMenuItem();
@@ -92,6 +92,9 @@
             this.label1 = new System.Windows.Forms.Label();
             this.lblId = new System.Windows.Forms.Label();
             this.panelProduct = new System.Windows.Forms.Panel();
+            this.Krt22 = new System.Windows.Forms.RadioButton();
+            this.Krt14 = new System.Windows.Forms.RadioButton();
+            this.Krt18 = new System.Windows.Forms.RadioButton();
             this.btnUpdateProduct = new System.Windows.Forms.Button();
             this.btnDisplayProduct = new System.Windows.Forms.Button();
             this.btnAddProduct = new System.Windows.Forms.Button();
@@ -842,6 +845,9 @@
             // panelProduct
             // 
             this.panelProduct.BackColor = System.Drawing.Color.Transparent;
+            this.panelProduct.Controls.Add(this.Krt22);
+            this.panelProduct.Controls.Add(this.Krt14);
+            this.panelProduct.Controls.Add(this.Krt18);
             this.panelProduct.Controls.Add(this.btnUpdateProduct);
             this.panelProduct.Controls.Add(this.btnDisplayProduct);
             this.panelProduct.Controls.Add(this.btnAddProduct);
@@ -853,9 +859,48 @@
             this.panelProduct.Controls.Add(this.dataGridProduct);
             this.panelProduct.Location = new System.Drawing.Point(190, 104);
             this.panelProduct.Name = "panelProduct";
-            this.panelProduct.Size = new System.Drawing.Size(490, 491);
+            this.panelProduct.Size = new System.Drawing.Size(560, 491);
             this.panelProduct.TabIndex = 3;
             this.panelProduct.Paint += new System.Windows.Forms.PaintEventHandler(this.panelProduct_Paint);
+            // 
+            // Krt22
+            // 
+            this.Krt22.AutoSize = true;
+            this.Krt22.Font = new System.Drawing.Font("Calibri", 14F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Krt22.Location = new System.Drawing.Point(453, 232);
+            this.Krt22.Name = "Krt22";
+            this.Krt22.Size = new System.Drawing.Size(82, 27);
+            this.Krt22.TabIndex = 20;
+            this.Krt22.TabStop = true;
+            this.Krt22.Text = "22 KRT";
+            this.Krt22.UseVisualStyleBackColor = true;
+            this.Krt22.CheckedChanged += new System.EventHandler(this.Purity_CheckedChanged);
+            // 
+            // Krt14
+            // 
+            this.Krt14.AutoSize = true;
+            this.Krt14.Font = new System.Drawing.Font("Calibri", 14F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Krt14.Location = new System.Drawing.Point(16, 232);
+            this.Krt14.Name = "Krt14";
+            this.Krt14.Size = new System.Drawing.Size(82, 27);
+            this.Krt14.TabIndex = 19;
+            this.Krt14.TabStop = true;
+            this.Krt14.Text = "14 KRT";
+            this.Krt14.UseVisualStyleBackColor = true;
+            this.Krt14.CheckedChanged += new System.EventHandler(this.Purity_CheckedChanged);
+            // 
+            // Krt18
+            // 
+            this.Krt18.AutoSize = true;
+            this.Krt18.Font = new System.Drawing.Font("Calibri", 14F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Krt18.Location = new System.Drawing.Point(243, 230);
+            this.Krt18.Name = "Krt18";
+            this.Krt18.Size = new System.Drawing.Size(82, 27);
+            this.Krt18.TabIndex = 18;
+            this.Krt18.TabStop = true;
+            this.Krt18.Text = "18 KRT";
+            this.Krt18.UseVisualStyleBackColor = true;
+            this.Krt18.CheckedChanged += new System.EventHandler(this.Purity_CheckedChanged);
             // 
             // btnUpdateProduct
             // 
@@ -863,7 +908,7 @@
             this.btnUpdateProduct.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnUpdateProduct.FlatAppearance.BorderSize = 0;
             this.btnUpdateProduct.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnUpdateProduct.Location = new System.Drawing.Point(167, 441);
+            this.btnUpdateProduct.Location = new System.Drawing.Point(263, 444);
             this.btnUpdateProduct.Name = "btnUpdateProduct";
             this.btnUpdateProduct.Size = new System.Drawing.Size(82, 35);
             this.btnUpdateProduct.TabIndex = 17;
@@ -877,7 +922,7 @@
             this.btnDisplayProduct.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnDisplayProduct.FlatAppearance.BorderSize = 0;
             this.btnDisplayProduct.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDisplayProduct.Location = new System.Drawing.Point(277, 191);
+            this.btnDisplayProduct.Location = new System.Drawing.Point(371, 146);
             this.btnDisplayProduct.Name = "btnDisplayProduct";
             this.btnDisplayProduct.Size = new System.Drawing.Size(82, 36);
             this.btnDisplayProduct.TabIndex = 16;
@@ -891,7 +936,7 @@
             this.btnAddProduct.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnAddProduct.FlatAppearance.BorderSize = 0;
             this.btnAddProduct.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAddProduct.Location = new System.Drawing.Point(176, 191);
+            this.btnAddProduct.Location = new System.Drawing.Point(270, 146);
             this.btnAddProduct.Name = "btnAddProduct";
             this.btnAddProduct.Size = new System.Drawing.Size(75, 36);
             this.btnAddProduct.TabIndex = 15;
@@ -905,7 +950,7 @@
             this.btnCancelProduct.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnCancelProduct.FlatAppearance.BorderSize = 0;
             this.btnCancelProduct.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCancelProduct.Location = new System.Drawing.Point(69, 191);
+            this.btnCancelProduct.Location = new System.Drawing.Point(163, 146);
             this.btnCancelProduct.Name = "btnCancelProduct";
             this.btnCancelProduct.Size = new System.Drawing.Size(82, 36);
             this.btnCancelProduct.TabIndex = 14;
@@ -917,7 +962,7 @@
             // 
             this.txtDesc.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.txtDesc.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDesc.Location = new System.Drawing.Point(156, 116);
+            this.txtDesc.Location = new System.Drawing.Point(250, 71);
             this.txtDesc.Multiline = true;
             this.txtDesc.Name = "txtDesc";
             this.txtDesc.Size = new System.Drawing.Size(180, 50);
@@ -927,7 +972,7 @@
             // 
             this.txtProductName.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.txtProductName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtProductName.Location = new System.Drawing.Point(156, 70);
+            this.txtProductName.Location = new System.Drawing.Point(250, 25);
             this.txtProductName.Name = "txtProductName";
             this.txtProductName.Size = new System.Drawing.Size(180, 26);
             this.txtProductName.TabIndex = 12;
@@ -936,7 +981,7 @@
             // 
             this.lblDesc.AutoSize = true;
             this.lblDesc.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDesc.Location = new System.Drawing.Point(10, 133);
+            this.lblDesc.Location = new System.Drawing.Point(104, 88);
             this.lblDesc.Name = "lblDesc";
             this.lblDesc.Size = new System.Drawing.Size(100, 20);
             this.lblDesc.TabIndex = 11;
@@ -946,7 +991,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(10, 75);
+            this.label5.Location = new System.Drawing.Point(104, 30);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(117, 20);
             this.label5.TabIndex = 10;
@@ -955,14 +1000,14 @@
             // dataGridProduct
             // 
             this.dataGridProduct.AllowUserToAddRows = false;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.dataGridProduct.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.dataGridProduct.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridProduct.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
             this.dataGridProduct.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridProduct.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.dataGridProduct.Location = new System.Drawing.Point(8, 266);
             this.dataGridProduct.Name = "dataGridProduct";
-            this.dataGridProduct.Size = new System.Drawing.Size(351, 167);
+            this.dataGridProduct.Size = new System.Drawing.Size(500, 167);
             this.dataGridProduct.TabIndex = 9;
             this.dataGridProduct.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridProduct_CellClick);
             this.dataGridProduct.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridProduct_CellContentClick);
@@ -1010,9 +1055,9 @@
             this.panelPremainInventory.Controls.Add(this.txtID);
             this.panelPremainInventory.Controls.Add(this.label14);
             this.panelPremainInventory.Controls.Add(this.cmbSuplierName);
-            this.panelPremainInventory.Location = new System.Drawing.Point(195, 107);
+            this.panelPremainInventory.Location = new System.Drawing.Point(697, 107);
             this.panelPremainInventory.Name = "panelPremainInventory";
-            this.panelPremainInventory.Size = new System.Drawing.Size(475, 445);
+            this.panelPremainInventory.Size = new System.Drawing.Size(44, 445);
             this.panelPremainInventory.TabIndex = 5;
             this.panelPremainInventory.Paint += new System.Windows.Forms.PaintEventHandler(this.panelPremainInventory_Paint);
             // 
@@ -1295,5 +1340,8 @@
         private System.Windows.Forms.ToolStripMenuItem statementToolStripMenuItem;
         private System.Windows.Forms.DataGridView dataGridInventoryComfirm;
         private System.Windows.Forms.Button btnSubmitnew;
+        private System.Windows.Forms.RadioButton Krt22;
+        private System.Windows.Forms.RadioButton Krt14;
+        private System.Windows.Forms.RadioButton Krt18;
     }
 }

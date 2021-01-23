@@ -25,7 +25,7 @@ namespace Sample_Projectt
         SqlCommand cmd,cmd1;
         public SqlDataReader rdr;
         DataTable dt;
-
+        int count;
 
       
         SqlDataAdapter adap;
@@ -77,7 +77,12 @@ namespace Sample_Projectt
         
         }
 
-     
+        private void Krt14_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+
 
         //for getting Countine of registered user
         void getCount()
@@ -103,19 +108,50 @@ namespace Sample_Projectt
             con = new SqlConnection(conn);
             if (!(txtName.Text == string.Empty))
             {
-                ID++;
-                string value = ID.ToString("00000");
-                REGID = Word + value;
+                count = 0;
+                using (con = new SqlConnection(conn))
+                {
+                    con.Open();
+                    select = "select Product_Name from Product where Product_Name='" + txtName.Text + "'";
+                    cmd = new SqlCommand(select, con);
+                    rdr = cmd.ExecuteReader();
 
-                string insert = "insert into Product values('" + REGID + "','" + txtName.Text + "','" + txtDesc.Text + "')";
-                string insert1 = "insert into Inventory values('" + REGID + "','" + txtName.Text + "')";
-                cmd = new SqlCommand(insert, con);
-                cmd1 = new SqlCommand(insert1, con);
-                con.Open();
-                cmd.ExecuteNonQuery();
-                //cmd1.ExecuteNonQuery();
-                con.Close();
-                GetData();            
+                    while (rdr.Read())
+                    {
+                        count = count + 1;
+                    }
+                }
+                if (count >= 1)
+                {
+                    DialogResult dialogResult = MessageBox.Show("PRODUCT ALREADY EXIST", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                    //   TextBoxProduct();
+                    count = 0;
+                    if (dialogResult == DialogResult.OK)
+                    {
+
+                        btnSubmit.Enabled = true;
+                        btnDisplay.Enabled = true;
+                        //btnCancelProduct.Enabled = true;
+                        btnUpdate.Enabled = false;
+
+                    }
+                }
+                else
+                {
+                    ID++;
+                    string value = ID.ToString("00000");
+                    REGID = Word + value;
+
+                    string insert = "insert into Product values('" + REGID + "','" + txtName.Text + "','" + txtDesc.Text + "')";
+                    string insert1 = "insert into Inventory values('" + REGID + "','" + txtName.Text + "')";
+                    cmd = new SqlCommand(insert, con);
+                    cmd1 = new SqlCommand(insert1, con);
+                    con.Open();
+                    cmd.ExecuteNonQuery();
+                    //cmd1.ExecuteNonQuery();
+                    con.Close();
+                    GetData();
+                }
             }
         }
         

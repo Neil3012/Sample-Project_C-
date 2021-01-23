@@ -46,7 +46,7 @@
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
-            this.dataGridView1.Location = new System.Drawing.Point(104, 211);
+            this.dataGridView1.Location = new System.Drawing.Point(104, 288);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(494, 108);
             this.dataGridView1.TabIndex = 0;
@@ -101,7 +101,7 @@
             this.btnCancel.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancel.Location = new System.Drawing.Point(259, 156);
+            this.btnCancel.Location = new System.Drawing.Point(458, 414);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(100, 36);
             this.btnCancel.TabIndex = 5;
@@ -119,7 +119,7 @@
             this.btnSubmit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btnSubmit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSubmit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSubmit.Location = new System.Drawing.Point(365, 156);
+            this.btnSubmit.Location = new System.Drawing.Point(365, 233);
             this.btnSubmit.Name = "btnSubmit";
             this.btnSubmit.Size = new System.Drawing.Size(100, 36);
             this.btnSubmit.TabIndex = 6;
@@ -140,7 +140,7 @@
             this.btnDisplay.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDisplay.ForeColor = System.Drawing.Color.Black;
             this.btnDisplay.ImageAlign = System.Drawing.ContentAlignment.BottomRight;
-            this.btnDisplay.Location = new System.Drawing.Point(471, 156);
+            this.btnDisplay.Location = new System.Drawing.Point(471, 233);
             this.btnDisplay.Name = "btnDisplay";
             this.btnDisplay.Size = new System.Drawing.Size(100, 36);
             this.btnDisplay.TabIndex = 7;
@@ -158,7 +158,7 @@
             this.btnUpdate.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUpdate.Location = new System.Drawing.Point(301, 325);
+            this.btnUpdate.Location = new System.Drawing.Point(301, 402);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(100, 36);
             this.btnUpdate.TabIndex = 8;
@@ -173,7 +173,7 @@
             this.BackColor = System.Drawing.Color.Gainsboro;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(694, 391);
+            this.ClientSize = new System.Drawing.Size(727, 503);
             this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.btnDisplay);
             this.Controls.Add(this.btnSubmit);

@@ -54,7 +54,7 @@ namespace Sample_Projectt
         public bool _completeTrans = false;
 
         TransectionSupplier ts = new TransectionSupplier();
-
+        string _tempPurity = "";
 
 
         int rowsCount = 0;
@@ -1030,7 +1030,7 @@ namespace Sample_Projectt
                     }
                     if (count >= 1)
                     {
-                        MessageBox.Show("PRODUCT NAME ALREADY EXIST!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                        MessageBox.Show("PRODUCT ALREADY EXIST!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
                         TextBoxProduct();
                     }
 
@@ -1041,7 +1041,7 @@ namespace Sample_Projectt
                         REGID = Words + value;
                         using (SqlConnection connn = new SqlConnection(conn))
                         {
-                            string insert = "insert into Product values('" + REGID + "','" + txtProductName.Text + "','" + txtDesc.Text + "')";
+                            string insert = "insert into Product values('" + REGID + "','" + _tempPurity + "','" + txtProductName.Text + "','" + txtDesc.Text + "')";
                             //   string insert1 = "insert into Inventory values('" + REGID + "','" + txtProductName.Text + "')";
                             cmd = new SqlCommand(insert, connn);
                             //cmd1 = new SqlCommand(insert1, connn);
@@ -1113,9 +1113,9 @@ namespace Sample_Projectt
 
                 dataGridProduct.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
                 UpdateID = (dataGridProduct.Rows[e.RowIndex].Cells[0].Value.ToString());
-                txtProductName.Text = (dataGridProduct.Rows[e.RowIndex].Cells[1].Value.ToString());
-                txtDesc.Text = (dataGridProduct.Rows[e.RowIndex].Cells[2].Value.ToString());
-
+                txtProductName.Text = (dataGridProduct.Rows[e.RowIndex].Cells[2].Value.ToString());
+                txtDesc.Text = (dataGridProduct.Rows[e.RowIndex].Cells[3].Value.ToString());
+                UpdatePurity(dataGridProduct.Rows[e.RowIndex].Cells[1].Value.ToString());
                 ButtonDisableProduct();
                 btnUpdateProduct.Enabled = true;
             }
@@ -1127,7 +1127,21 @@ namespace Sample_Projectt
 
 
         }
-
+        private void UpdatePurity(string purity)
+        {
+            if (purity.Contains("18"))
+            {
+                Krt18.Checked = true;
+            }
+            else if (purity.Contains("14"))
+            {
+                Krt14.Checked = true;
+            }
+            else if (purity.Contains("22"))
+            {
+                Krt22.Checked = true;
+            }
+        }
         void ButtonDisableProduct()
         {
             btnAddProduct.Enabled = false;
@@ -1774,7 +1788,22 @@ namespace Sample_Projectt
             listboxProduct.Items.AddRange(result);
             listboxProduct.Visible = true; // show the listbox ag
         }
-
+        private void Purity_CheckedChanged(object sender, EventArgs e)
+        {
+            
+            if (Krt14.Checked == true)
+            {
+                _tempPurity = "14 KRT";
+            }
+            else if (Krt18.Checked == true)
+            {
+                _tempPurity = "18 KRT";
+            }
+            else if (Krt22.Checked == true)
+            {
+                _tempPurity = "KRT 22";
+            }
+        }
         //private void btnSubmitCheckout_Click(object sender, EventArgs e)
         //{
         //    if (txtGoldPaidchk.Text == string.Empty || txtgoldrecvchk.Text == string.Empty)
