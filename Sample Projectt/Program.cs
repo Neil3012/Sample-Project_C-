@@ -15,7 +15,6 @@ namespace Sample_Projectt
         [STAThread]
         static void Main()
         {
-            int a = 10;
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Login());
