@@ -30,7 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdminWindow));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.supplierToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.InventoryToolStrip = new System.Windows.Forms.ToolStripMenuItem();
@@ -866,6 +866,7 @@
             // Krt22
             // 
             this.Krt22.AutoSize = true;
+            this.Krt22.Checked = true;
             this.Krt22.Font = new System.Drawing.Font("Calibri", 14F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Krt22.Location = new System.Drawing.Point(453, 232);
             this.Krt22.Name = "Krt22";
@@ -884,7 +885,6 @@
             this.Krt14.Name = "Krt14";
             this.Krt14.Size = new System.Drawing.Size(82, 27);
             this.Krt14.TabIndex = 19;
-            this.Krt14.TabStop = true;
             this.Krt14.Text = "14 KRT";
             this.Krt14.UseVisualStyleBackColor = true;
             this.Krt14.CheckedChanged += new System.EventHandler(this.Purity_CheckedChanged);
@@ -897,7 +897,6 @@
             this.Krt18.Name = "Krt18";
             this.Krt18.Size = new System.Drawing.Size(82, 27);
             this.Krt18.TabIndex = 18;
-            this.Krt18.TabStop = true;
             this.Krt18.Text = "18 KRT";
             this.Krt18.UseVisualStyleBackColor = true;
             this.Krt18.CheckedChanged += new System.EventHandler(this.Purity_CheckedChanged);
@@ -1000,8 +999,8 @@
             // dataGridProduct
             // 
             this.dataGridProduct.AllowUserToAddRows = false;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.dataGridProduct.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.dataGridProduct.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridProduct.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
             this.dataGridProduct.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridProduct.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
@@ -1010,7 +1009,6 @@
             this.dataGridProduct.Size = new System.Drawing.Size(500, 167);
             this.dataGridProduct.TabIndex = 9;
             this.dataGridProduct.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridProduct_CellClick);
-            this.dataGridProduct.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridProduct_CellContentClick);
             this.dataGridProduct.RowEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgGridProduct_RowEnter);
             this.dataGridProduct.RowLeave += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgGridProduct_RowLeave);
             // 
@@ -1055,9 +1053,9 @@
             this.panelPremainInventory.Controls.Add(this.txtID);
             this.panelPremainInventory.Controls.Add(this.label14);
             this.panelPremainInventory.Controls.Add(this.cmbSuplierName);
-            this.panelPremainInventory.Location = new System.Drawing.Point(697, 107);
+            this.panelPremainInventory.Location = new System.Drawing.Point(221, 107);
             this.panelPremainInventory.Name = "panelPremainInventory";
-            this.panelPremainInventory.Size = new System.Drawing.Size(44, 445);
+            this.panelPremainInventory.Size = new System.Drawing.Size(520, 445);
             this.panelPremainInventory.TabIndex = 5;
             this.panelPremainInventory.Paint += new System.Windows.Forms.PaintEventHandler(this.panelPremainInventory_Paint);
             // 

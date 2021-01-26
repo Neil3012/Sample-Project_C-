@@ -80,7 +80,8 @@ namespace Sample_Projectt
             dataGridInventoryComfirm.Columns.Add("LabourRS", "LabourRS");
             dataGridInventoryComfirm.Columns.Add("Touch_Pouch", "Touch_Pouch");
             StyleInventoryGrid();
-
+            ProductRadio();
+            Purity_CheckedChanged(new object(), new EventArgs());
         }
 
         private void supplierToolStripMenuItem_Click(object sender, EventArgs e)
@@ -566,8 +567,6 @@ namespace Sample_Projectt
 
                 else
                 {
-
-
                     btnCancelInventory.Enabled = false;
                     productCount++;
                     if (txtLabourRs.Text != "Zero")
@@ -897,8 +896,11 @@ namespace Sample_Projectt
                     update = "update Supplier set Balance_Gold=Cast((Balance_Gold+'" + calGold + "') AS dec(10,3)), Balance_Cash=Cast((Balance_Cash+'" + cash + "') AS dec(10,3)) where Supplier_ID='" + txtSupID.Text + "'  ";
 
                 else//Supplier Paid 100 and get 140 then Amount is subtrtacted from its quota
+                {
+                    calGold = Math.Abs(calGold);
+                    cash = Math.Abs(cash);
                     update = "update Supplier set Balance_Gold=Cast((Balance_Gold-'" + calGold + "') AS dec(10,3)), Balance_Cash=Cast((Balance_Cash-'" + cash + "') AS dec(10,3)) where Supplier_ID='" + txtSupID.Text + "'  ";
-
+                }
                 using (SqlConnection con = new SqlConnection(conn))
                 {
                     con.Open();
@@ -980,7 +982,7 @@ namespace Sample_Projectt
         public string DBID = "";
         public static int ID_P = 0;
         string REGID = "";
-        public static string Words = "SM/" + DateTime.Now.Year + "/";
+        public static string Words = "SM" + "/";
 
 
         void CheckProduct()
@@ -997,10 +999,16 @@ namespace Sample_Projectt
                 }
                 if (count <= 1)
                 {
-                    MessageBox.Show("PRODUCT NAME ALREADY EXIST.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                    MessageBox.Show("PRODUCT ALREADY EXIST.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
                     TextBoxProduct();
                 }
             }
+        }
+        private void ProductRadio()
+        {
+            Krt22.Checked = false;
+            Krt18.Checked = false;
+            Krt14.Checked = false;
         }
         private void btnAddProduct_Click(object sender, EventArgs e)
         {
@@ -1011,15 +1019,19 @@ namespace Sample_Projectt
                 MessageBox.Show("PLEASE ENTER PRODUCT NAME.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
 
             }
-            else
+            else if (Krt14.Checked == false && Krt18.Checked == false && Krt22.Checked == false)
+            {
+                MessageBox.Show("YOU MUST SELECT ONE OF PURITY TYPE.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
 
+            }
+            else
                 using (SqlConnection con = new SqlConnection(conn))
                 {
                     count = 0;
                     string value = ID_P.ToString("00000");
                     REGID = Words + value;
                     con.Open();
-                    select = "select Product_Name from Product where Product_Name='" + txtProductName.Text + "'";
+                    select = "select Product_Name,Purity from Product where Product_Name='" + txtProductName.Text + "' and Purity='"+_tempPurity+"'";
                     cmd = new SqlCommand(select, con);
                     rdr = cmd.ExecuteReader();
 
@@ -1115,7 +1127,7 @@ namespace Sample_Projectt
                 UpdateID = (dataGridProduct.Rows[e.RowIndex].Cells[0].Value.ToString());
                 txtProductName.Text = (dataGridProduct.Rows[e.RowIndex].Cells[2].Value.ToString());
                 txtDesc.Text = (dataGridProduct.Rows[e.RowIndex].Cells[3].Value.ToString());
-                UpdatePurity(dataGridProduct.Rows[e.RowIndex].Cells[1].Value.ToString());
+                UpdateRadioPurity(dataGridProduct.Rows[e.RowIndex].Cells[1].Value.ToString());
                 ButtonDisableProduct();
                 btnUpdateProduct.Enabled = true;
             }
@@ -1127,7 +1139,7 @@ namespace Sample_Projectt
 
 
         }
-        private void UpdatePurity(string purity)
+        private void UpdateRadioPurity(string purity)
         {
             if (purity.Contains("18"))
             {
@@ -1185,7 +1197,7 @@ namespace Sample_Projectt
                 using (con = new SqlConnection(conn))
                 {
                     con.Open();
-                    select = "select Product_Name from Product where Product_Name='" + txtProductName.Text + "'";
+                    select = "select Product_Name,Purity from Product where Product_Name='" + txtProductName.Text + "' and Purity= '"+_tempPurity+"' ";
                     cmd = new SqlCommand(select, con);
                     rdr = cmd.ExecuteReader();
 
@@ -1214,7 +1226,7 @@ namespace Sample_Projectt
             {
                 using (con = new SqlConnection(conn))
                 {
-                    string update = "update Product set Product_Name='" + txtProductName.Text + "',Description='" + txtDesc.Text + "' where Product_ID='" + UpdateID + "'";
+                    string update = "update Product set Product_Name='" + txtProductName.Text + "',Description='" + txtDesc.Text + "' ,Purity='"+_tempPurity+"' where Product_ID='" + UpdateID + "'";
                     cmd = new SqlCommand(update, con);
 
 
@@ -1256,6 +1268,7 @@ namespace Sample_Projectt
                     cmd.ExecuteNonQuery();
 
                 }
+                DialogResult dialogResult = MessageBox.Show("PRODUCT SUCCESSFULLY UPDATED IN RECORDS.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 TextBoxProduct();
 
 
@@ -1301,15 +1314,15 @@ namespace Sample_Projectt
             con.Close();
             if (DBID != string.Empty)
             {
-                string temp = DBID.Substring(8, 5);
+                string temp = DBID.Substring(3, 5);
                 ID_P = Convert.ToInt32(temp);
             }
 
         }
-        private void dataGridProduct_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
+        //private void dataGridProduct_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        //{
 
-        }
+        //}
 
         private void gridInventoryDetails_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -1788,6 +1801,7 @@ namespace Sample_Projectt
             listboxProduct.Items.AddRange(result);
             listboxProduct.Visible = true; // show the listbox ag
         }
+      
         private void Purity_CheckedChanged(object sender, EventArgs e)
         {
             
@@ -1801,9 +1815,10 @@ namespace Sample_Projectt
             }
             else if (Krt22.Checked == true)
             {
-                _tempPurity = "KRT 22";
+                _tempPurity = "22 KRT";
             }
         }
+
         //private void btnSubmitCheckout_Click(object sender, EventArgs e)
         //{
         //    if (txtGoldPaidchk.Text == string.Empty || txtgoldrecvchk.Text == string.Empty)
