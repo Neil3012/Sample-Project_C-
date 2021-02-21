@@ -27,6 +27,11 @@ D:\Projects\office\Sample Projectt\Sample Projectt\obj\Release\Sample Projectt.e
 D:\Projects\office\Sample Projectt\Sample Projectt\obj\Release\Sample Projectt.application
 D:\Projects\office\Sample Projectt\Sample Projectt\obj\Release\Sample Projectt.exe
 D:\Projects\office\Sample Projectt\Sample Projectt\obj\Release\Sample Projectt.pdb
+E:\Sumit Project 26 oct\Sample Projectt\Sample Projectt\bin\Release\Sample Projectt.exe.config
+E:\Sumit Project 26 oct\Sample Projectt\Sample Projectt\bin\Release\Sample Projectt.exe.manifest
+E:\Sumit Project 26 oct\Sample Projectt\Sample Projectt\bin\Release\Sample Projectt.application
+E:\Sumit Project 26 oct\Sample Projectt\Sample Projectt\bin\Release\Sample Projectt.exe
+E:\Sumit Project 26 oct\Sample Projectt\Sample Projectt\bin\Release\Sample Projectt.pdb
 E:\Sumit Project 26 oct\Sample Projectt\Sample Projectt\obj\Release\Sample Projectt.csprojAssemblyReference.cache
 E:\Sumit Project 26 oct\Sample Projectt\Sample Projectt\obj\Release\Sample_Projectt.AdminWindow.resources
 E:\Sumit Project 26 oct\Sample Projectt\Sample Projectt\obj\Release\Sample_Projectt.Cashout.resources
@@ -48,5 +53,7 @@ E:\Sumit Project 26 oct\Sample Projectt\Sample Projectt\obj\Release\Sample_Proje
 E:\Sumit Project 26 oct\Sample Projectt\Sample Projectt\obj\Release\Sample_Projectt.TransectionSupplier.resources
 E:\Sumit Project 26 oct\Sample Projectt\Sample Projectt\obj\Release\Sample Projectt.csproj.GenerateResource.cache
 E:\Sumit Project 26 oct\Sample Projectt\Sample Projectt\obj\Release\Sample Projectt.csproj.CoreCompileInputs.cache
+E:\Sumit Project 26 oct\Sample Projectt\Sample Projectt\obj\Release\Sample Projectt.exe.manifest
+E:\Sumit Project 26 oct\Sample Projectt\Sample Projectt\obj\Release\Sample Projectt.application
 E:\Sumit Project 26 oct\Sample Projectt\Sample Projectt\obj\Release\Sample Projectt.exe
 E:\Sumit Project 26 oct\Sample Projectt\Sample Projectt\obj\Release\Sample Projectt.pdb

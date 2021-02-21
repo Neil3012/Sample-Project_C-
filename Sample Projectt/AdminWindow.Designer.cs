@@ -30,10 +30,12 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdminWindow));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.supplierToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.InventoryToolStrip = new System.Windows.Forms.ToolStripMenuItem();
+            this.goldPaidToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.goldReceiveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ProductToolStrip = new System.Windows.Forms.ToolStripMenuItem();
             this.reportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.SummeryToolStrip = new System.Windows.Forms.ToolStripMenuItem();
@@ -54,6 +56,11 @@
             this.txtName = new System.Windows.Forms.TextBox();
             this.lblname = new System.Windows.Forms.Label();
             this.panelInventory = new System.Windows.Forms.Panel();
+            this.listBox2 = new System.Windows.Forms.ListBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.txtSupIDmain = new System.Windows.Forms.TextBox();
+            this.label20 = new System.Windows.Forms.Label();
+            this.cmdGR = new System.Windows.Forms.ComboBox();
             this.btnSubmitnew = new System.Windows.Forms.Button();
             this.dataGridInventoryComfirm = new System.Windows.Forms.DataGridView();
             this.listboxProduct = new System.Windows.Forms.ListBox();
@@ -68,7 +75,6 @@
             this.label16 = new System.Windows.Forms.Label();
             this.txtTransIDmain = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.txtSupname = new System.Windows.Forms.TextBox();
             this.txtCash = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.txtLabour = new System.Windows.Forms.TextBox();
@@ -76,7 +82,6 @@
             this.txtPure = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.totalvalue = new System.Windows.Forms.Label();
-            this.txtSupID = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.lblSupID = new System.Windows.Forms.Label();
             this.btnSubmitInventory = new System.Windows.Forms.Button();
@@ -121,6 +126,7 @@
             this.txtID = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.cmbSuplierName = new System.Windows.Forms.ComboBox();
+            this.cmbKRT = new System.Windows.Forms.ComboBox();
             this.menuStrip1.SuspendLayout();
             this.panelSupplier.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridSupplier)).BeginInit();
@@ -163,10 +169,27 @@
             // InventoryToolStrip
             // 
             this.InventoryToolStrip.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.InventoryToolStrip.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.goldPaidToolStripMenuItem,
+            this.goldReceiveToolStripMenuItem});
             this.InventoryToolStrip.Name = "InventoryToolStrip";
             this.InventoryToolStrip.Size = new System.Drawing.Size(97, 25);
             this.InventoryToolStrip.Text = "Inventory";
             this.InventoryToolStrip.Click += new System.EventHandler(this.InventoryToolStrip_Click);
+            // 
+            // goldPaidToolStripMenuItem
+            // 
+            this.goldPaidToolStripMenuItem.Name = "goldPaidToolStripMenuItem";
+            this.goldPaidToolStripMenuItem.Size = new System.Drawing.Size(179, 26);
+            this.goldPaidToolStripMenuItem.Text = "Gold Paid";
+            this.goldPaidToolStripMenuItem.Click += new System.EventHandler(this.G_Paid_Click);
+            // 
+            // goldReceiveToolStripMenuItem
+            // 
+            this.goldReceiveToolStripMenuItem.Name = "goldReceiveToolStripMenuItem";
+            this.goldReceiveToolStripMenuItem.Size = new System.Drawing.Size(179, 26);
+            this.goldReceiveToolStripMenuItem.Text = "Gold Receive";
+            this.goldReceiveToolStripMenuItem.Click += new System.EventHandler(this.G_Receive_Click);
             // 
             // ProductToolStrip
             // 
@@ -219,9 +242,9 @@
             this.panelSupplier.Controls.Add(this.label3);
             this.panelSupplier.Controls.Add(this.txtName);
             this.panelSupplier.Controls.Add(this.lblname);
-            this.panelSupplier.Location = new System.Drawing.Point(141, 64);
+            this.panelSupplier.Location = new System.Drawing.Point(147, 48);
             this.panelSupplier.Name = "panelSupplier";
-            this.panelSupplier.Size = new System.Drawing.Size(631, 582);
+            this.panelSupplier.Size = new System.Drawing.Size(671, 598);
             this.panelSupplier.TabIndex = 1;
             this.panelSupplier.Paint += new System.Windows.Forms.PaintEventHandler(this.panelSupplier_Paint);
             // 
@@ -382,6 +405,12 @@
             // panelInventory
             // 
             this.panelInventory.BackColor = System.Drawing.Color.Transparent;
+            this.panelInventory.Controls.Add(this.cmbKRT);
+            this.panelInventory.Controls.Add(this.listBox2);
+            this.panelInventory.Controls.Add(this.label11);
+            this.panelInventory.Controls.Add(this.txtSupIDmain);
+            this.panelInventory.Controls.Add(this.label20);
+            this.panelInventory.Controls.Add(this.cmdGR);
             this.panelInventory.Controls.Add(this.btnSubmitnew);
             this.panelInventory.Controls.Add(this.dataGridInventoryComfirm);
             this.panelInventory.Controls.Add(this.listboxProduct);
@@ -396,7 +425,6 @@
             this.panelInventory.Controls.Add(this.label16);
             this.panelInventory.Controls.Add(this.txtTransIDmain);
             this.panelInventory.Controls.Add(this.label10);
-            this.panelInventory.Controls.Add(this.txtSupname);
             this.panelInventory.Controls.Add(this.txtCash);
             this.panelInventory.Controls.Add(this.label8);
             this.panelInventory.Controls.Add(this.txtLabour);
@@ -404,7 +432,6 @@
             this.panelInventory.Controls.Add(this.txtPure);
             this.panelInventory.Controls.Add(this.label6);
             this.panelInventory.Controls.Add(this.totalvalue);
-            this.panelInventory.Controls.Add(this.txtSupID);
             this.panelInventory.Controls.Add(this.label9);
             this.panelInventory.Controls.Add(this.lblSupID);
             this.panelInventory.Controls.Add(this.btnSubmitInventory);
@@ -421,8 +448,64 @@
             this.panelInventory.Controls.Add(this.lblId);
             this.panelInventory.Location = new System.Drawing.Point(75, 37);
             this.panelInventory.Name = "panelInventory";
-            this.panelInventory.Size = new System.Drawing.Size(879, 660);
+            this.panelInventory.Size = new System.Drawing.Size(1009, 660);
             this.panelInventory.TabIndex = 2;
+            // 
+            // listBox2
+            // 
+            this.listBox2.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.listBox2.FormattingEnabled = true;
+            this.listBox2.ItemHeight = 20;
+            this.listBox2.Location = new System.Drawing.Point(187, 33);
+            this.listBox2.Name = "listBox2";
+            this.listBox2.Size = new System.Drawing.Size(161, 64);
+            this.listBox2.TabIndex = 101;
+            this.listBox2.SelectedIndexChanged += new System.EventHandler(this.listBox2_SelectedIndexChanged);
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.BackColor = System.Drawing.Color.Transparent;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(489, 481);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(104, 20);
+            this.label11.TabIndex = 100;
+            this.label11.Text = "Supplier_ID";
+            // 
+            // txtSupIDmain
+            // 
+            this.txtSupIDmain.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.txtSupIDmain.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSupIDmain.Location = new System.Drawing.Point(186, 48);
+            this.txtSupIDmain.Name = "txtSupIDmain";
+            this.txtSupIDmain.Size = new System.Drawing.Size(162, 26);
+            this.txtSupIDmain.TabIndex = 99;
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.BackColor = System.Drawing.Color.Transparent;
+            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.Location = new System.Drawing.Point(489, 438);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(131, 20);
+            this.label20.TabIndex = 98;
+            this.label20.Text = "Supplier_Name";
+            // 
+            // cmdGR
+            // 
+            this.cmdGR.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.cmdGR.DropDownHeight = 70;
+            this.cmdGR.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmdGR.FormattingEnabled = true;
+            this.cmdGR.IntegralHeight = false;
+            this.cmdGR.Location = new System.Drawing.Point(186, 8);
+            this.cmdGR.Name = "cmdGR";
+            this.cmdGR.Size = new System.Drawing.Size(162, 28);
+            this.cmdGR.TabIndex = 97;
+            this.cmdGR.SelectedIndexChanged += new System.EventHandler(this.cmbGR_SelectedIndexChanged);
+            this.cmdGR.TextChanged += new System.EventHandler(this.cmdGR_TextChanged);
             // 
             // btnSubmitnew
             // 
@@ -432,9 +515,9 @@
             this.btnSubmitnew.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSubmitnew.Location = new System.Drawing.Point(732, 368);
             this.btnSubmitnew.Name = "btnSubmitnew";
-            this.btnSubmitnew.Size = new System.Drawing.Size(83, 33);
+            this.btnSubmitnew.Size = new System.Drawing.Size(90, 33);
             this.btnSubmitnew.TabIndex = 96;
-            this.btnSubmitnew.Text = "Submit";
+            this.btnSubmitnew.Text = "SUBMIT";
             this.btnSubmitnew.UseVisualStyleBackColor = true;
             this.btnSubmitnew.Click += new System.EventHandler(this.btnSubmitnew_Click);
             // 
@@ -444,9 +527,9 @@
             this.dataGridInventoryComfirm.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
             this.dataGridInventoryComfirm.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridInventoryComfirm.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
-            this.dataGridInventoryComfirm.Location = new System.Drawing.Point(358, 88);
+            this.dataGridInventoryComfirm.Location = new System.Drawing.Point(449, 86);
             this.dataGridInventoryComfirm.Name = "dataGridInventoryComfirm";
-            this.dataGridInventoryComfirm.Size = new System.Drawing.Size(464, 191);
+            this.dataGridInventoryComfirm.Size = new System.Drawing.Size(482, 191);
             this.dataGridInventoryComfirm.TabIndex = 9;
             this.dataGridInventoryComfirm.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridInventoryDetails_CellContentClick);
             this.dataGridInventoryComfirm.RowEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgGriInventory_RowEnter);
@@ -563,7 +646,7 @@
             this.label16.AutoSize = true;
             this.label16.BackColor = System.Drawing.Color.Transparent;
             this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(354, 11);
+            this.label16.Location = new System.Drawing.Point(445, 11);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(127, 20);
             this.label16.TabIndex = 84;
@@ -573,7 +656,7 @@
             // 
             this.txtTransIDmain.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.txtTransIDmain.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTransIDmain.Location = new System.Drawing.Point(504, 8);
+            this.txtTransIDmain.Location = new System.Drawing.Point(595, 8);
             this.txtTransIDmain.Name = "txtTransIDmain";
             this.txtTransIDmain.Size = new System.Drawing.Size(134, 26);
             this.txtTransIDmain.TabIndex = 83;
@@ -588,16 +671,6 @@
             this.label10.Size = new System.Drawing.Size(102, 20);
             this.label10.TabIndex = 87;
             this.label10.Text = "Final Touch";
-            // 
-            // txtSupname
-            // 
-            this.txtSupname.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.txtSupname.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSupname.Location = new System.Drawing.Point(186, 8);
-            this.txtSupname.Name = "txtSupname";
-            this.txtSupname.Size = new System.Drawing.Size(162, 26);
-            this.txtSupname.TabIndex = 53;
-            this.txtSupname.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.NOinput_KeyPress);
             // 
             // txtCash
             // 
@@ -673,16 +746,6 @@
             this.totalvalue.Name = "totalvalue";
             this.totalvalue.Size = new System.Drawing.Size(0, 18);
             this.totalvalue.TabIndex = 46;
-            // 
-            // txtSupID
-            // 
-            this.txtSupID.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.txtSupID.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSupID.Location = new System.Drawing.Point(186, 48);
-            this.txtSupID.Name = "txtSupID";
-            this.txtSupID.Size = new System.Drawing.Size(162, 26);
-            this.txtSupID.TabIndex = 33;
-            this.txtSupID.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.NOinput_KeyPress);
             // 
             // label9
             // 
@@ -857,9 +920,9 @@
             this.panelProduct.Controls.Add(this.lblDesc);
             this.panelProduct.Controls.Add(this.label5);
             this.panelProduct.Controls.Add(this.dataGridProduct);
-            this.panelProduct.Location = new System.Drawing.Point(190, 104);
+            this.panelProduct.Location = new System.Drawing.Point(175, 77);
             this.panelProduct.Name = "panelProduct";
-            this.panelProduct.Size = new System.Drawing.Size(560, 491);
+            this.panelProduct.Size = new System.Drawing.Size(602, 512);
             this.panelProduct.TabIndex = 3;
             this.panelProduct.Paint += new System.Windows.Forms.PaintEventHandler(this.panelProduct_Paint);
             // 
@@ -975,6 +1038,7 @@
             this.txtProductName.Name = "txtProductName";
             this.txtProductName.Size = new System.Drawing.Size(180, 26);
             this.txtProductName.TabIndex = 12;
+            this.txtProductName.TextChanged += new System.EventHandler(this.txtProductName_TextChanged);
             // 
             // lblDesc
             // 
@@ -999,8 +1063,8 @@
             // dataGridProduct
             // 
             this.dataGridProduct.AllowUserToAddRows = false;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.dataGridProduct.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.dataGridProduct.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridProduct.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
             this.dataGridProduct.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridProduct.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
@@ -1053,9 +1117,9 @@
             this.panelPremainInventory.Controls.Add(this.txtID);
             this.panelPremainInventory.Controls.Add(this.label14);
             this.panelPremainInventory.Controls.Add(this.cmbSuplierName);
-            this.panelPremainInventory.Location = new System.Drawing.Point(221, 107);
+            this.panelPremainInventory.Location = new System.Drawing.Point(212, 115);
             this.panelPremainInventory.Name = "panelPremainInventory";
-            this.panelPremainInventory.Size = new System.Drawing.Size(520, 445);
+            this.panelPremainInventory.Size = new System.Drawing.Size(542, 410);
             this.panelPremainInventory.TabIndex = 5;
             this.panelPremainInventory.Paint += new System.Windows.Forms.PaintEventHandler(this.panelPremainInventory_Paint);
             // 
@@ -1207,6 +1271,14 @@
             this.cmbSuplierName.SelectedIndexChanged += new System.EventHandler(this.cmbSuplierName_SelectedIndexChanged);
             this.cmbSuplierName.TextChanged += new System.EventHandler(this.cmbSuplierName_TextChanged);
             // 
+            // cmbKRT
+            // 
+            this.cmbKRT.FormattingEnabled = true;
+            this.cmbKRT.Location = new System.Drawing.Point(357, 88);
+            this.cmbKRT.Name = "cmbKRT";
+            this.cmbKRT.Size = new System.Drawing.Size(75, 28);
+            this.cmbKRT.TabIndex = 102;
+            // 
             // AdminWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
@@ -1285,7 +1357,6 @@
         private System.Windows.Forms.Label lblSupID;
         private GoldDataSet goldDataSet;
         private System.Windows.Forms.BindingSource goldDataSetBindingSource;
-        private System.Windows.Forms.TextBox txtSupID;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.ToolStripMenuItem reportToolStripMenuItem;
         private System.Windows.Forms.Label totalvalue;
@@ -1316,7 +1387,6 @@
         private System.Windows.Forms.TextBox txtID;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.ComboBox cmbSuplierName;
-        private System.Windows.Forms.TextBox txtSupname;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.TextBox txtTransIDmain;
         private System.Windows.Forms.DateTimePicker datePickPremain;
@@ -1341,5 +1411,13 @@
         private System.Windows.Forms.RadioButton Krt22;
         private System.Windows.Forms.RadioButton Krt14;
         private System.Windows.Forms.RadioButton Krt18;
+        private System.Windows.Forms.ToolStripMenuItem goldPaidToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem goldReceiveToolStripMenuItem;
+        private System.Windows.Forms.ListBox listBox2;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.TextBox txtSupIDmain;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.ComboBox cmdGR;
+        private System.Windows.Forms.ComboBox cmbKRT;
     }
 }

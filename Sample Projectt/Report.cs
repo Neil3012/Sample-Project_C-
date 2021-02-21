@@ -32,21 +32,18 @@ namespace Sample_Projectt
             dataGrid1.DataSource = null;
             DataTable dt = new DataTable();
             DataTable dt1 = new DataTable();
-            string select = "select * from SupplierTransection where Transection_ID ='"+cmbSupplier.SelectedItem+"' ";
+            string select = "select * from SupplierTransection where Supplier_Name ='"+cmbSupplier.SelectedItem+"' ";
 
             using (con = new SqlConnection(conn))
-            { 
+            {
                 cmd = new SqlCommand(select, con);
                 con.Open();
                 rdr = cmd.ExecuteReader();
                 dt.Load(rdr);
-                foreach (DataRow dr in dt.Rows)
-                {
-                    txtSupName.Text = dr["Supplier_Name"].ToString();
-                }
+               
                 con.Close();
             }
-            string select1 = "select ReportID,Product_Name,Supplier_Name,Item_Weight,Item_Quantity,Date,Pure_Gold,Cash,Labour,Transection_ID from InventoryDetails where Transection_ID ='" + cmbSupplier.SelectedItem + "' ";
+            string select1 = "select ReportID,Product_Name,Supplier_Name,Item_Weight,Item_Quantity,Date,Pure_Gold,Cash,Labour,Transection_ID from InventoryDetails where Supplier_Name ='" + cmbSupplier.SelectedItem + "' ";
 
             using (con = new SqlConnection(conn))
             {
@@ -96,6 +93,26 @@ namespace Sample_Projectt
         //        MessageBox.Show("Error Occured!");
         //    }
         //}
+
+        private void cmbSupplier_1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            DataTable dt = new DataTable();
+            string select = "";
+            select = "select * from SupplierTransection where Supplier_Name='"+cmbSupplier.SelectedItem.ToString()+"'";
+
+            con = new SqlConnection(conn);
+            cmd = new SqlCommand(select, con);
+            con.Open();
+            rdr = cmd.ExecuteReader();
+            dt.Load(rdr);
+
+            dataGrid1.DataSource = dt;
+
+            con.Close();
+        }
+
+
+
         void GetTRansectionCombo()
         {
             cmbSupplier.Items.Clear();
@@ -105,7 +122,8 @@ namespace Sample_Projectt
                 try
                 {
                     con.Open();
-                    string query = "select Transection_ID from SupplierTransection";
+                    //  string query = "select Transection_ID from SupplierTransection";
+                    string query = "select Distinct Supplier_Name from SupplierTransection";
                     SqlCommand command = new SqlCommand(query, con);
                     SqlDataReader reader = command.ExecuteReader();
                     while (reader.Read())

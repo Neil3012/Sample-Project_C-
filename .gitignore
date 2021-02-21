@@ -45,3 +45,6 @@ Sample Projectt/obj/Debug/Sample Projectt.exe.manifest
 Sample Projectt/obj/Debug/Sample Projectt.pdb
 *.exe
 Sample Projectt/bin/Debug/Sample Projectt.application
+*.exe
+Sample Projectt/bin/Debug/Sample Projectt.exe
+Sample Projectt/obj/Release/Sample Projectt.application
