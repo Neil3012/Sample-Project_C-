@@ -32,8 +32,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.cmbClient = new System.Windows.Forms.ComboBox();
             this.dataGrid1 = new System.Windows.Forms.DataGrid();
-            this.txtClintNam = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
             this.btnPrint = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGrid1)).BeginInit();
             this.SuspendLayout();
@@ -45,9 +43,9 @@
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(48, 84);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(130, 20);
+            this.label2.Size = new System.Drawing.Size(106, 20);
             this.label2.TabIndex = 6;
-            this.label2.Text = "Transection No";
+            this.label2.Text = "Client Name";
             // 
             // cmbClient
             // 
@@ -56,7 +54,7 @@
             this.cmbClient.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbClient.FormattingEnabled = true;
             this.cmbClient.IntegralHeight = false;
-            this.cmbClient.Location = new System.Drawing.Point(193, 76);
+            this.cmbClient.Location = new System.Drawing.Point(190, 81);
             this.cmbClient.MaxDropDownItems = 5;
             this.cmbClient.Name = "cmbClient";
             this.cmbClient.Size = new System.Drawing.Size(227, 28);
@@ -71,26 +69,6 @@
             this.dataGrid1.Name = "dataGrid1";
             this.dataGrid1.Size = new System.Drawing.Size(833, 223);
             this.dataGrid1.TabIndex = 7;
-            // 
-            // txtClintNam
-            // 
-            this.txtClintNam.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.txtClintNam.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtClintNam.Location = new System.Drawing.Point(688, 76);
-            this.txtClintNam.Name = "txtClintNam";
-            this.txtClintNam.Size = new System.Drawing.Size(192, 26);
-            this.txtClintNam.TabIndex = 10;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(591, 79);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(79, 20);
-            this.label4.TabIndex = 9;
-            this.label4.Text = "Client ID";
             // 
             // btnPrint
             // 
@@ -115,8 +93,6 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(949, 512);
             this.Controls.Add(this.btnPrint);
-            this.Controls.Add(this.txtClintNam);
-            this.Controls.Add(this.label4);
             this.Controls.Add(this.dataGrid1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.cmbClient);
@@ -138,8 +114,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ComboBox cmbClient;
         private System.Windows.Forms.DataGrid dataGrid1;
-        private System.Windows.Forms.TextBox txtClintNam;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button btnPrint;
     }
 }

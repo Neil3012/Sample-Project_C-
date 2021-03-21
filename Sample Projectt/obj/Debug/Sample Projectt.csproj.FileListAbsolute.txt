@@ -479,12 +479,17 @@ D:\office\Sample Projectt\Sample Projectt\obj\Debug\Sample Projectt.csproj.Gener
 D:\office\Sample Projectt\Sample Projectt\bin\Debug\Sample Projectt.exe
 D:\office\Sample Projectt\Sample Projectt\bin\Debug\Sample Projectt.pdb
 C:\Users\USER\Desktop\office\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.GoldLive_Popup.resources
-E:\Sumit Project 26 oct\Sample Projectt\Sample Projectt\obj\Debug\Sample Projectt.csprojAssemblyReference.cache
+E:\Sumit Project 26 oct\Sample Projectt\Sample Projectt\bin\Debug\Sample Projectt.exe.config
+E:\Sumit Project 26 oct\Sample Projectt\Sample Projectt\bin\Debug\Sample Projectt.exe.manifest
+E:\Sumit Project 26 oct\Sample Projectt\Sample Projectt\bin\Debug\Sample Projectt.application
+E:\Sumit Project 26 oct\Sample Projectt\Sample Projectt\bin\Debug\Sample Projectt.exe
+E:\Sumit Project 26 oct\Sample Projectt\Sample Projectt\bin\Debug\Sample Projectt.pdb
 E:\Sumit Project 26 oct\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.AdminWindow.resources
 E:\Sumit Project 26 oct\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Cashout.resources
 E:\Sumit Project 26 oct\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.CashoutClint.resources
 E:\Sumit Project 26 oct\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.ClientReport.resources
 E:\Sumit Project 26 oct\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.ClientStatement.resources
+E:\Sumit Project 26 oct\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Current_Inventory.resources
 E:\Sumit Project 26 oct\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Form1.resources
 E:\Sumit Project 26 oct\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.GoldLive_Popup.resources
 E:\Sumit Project 26 oct\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.Login.resources
@@ -500,12 +505,8 @@ E:\Sumit Project 26 oct\Sample Projectt\Sample Projectt\obj\Debug\Sample_Project
 E:\Sumit Project 26 oct\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.TransectionSupplier.resources
 E:\Sumit Project 26 oct\Sample Projectt\Sample Projectt\obj\Debug\Sample Projectt.csproj.GenerateResource.cache
 E:\Sumit Project 26 oct\Sample Projectt\Sample Projectt\obj\Debug\Sample Projectt.csproj.CoreCompileInputs.cache
-E:\Sumit Project 26 oct\Sample Projectt\Sample Projectt\obj\Debug\Sample Projectt.exe
-E:\Sumit Project 26 oct\Sample Projectt\Sample Projectt\obj\Debug\Sample Projectt.pdb
-E:\Sumit Project 26 oct\Sample Projectt\Sample Projectt\bin\Debug\Sample Projectt.exe.config
-E:\Sumit Project 26 oct\Sample Projectt\Sample Projectt\bin\Debug\Sample Projectt.exe.manifest
-E:\Sumit Project 26 oct\Sample Projectt\Sample Projectt\bin\Debug\Sample Projectt.application
-E:\Sumit Project 26 oct\Sample Projectt\Sample Projectt\bin\Debug\Sample Projectt.exe
-E:\Sumit Project 26 oct\Sample Projectt\Sample Projectt\bin\Debug\Sample Projectt.pdb
 E:\Sumit Project 26 oct\Sample Projectt\Sample Projectt\obj\Debug\Sample Projectt.exe.manifest
 E:\Sumit Project 26 oct\Sample Projectt\Sample Projectt\obj\Debug\Sample Projectt.application
+E:\Sumit Project 26 oct\Sample Projectt\Sample Projectt\obj\Debug\Sample Projectt.exe
+E:\Sumit Project 26 oct\Sample Projectt\Sample Projectt\obj\Debug\Sample Projectt.pdb
+E:\Sumit Project 26 oct\Sample Projectt\Sample Projectt\obj\Debug\Sample Projectt.csprojAssemblyReference.cache

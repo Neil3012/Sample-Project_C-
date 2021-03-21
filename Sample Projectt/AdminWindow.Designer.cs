@@ -30,7 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdminWindow));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.supplierToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.InventoryToolStrip = new System.Windows.Forms.ToolStripMenuItem();
@@ -41,6 +41,7 @@
             this.SummeryToolStrip = new System.Windows.Forms.ToolStripMenuItem();
             this.cashOutToolStrip = new System.Windows.Forms.ToolStripMenuItem();
             this.statementToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.statusToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panelSupplier = new System.Windows.Forms.Panel();
             this.btnuupdate = new System.Windows.Forms.Button();
             this.btnDisplay = new System.Windows.Forms.Button();
@@ -56,10 +57,9 @@
             this.txtName = new System.Windows.Forms.TextBox();
             this.lblname = new System.Windows.Forms.Label();
             this.panelInventory = new System.Windows.Forms.Panel();
+            this.txtFinalTouch = new System.Windows.Forms.TextBox();
             this.listBox2 = new System.Windows.Forms.ListBox();
-            this.label11 = new System.Windows.Forms.Label();
             this.txtSupIDmain = new System.Windows.Forms.TextBox();
-            this.label20 = new System.Windows.Forms.Label();
             this.cmdGR = new System.Windows.Forms.ComboBox();
             this.btnSubmitnew = new System.Windows.Forms.Button();
             this.dataGridInventoryComfirm = new System.Windows.Forms.DataGridView();
@@ -126,7 +126,6 @@
             this.txtID = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.cmbSuplierName = new System.Windows.Forms.ComboBox();
-            this.cmbKRT = new System.Windows.Forms.ComboBox();
             this.menuStrip1.SuspendLayout();
             this.panelSupplier.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridSupplier)).BeginInit();
@@ -150,7 +149,8 @@
             this.reportToolStripMenuItem,
             this.SummeryToolStrip,
             this.cashOutToolStrip,
-            this.statementToolStripMenuItem});
+            this.statementToolStripMenuItem,
+            this.statusToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(10, 3, 0, 3);
@@ -226,6 +226,13 @@
             this.statementToolStripMenuItem.Text = "Statement";
             this.statementToolStripMenuItem.Click += new System.EventHandler(this.statementToolStripMenuItem_Click);
             // 
+            // statusToolStripMenuItem
+            // 
+            this.statusToolStripMenuItem.Name = "statusToolStripMenuItem";
+            this.statusToolStripMenuItem.Size = new System.Drawing.Size(69, 25);
+            this.statusToolStripMenuItem.Text = "Status";
+            this.statusToolStripMenuItem.Click += new System.EventHandler(this.statusToolStripMenuItem_Click);
+            // 
             // panelSupplier
             // 
             this.panelSupplier.BackColor = System.Drawing.Color.Transparent;
@@ -242,9 +249,9 @@
             this.panelSupplier.Controls.Add(this.label3);
             this.panelSupplier.Controls.Add(this.txtName);
             this.panelSupplier.Controls.Add(this.lblname);
-            this.panelSupplier.Location = new System.Drawing.Point(147, 48);
+            this.panelSupplier.Location = new System.Drawing.Point(104, 48);
             this.panelSupplier.Name = "panelSupplier";
-            this.panelSupplier.Size = new System.Drawing.Size(671, 598);
+            this.panelSupplier.Size = new System.Drawing.Size(774, 572);
             this.panelSupplier.TabIndex = 1;
             this.panelSupplier.Paint += new System.Windows.Forms.PaintEventHandler(this.panelSupplier_Paint);
             // 
@@ -405,11 +412,9 @@
             // panelInventory
             // 
             this.panelInventory.BackColor = System.Drawing.Color.Transparent;
-            this.panelInventory.Controls.Add(this.cmbKRT);
+            this.panelInventory.Controls.Add(this.txtFinalTouch);
             this.panelInventory.Controls.Add(this.listBox2);
-            this.panelInventory.Controls.Add(this.label11);
             this.panelInventory.Controls.Add(this.txtSupIDmain);
-            this.panelInventory.Controls.Add(this.label20);
             this.panelInventory.Controls.Add(this.cmdGR);
             this.panelInventory.Controls.Add(this.btnSubmitnew);
             this.panelInventory.Controls.Add(this.dataGridInventoryComfirm);
@@ -451,6 +456,17 @@
             this.panelInventory.Size = new System.Drawing.Size(1009, 660);
             this.panelInventory.TabIndex = 2;
             // 
+            // txtFinalTouch
+            // 
+            this.txtFinalTouch.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.txtFinalTouch.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtFinalTouch.Location = new System.Drawing.Point(187, 335);
+            this.txtFinalTouch.MaxLength = 10;
+            this.txtFinalTouch.Name = "txtFinalTouch";
+            this.txtFinalTouch.Size = new System.Drawing.Size(161, 26);
+            this.txtFinalTouch.TabIndex = 102;
+            this.txtFinalTouch.Leave += new System.EventHandler(this.txtFinalTouch_Leave);
+            // 
             // listBox2
             // 
             this.listBox2.BackColor = System.Drawing.SystemColors.ActiveCaption;
@@ -462,17 +478,6 @@
             this.listBox2.TabIndex = 101;
             this.listBox2.SelectedIndexChanged += new System.EventHandler(this.listBox2_SelectedIndexChanged);
             // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.BackColor = System.Drawing.Color.Transparent;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(489, 481);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(104, 20);
-            this.label11.TabIndex = 100;
-            this.label11.Text = "Supplier_ID";
-            // 
             // txtSupIDmain
             // 
             this.txtSupIDmain.BackColor = System.Drawing.SystemColors.ActiveCaption;
@@ -481,17 +486,7 @@
             this.txtSupIDmain.Name = "txtSupIDmain";
             this.txtSupIDmain.Size = new System.Drawing.Size(162, 26);
             this.txtSupIDmain.TabIndex = 99;
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.BackColor = System.Drawing.Color.Transparent;
-            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(489, 438);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(131, 20);
-            this.label20.TabIndex = 98;
-            this.label20.Text = "Supplier_Name";
+            this.txtSupIDmain.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.NOinput_KeyPress);
             // 
             // cmdGR
             // 
@@ -568,7 +563,6 @@
             this.txtLabourRs.Name = "txtLabourRs";
             this.txtLabourRs.Size = new System.Drawing.Size(162, 26);
             this.txtLabourRs.TabIndex = 92;
-            this.txtLabourRs.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.NOinput_KeyPress);
             // 
             // label19
             // 
@@ -584,7 +578,7 @@
             // 
             this.rb14.AutoSize = true;
             this.rb14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rb14.Location = new System.Drawing.Point(343, 336);
+            this.rb14.Location = new System.Drawing.Point(858, 510);
             this.rb14.Name = "rb14";
             this.rb14.Size = new System.Drawing.Size(73, 24);
             this.rb14.TabIndex = 90;
@@ -609,7 +603,7 @@
             // 
             this.rb18.AutoSize = true;
             this.rb18.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rb18.Location = new System.Drawing.Point(251, 336);
+            this.rb18.Location = new System.Drawing.Point(900, 465);
             this.rb18.Name = "rb18";
             this.rb18.Size = new System.Drawing.Size(73, 24);
             this.rb18.TabIndex = 89;
@@ -622,7 +616,7 @@
             // 
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(18, 301);
+            this.label18.Location = new System.Drawing.Point(25, 301);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(113, 20);
             this.label18.TabIndex = 85;
@@ -632,7 +626,7 @@
             // 
             this.rb22.AutoSize = true;
             this.rb22.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rb22.Location = new System.Drawing.Point(163, 336);
+            this.rb22.Location = new System.Drawing.Point(812, 465);
             this.rb22.Name = "rb22";
             this.rb22.Size = new System.Drawing.Size(73, 24);
             this.rb22.TabIndex = 88;
@@ -666,7 +660,7 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(18, 338);
+            this.label10.Location = new System.Drawing.Point(25, 338);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(102, 20);
             this.label10.TabIndex = 87;
@@ -710,7 +704,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(18, 217);
+            this.label7.Location = new System.Drawing.Point(25, 217);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(92, 20);
             this.label7.TabIndex = 49;
@@ -720,7 +714,7 @@
             // 
             this.txtPure.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.txtPure.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPure.Location = new System.Drawing.Point(186, 371);
+            this.txtPure.Location = new System.Drawing.Point(187, 372);
             this.txtPure.MaxLength = 10;
             this.txtPure.Name = "txtPure";
             this.txtPure.Size = new System.Drawing.Size(161, 26);
@@ -732,7 +726,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(17, 375);
+            this.label6.Location = new System.Drawing.Point(25, 375);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(87, 20);
             this.label6.TabIndex = 47;
@@ -751,7 +745,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(18, 51);
+            this.label9.Location = new System.Drawing.Point(25, 51);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(104, 20);
             this.label9.TabIndex = 32;
@@ -761,7 +755,7 @@
             // 
             this.lblSupID.AutoSize = true;
             this.lblSupID.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSupID.Location = new System.Drawing.Point(18, 11);
+            this.lblSupID.Location = new System.Drawing.Point(25, 11);
             this.lblSupID.Name = "lblSupID";
             this.lblSupID.Size = new System.Drawing.Size(131, 20);
             this.lblSupID.TabIndex = 26;
@@ -812,7 +806,7 @@
             // 
             this.txtDate.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.txtDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDate.Location = new System.Drawing.Point(187, 418);
+            this.txtDate.Location = new System.Drawing.Point(187, 415);
             this.txtDate.Name = "txtDate";
             this.txtDate.Size = new System.Drawing.Size(161, 26);
             this.txtDate.TabIndex = 21;
@@ -824,7 +818,7 @@
             // 
             this.lblDate.AutoSize = true;
             this.lblDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDate.Location = new System.Drawing.Point(18, 418);
+            this.lblDate.Location = new System.Drawing.Point(25, 418);
             this.lblDate.Name = "lblDate";
             this.lblDate.Size = new System.Drawing.Size(48, 20);
             this.lblDate.TabIndex = 20;
@@ -847,7 +841,7 @@
             // 
             this.lblQuatity.AutoSize = true;
             this.lblQuatity.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblQuatity.Location = new System.Drawing.Point(18, 175);
+            this.lblQuatity.Location = new System.Drawing.Point(25, 175);
             this.lblQuatity.Name = "lblQuatity";
             this.lblQuatity.Size = new System.Drawing.Size(76, 20);
             this.lblQuatity.TabIndex = 18;
@@ -869,7 +863,7 @@
             // 
             this.lblWeight.AutoSize = true;
             this.lblWeight.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblWeight.Location = new System.Drawing.Point(18, 259);
+            this.lblWeight.Location = new System.Drawing.Point(25, 259);
             this.lblWeight.Name = "lblWeight";
             this.lblWeight.Size = new System.Drawing.Size(65, 20);
             this.lblWeight.TabIndex = 16;
@@ -889,7 +883,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(18, 91);
+            this.label1.Location = new System.Drawing.Point(25, 91);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(122, 20);
             this.label1.TabIndex = 14;
@@ -899,7 +893,7 @@
             // 
             this.lblId.AutoSize = true;
             this.lblId.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblId.Location = new System.Drawing.Point(18, 133);
+            this.lblId.Location = new System.Drawing.Point(25, 133);
             this.lblId.Name = "lblId";
             this.lblId.Size = new System.Drawing.Size(100, 20);
             this.lblId.TabIndex = 13;
@@ -920,9 +914,9 @@
             this.panelProduct.Controls.Add(this.lblDesc);
             this.panelProduct.Controls.Add(this.label5);
             this.panelProduct.Controls.Add(this.dataGridProduct);
-            this.panelProduct.Location = new System.Drawing.Point(175, 77);
+            this.panelProduct.Location = new System.Drawing.Point(182, 92);
             this.panelProduct.Name = "panelProduct";
-            this.panelProduct.Size = new System.Drawing.Size(602, 512);
+            this.panelProduct.Size = new System.Drawing.Size(602, 495);
             this.panelProduct.TabIndex = 3;
             this.panelProduct.Paint += new System.Windows.Forms.PaintEventHandler(this.panelProduct_Paint);
             // 
@@ -1063,8 +1057,8 @@
             // dataGridProduct
             // 
             this.dataGridProduct.AllowUserToAddRows = false;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.dataGridProduct.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.dataGridProduct.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridProduct.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
             this.dataGridProduct.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridProduct.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
@@ -1117,9 +1111,9 @@
             this.panelPremainInventory.Controls.Add(this.txtID);
             this.panelPremainInventory.Controls.Add(this.label14);
             this.panelPremainInventory.Controls.Add(this.cmbSuplierName);
-            this.panelPremainInventory.Location = new System.Drawing.Point(212, 115);
+            this.panelPremainInventory.Location = new System.Drawing.Point(210, 125);
             this.panelPremainInventory.Name = "panelPremainInventory";
-            this.panelPremainInventory.Size = new System.Drawing.Size(542, 410);
+            this.panelPremainInventory.Size = new System.Drawing.Size(520, 386);
             this.panelPremainInventory.TabIndex = 5;
             this.panelPremainInventory.Paint += new System.Windows.Forms.PaintEventHandler(this.panelPremainInventory_Paint);
             // 
@@ -1271,14 +1265,6 @@
             this.cmbSuplierName.SelectedIndexChanged += new System.EventHandler(this.cmbSuplierName_SelectedIndexChanged);
             this.cmbSuplierName.TextChanged += new System.EventHandler(this.cmbSuplierName_TextChanged);
             // 
-            // cmbKRT
-            // 
-            this.cmbKRT.FormattingEnabled = true;
-            this.cmbKRT.Location = new System.Drawing.Point(357, 88);
-            this.cmbKRT.Name = "cmbKRT";
-            this.cmbKRT.Size = new System.Drawing.Size(75, 28);
-            this.cmbKRT.TabIndex = 102;
-            // 
             // AdminWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
@@ -1414,10 +1400,9 @@
         private System.Windows.Forms.ToolStripMenuItem goldPaidToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem goldReceiveToolStripMenuItem;
         private System.Windows.Forms.ListBox listBox2;
-        private System.Windows.Forms.Label label11;
         private System.Windows.Forms.TextBox txtSupIDmain;
-        private System.Windows.Forms.Label label20;
         private System.Windows.Forms.ComboBox cmdGR;
-        private System.Windows.Forms.ComboBox cmbKRT;
+        private System.Windows.Forms.TextBox txtFinalTouch;
+        private System.Windows.Forms.ToolStripMenuItem statusToolStripMenuItem;
     }
 }

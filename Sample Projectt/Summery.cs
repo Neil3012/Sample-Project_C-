@@ -46,7 +46,7 @@ namespace Sample_Projectt
             lblTo.Hide();
             gridInventoryDetails.Hide();
             gridPurchasedetails.Hide();
-            gridSupplierTransection.Hide();
+            
             //GetInventoryDetails();
             //GetSupplierTransection();
             //GetPurchase();
@@ -69,12 +69,6 @@ namespace Sample_Projectt
             gridPurchasedetails.Columns["Purchase_Date"].Width = 120;
 
 
-            gridSupplierTransection.ColumnHeadersDefaultCellStyle.Font =
-      new Font("Microsoft Sans Serif", 9.0f, FontStyle.Bold);
-            gridSupplierTransection.Columns["Cash_Receive"].Width = 110;
-            gridSupplierTransection.Columns["Gold_Receive"].Width = 110;
-            gridSupplierTransection.Columns["Supplier_Name"].Width = 110;
-            gridSupplierTransection.Columns["Transection_ID"].Width = 120;
         }
         private void btnCal_Click(object sender, EventArgs e)
         {
@@ -109,24 +103,24 @@ namespace Sample_Projectt
             if (day == true)
             {
                 selectSupplier = "select  * from SupplierTransection where Date='" + dateFrom + "'";
-                selectInventory = "select  ReportID,Product_Name,Supplier_Name,Item_Weight,Item_Quantity,Pure_Gold,Date,Labour from InventoryDetails where Date='" + dateFrom + "'";
-                selectProduct = "select  Purchase_ID,Client_Name,Product_Name,Sold_Quantity,Sold_Weight,Pure_Gold,Purchase_Date,Labour from Purchase where Purchase_Date='" + dateFrom + "'";
+                selectInventory = "select  ReportID,Product_Name,Supplier_Name,Item_Weight,Item_Quantity,Pure_Gold,Date,Labour,LabourRS from InventoryDetails where Date='" + dateFrom + "'";
+                selectProduct = "select  Purchase_ID,Client_Name,Product_Name,Sold_Quantity,Sold_Weight,Pure_Gold,Purchase_Date,Labour,LabourRS from Purchase where Purchase_Date='" + dateFrom + "'";
             }
             if (day == false)
             {
                 selectSupplier = "select DISTINCT * from SupplierTransection where Date between '" + dateFrom + "' and '" + dateTo + "'";
-                selectInventory = "select DISTINCT  ReportID,Product_Name,Supplier_Name,Item_Weight,Item_Quantity,Pure_Gold,Date,Labour from InventoryDetails where Date between '" + dateFrom + "' and '" + dateTo + "'";
-                selectProduct = "select DISTINCT Purchase_ID,Client_Name,Product_Name,Sold_Quantity,Sold_Weight,Pure_Gold,Purchase_Date,Labour from Purchase where Purchase_Date between '" + dateFrom + "' and '" + dateTo + "'";
+                selectInventory = "select DISTINCT  ReportID,Product_Name,Supplier_Name,Item_Weight,Item_Quantity,Pure_Gold,Date,Labour,LabourRS from InventoryDetails where Date between '" + dateFrom + "' and '" + dateTo + "'";
+                selectProduct = "select DISTINCT Purchase_ID,Client_Name,Product_Name,Sold_Quantity,Sold_Weight,Pure_Gold,Purchase_Date,Labour,LabourRS from Purchase where Purchase_Date between '" + dateFrom + "' and '" + dateTo + "'";
             }
             GetSupplierTransection();
             GetInventoryDetails();
             GetPurchase();
             gridInventoryDetails.Show();
             gridPurchasedetails.Show();
-            gridSupplierTransection.Show();
+            //gridSupplierTransection.Show();
             SumcalInventory();
             SumCalPurchase();
-            SumCalSuplierTransection();
+            //SumCalSuplierTransection();
             GridStyle();
 
 
@@ -142,12 +136,12 @@ namespace Sample_Projectt
             else if (rbDay.Enabled == true)
                 select = "select Sum(Gold_Paid) from SupplierTransection where Date= '" + dateFrom + "'";
 
-            using (con = new SqlConnection(conn))
-            {
-                cmd = new SqlCommand(select, con);
-                con.Open();
-                lblSupGoldPaid.Text = cmd.ExecuteScalar().ToString();
-            }
+            //using (con = new SqlConnection(conn))
+            //{
+            //    cmd = new SqlCommand(select, con);
+            //    con.Open();
+            //    //lblSupGoldPaid.Text = cmd.ExecuteScalar().ToString();
+            //}
 
 
             if (rbMonth.Enabled == true)
@@ -160,7 +154,7 @@ namespace Sample_Projectt
             {
                 cmd = new SqlCommand(select, con);
                 con.Open();
-                lblSupGoldReceive.Text = cmd.ExecuteScalar().ToString();
+              //  lblSupGoldReceive.Text = cmd.ExecuteScalar().ToString();
             }
 
 
@@ -212,10 +206,10 @@ namespace Sample_Projectt
 
             if (rbMonth.Enabled == true)
             {
-                select = "select Sum(Labour) from Purchase where Purchase_Date between '" + dateFrom + "' and '" + dateTo + "'";
+                select = "select Sum(Pure_Gold) from Purchase where Purchase_Date between '" + dateFrom + "' and '" + dateTo + "'";
             }
             else if (rbDay.Enabled == true)
-                select = "select Sum(Labour) from Purchase where Purchase_Date= '" + dateFrom + "'";
+                select = "select Sum(Pure_Gold) from Purchase where Purchase_Date= '" + dateFrom + "'";
             using (con = new SqlConnection(conn))
             {
                 cmd = new SqlCommand(select, con);
@@ -273,10 +267,10 @@ namespace Sample_Projectt
 
             if (rbMonth.Enabled == true)
             {
-                select = "select Sum(Labour) from InventoryDetails where Date between '" + dateFrom + "' and '" + dateTo + "'";
+                select = "select Sum(Pure_Gold) from InventoryDetails where Date between '" + dateFrom + "' and '" + dateTo + "'";
             }
             else if (rbDay.Enabled == true)
-                select = "select Sum(Labour) from InventoryDetails where Date= '" + dateFrom + "'";
+                select = "select Sum(Pure_Gold) from InventoryDetails where Date= '" + dateFrom + "'";
             using (con = new SqlConnection(conn))
             {
                 cmd = new SqlCommand(select, con);
@@ -323,7 +317,7 @@ namespace Sample_Projectt
                 rdr = cmd.ExecuteReader();
                 dt.Load(rdr);
 
-                gridSupplierTransection.DataSource = dt;
+               // gridSupplierTransection.DataSource = dt;
 
             }
         }
@@ -334,7 +328,7 @@ namespace Sample_Projectt
                 System.Windows.Forms.DataGridViewCellStyle boldStyle = new System.Windows.Forms.DataGridViewCellStyle();
                 boldStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
                 boldStyle.ForeColor = Color.Red;
-                gridSupplierTransection.Rows[e.RowIndex].DefaultCellStyle = boldStyle;
+               //gridSupplierTransection.Rows[e.RowIndex].DefaultCellStyle = boldStyle;
             }
 
             else
@@ -349,7 +343,7 @@ namespace Sample_Projectt
             System.Windows.Forms.DataGridViewCellStyle norStyle = new System.Windows.Forms.DataGridViewCellStyle();
             norStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular);
 
-            gridSupplierTransection.Rows[e.RowIndex].DefaultCellStyle = norStyle;
+          //  gridSupplierTransection.Rows[e.RowIndex].DefaultCellStyle = norStyle;
 
 
         }

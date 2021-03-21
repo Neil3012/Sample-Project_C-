@@ -52,7 +52,7 @@ namespace Sample_Projectt
             listBoxCustName.Visible = false;
             using (con = new SqlConnection(conn))
             {
-                string select = "select Jama_Cash from Client where Customer_Name='" + cmbClient.SelectedItem.ToString() + "'";
+                string select = "select Balance_Cash from Client where Customer_Name='" + cmbClient.SelectedItem.ToString() + "'";
 
                 command = new SqlCommand(select,con);
                 con.Open();

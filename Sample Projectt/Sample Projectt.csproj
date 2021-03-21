@@ -107,6 +107,12 @@
     <Compile Include="ClientStatement.Designer.cs">
       <DependentUpon>ClientStatement.cs</DependentUpon>
     </Compile>
+    <Compile Include="Current_Inventory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Current_Inventory.Designer.cs">
+      <DependentUpon>Current_Inventory.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -205,6 +211,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ClientStatement.resx">
       <DependentUpon>ClientStatement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Current_Inventory.resx">
+      <DependentUpon>Current_Inventory.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>

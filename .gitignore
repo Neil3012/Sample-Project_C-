@@ -48,3 +48,5 @@ Sample Projectt/bin/Debug/Sample Projectt.application
 *.exe
 Sample Projectt/bin/Debug/Sample Projectt.exe
 Sample Projectt/obj/Release/Sample Projectt.application
+Sample Projectt/bin/Debug/app.publish/Sample Projectt.exe
+Sample Projectt/bin/Debug/Sample Projectt.exe

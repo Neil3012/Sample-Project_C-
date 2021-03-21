@@ -52,7 +52,7 @@ namespace Sample_Projectt
             {
                 SqlConnection con = new SqlConnection(conn);
                 con.Open();
-                string query = "select Client_Transection from ClientTransectionHistory";
+                string query = "select Distinct Customer_Name from ClientTransectionHistory";
                 SqlCommand command = new SqlCommand(query, con);
                 //using (SqlDataReader reader = command.ExecuteReader())
                 //{
@@ -78,7 +78,7 @@ namespace Sample_Projectt
             DataTable dt1 = new DataTable();
             SqlConnection con;
             SqlCommand cmd, cmd1;
-            string select = "select * from ClientTransectionHistory where Client_Transection ='" + cmbClient .SelectedItem + "' ";
+            string select = "select * from ClientTransectionHistory where Customer_Name ='" + cmbClient .SelectedItem + "' ";
 
             using (con = new SqlConnection(conn))
             {
@@ -86,13 +86,13 @@ namespace Sample_Projectt
                 con.Open();
                 rdr = cmd.ExecuteReader();
                 dt.Load(rdr);
-                foreach (DataRow dr in dt.Rows)
-                {
-                     txtClintNam.Text = dr["Customer_Name"].ToString();
-                }
+                //foreach (DataRow dr in dt.Rows)
+                //{
+                //     txtClintNam.Text = dr["Customer_Name"].ToString();
+                //}
                 con.Close();
             }
-            string select1 = "select Purchase_ID,Client_Name,Product_Name,Sold_Quantity,Sold_Weight,Cash_Amount,Pure_Gold,Purchase_Date,Labour,Client_Transection from Purchase where Client_Transection ='" + cmbClient.SelectedItem + "' ";
+            string select1 = "select Purchase_ID,Client_Name,Product_Name,Sold_Quantity,Sold_Weight,Cash_Amount,Pure_Gold,Purchase_Date,Client_Transection from Purchase where Client_Name ='" + cmbClient.SelectedItem + "' ";
 
             using (con = new SqlConnection(conn))
             {
@@ -108,7 +108,7 @@ namespace Sample_Projectt
                 dsDataset.Tables.Add(dt);
                 dsDataset.Tables.Add(dt1);
 
-                DataRelation Datatablerelation = new DataRelation("DETAIL TRANSECTION", dsDataset.Tables[0].Columns[0], dsDataset.Tables[1].Columns[9], false);
+                DataRelation Datatablerelation = new DataRelation("DETAIL TRANSECTION", dsDataset.Tables[0].Columns[0], dsDataset.Tables[1].Columns[8], false);
                 dsDataset.Relations.Add(Datatablerelation);
                 //dataGrid1.Columns["Client_Transection"].Width = 130;
                 dataGrid1.DataSource = dsDataset.Tables[0];

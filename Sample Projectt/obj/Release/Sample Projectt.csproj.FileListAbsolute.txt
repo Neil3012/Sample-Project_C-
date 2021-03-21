@@ -32,7 +32,6 @@ E:\Sumit Project 26 oct\Sample Projectt\Sample Projectt\bin\Release\Sample Proje
 E:\Sumit Project 26 oct\Sample Projectt\Sample Projectt\bin\Release\Sample Projectt.application
 E:\Sumit Project 26 oct\Sample Projectt\Sample Projectt\bin\Release\Sample Projectt.exe
 E:\Sumit Project 26 oct\Sample Projectt\Sample Projectt\bin\Release\Sample Projectt.pdb
-E:\Sumit Project 26 oct\Sample Projectt\Sample Projectt\obj\Release\Sample Projectt.csprojAssemblyReference.cache
 E:\Sumit Project 26 oct\Sample Projectt\Sample Projectt\obj\Release\Sample_Projectt.AdminWindow.resources
 E:\Sumit Project 26 oct\Sample Projectt\Sample Projectt\obj\Release\Sample_Projectt.Cashout.resources
 E:\Sumit Project 26 oct\Sample Projectt\Sample Projectt\obj\Release\Sample_Projectt.CashoutClint.resources
@@ -57,3 +56,5 @@ E:\Sumit Project 26 oct\Sample Projectt\Sample Projectt\obj\Release\Sample Proje
 E:\Sumit Project 26 oct\Sample Projectt\Sample Projectt\obj\Release\Sample Projectt.application
 E:\Sumit Project 26 oct\Sample Projectt\Sample Projectt\obj\Release\Sample Projectt.exe
 E:\Sumit Project 26 oct\Sample Projectt\Sample Projectt\obj\Release\Sample Projectt.pdb
+E:\Sumit Project 26 oct\Sample Projectt\Sample Projectt\obj\Release\Sample_Projectt.Current_Inventory.resources
+E:\Sumit Project 26 oct\Sample Projectt\Sample Projectt\obj\Release\Sample Projectt.csprojAssemblyReference.cache

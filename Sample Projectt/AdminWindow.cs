@@ -497,8 +497,8 @@ namespace Sample_Projectt
             cmdID.Text = "";
             txtProductID.Text = "";
             txtWeight.Text = "";
-            cmdGR.Text = "";
-            txtSupIDmain.Text = "";
+
+
 
         }
 
@@ -598,7 +598,7 @@ namespace Sample_Projectt
 
 
 
-                    insert = "insert into InventoryDetails(Product_ID,Product_Name,Supplier_ID,Supplier_Name,Item_Weight,Item_Quantity,Date,Purity,ReportID,Transection_ID,Pure_Gold,Cash,Labour) values" +
+                    insert = "insert into InventoryDetails(Product_ID,Product_Name,Supplier_ID,Supplier_Name,Item_Weight,Item_Quantity,Date,FinalTouch,ReportID,Transection_ID,Pure_Gold,Cash,Labour) values" +
                          " " +
                     "( '" + txtProductID.Text + "', '" + cmdID.SelectedItem.ToString() + "','" + txtSupIDmain.Text + "','" + cmdGR.SelectedItem.ToString() + "','" + txtWeight.Text + "','" + txtQuantity.Text + "','" + Convert.ToDateTime(datePicker1.Value.Date).ToString("yyyy-MM-dd") + "','"
                     + rbNam + "','" + reportID + "','" + txtTransIDmain.Text + "','" + txtPure.Text + "','" + txtCash.Text + "','" + labourRs + "')";
@@ -615,7 +615,7 @@ namespace Sample_Projectt
                     dataGridInventoryComfirm.Rows[n].Cells[4].Value = txtWeight.Text;
                     dataGridInventoryComfirm.Rows[n].Cells[5].Value = txtQuantity.Text;
                     dataGridInventoryComfirm.Rows[n].Cells[6].Value = Convert.ToDateTime(datePicker1.Value.Date).ToString("yyyy-MM-dd");
-                    dataGridInventoryComfirm.Rows[n].Cells[7].Value = rbNam;
+                    dataGridInventoryComfirm.Rows[n].Cells[7].Value = txtFinalTouch.Text;
 
 
 
@@ -744,6 +744,7 @@ namespace Sample_Projectt
                     InventoryToolStrip.Enabled = true;
                     supplierToolStripMenuItem.Enabled = true;
                     MainWindowComponents();
+                    cmdGR.Enabled = false;
                     rowsCount++;
                 }
             }
@@ -756,7 +757,7 @@ namespace Sample_Projectt
         void btnSubmitnew_Click(object sender, EventArgs e)
         {
             string productID = "", productName = "", supplierID = "", supplierName = "", weight = "",
-                quantity = "", date, radioinput, transectionID = "", currentPuregold = "", labRS = "", touchPouch = "";
+                quantity = "", date, _finalTouch, transectionID = "", currentPuregold = "", labRS = "", touchPouch = "";
             double _jama, _udhar, _bal;
             if (dataGridInventoryComfirm.Rows.Count <= 0)
             {
@@ -797,7 +798,7 @@ namespace Sample_Projectt
                     weight = dataGridInventoryComfirm.Rows[row].Cells[4].Value.ToString();
                     quantity = dataGridInventoryComfirm.Rows[row].Cells[5].Value.ToString();
                     date = dataGridInventoryComfirm.Rows[row].Cells[6].Value.ToString();
-                    radioinput = dataGridInventoryComfirm.Rows[row].Cells[7].Value.ToString();
+                    _finalTouch = dataGridInventoryComfirm.Rows[row].Cells[7].Value.ToString();
                     transectionID = dataGridInventoryComfirm.Rows[row].Cells[8].Value.ToString();
                     currentPuregold = dataGridInventoryComfirm.Rows[row].Cells[9].Value.ToString();
                     lab = Convert.ToDouble(dataGridInventoryComfirm.Rows[row].Cells[10].Value.ToString());
@@ -806,9 +807,9 @@ namespace Sample_Projectt
                     /*ash = Convert.ToDouble(dataGridInventoryComfirm.Rows[row].Cells[13].Value.ToString*/
                     using (SqlConnection con = new SqlConnection(conn))
                     {
-                        insert = "insert into InventoryDetails(Product_ID,Product_Name,Supplier_ID,Supplier_Name,Item_Weight,Item_Quantity,Date,Purity,ReportID,Transection_ID,Pure_Gold,Cash,Labour,LabourRS,Touch_Pouch) values" +
+                        insert = "insert into InventoryDetails(Product_ID,Product_Name,Supplier_ID,Supplier_Name,Item_Weight,Item_Quantity,Date,FinalTouch,ReportID,Transection_ID,Pure_Gold,Cash,Labour,LabourRS,Touch_Pouch) values" +
                         " " +
-                   "( '" + productID + "', '" + productName + "','" + supplierID + "','" + supplierName + "','" + weight + "','" + quantity + "','" + date + "','" + radioinput + "','" + reportID + "','" + transectionID + "','" + currentPuregold + "','" + cash + "','" + lab + "','" + labRS + "','" + touchPouch + "')";
+                   "( '" + productID + "', '" + productName + "','" + supplierID + "','" + supplierName + "','" + weight + "','" + quantity + "','" + date + "','" + _finalTouch + "','" + reportID + "','" + transectionID + "','" + currentPuregold + "','" + cash + "','" + lab + "','" + labRS + "','" + touchPouch + "')";
 
                         con.Open();
                         cmd = new SqlCommand(insert, con);
@@ -864,26 +865,6 @@ namespace Sample_Projectt
                 GetSupplierBalances(supplierID);
 
 
-                //using (SqlConnection con = new SqlConnection(conn))
-                //{
-                //    int temp;
-                //    if ((txtCash.Text) == string.Empty)
-                //    {
-                //        temp = 0;
-                //    }
-                //    else
-                //        temp = Convert.ToInt32(txtCash.Text);
-
-
-                //    con.Open();
-
-                //    insert = "update SupplierTransection set Gold_Receive= '" + pureGold + "', Cash_Receive= '" + temp + "' where Transection_ID ='" + ID + "'";
-
-                //    //string update = "update Supplier set Cash_Paid='" + txtCashPaid.Text + "', Gold_Paid=" + txtGoldPaid.Text + ", Cash_Receive='" + txtCashReceive.Text + "', Gold_Receive= " + txtGoldReceive.Text + ",Balance_Cash='" + txtBalanceCash.Text + "', Balance_Gold=" + txtBalanceGold.Text + " where Supplier_ID='" + txtID.Text + "'";
-                //    cmd = new SqlCommand(insert, con);
-                //    cmd.ExecuteNonQuery();
-                //}
-
 
                 rb14.Checked = false;
                 rb18.Checked = false;
@@ -899,29 +880,6 @@ namespace Sample_Projectt
                 GetInventoyDetails();
 
 
-                //double calGold = currentValue  - pureGold;
-
-                //if (calGold > 0) // Supplier Paid 100 and get 70 then Amount is added
-                //{
-                //    _jama = calGold;
-                //    _udhar = 0;
-                //    update = "update Supplier set Balance_Gold=Cast((Balance_Gold+'" + calGold + "') AS dec(10,3)), Balance_Cash=Cast((Balance_Cash+'" + cash + "') AS dec(10,3)) where Supplier_ID='" + txtSupIDmain.Text + "'  ";
-                //}
-                //else//Supplier Paid 100 and get 140 then Amount is subtrtacted from its quota
-                //{
-                //    _jama = 0;
-                //    _udhar = calGold;
-                //    calGold = Math.Abs(calGold);
-                //    cash = Math.Abs(cash);
-                //    update = "update Supplier set Balance_Gold=Cast((Balance_Gold-'" + calGold + "') AS dec(10,3)), Balance_Cash=Cast((Balance_Cash-'" + cash + "') AS dec(10,3)) where Supplier_ID='" + txtSupIDmain.Text + "'  ";
-                //}
-                //using (SqlConnection con = new SqlConnection(conn))
-                //{
-                //    con.Open();
-                //    cmd = new SqlCommand(update, con);
-                //    cmd.ExecuteNonQuery();
-
-                //}
 
                 UdharBalanceSupplier(supplierID);
                 using (SqlConnection con = new SqlConnection(conn))
@@ -953,6 +911,7 @@ namespace Sample_Projectt
 
                 #endregion
                 rowsCount = 0; dataGridInventoryComfirm.Rows.Clear();
+                cmdGR.Enabled = true;
             }
         }
         void GetSupplierBalances(string name)
@@ -1510,7 +1469,34 @@ namespace Sample_Projectt
 
 
         }
+        private void txtFinalTouch_Leave(object sender, EventArgs e)
+        {
+            float _finalToch = 0f;
+            if (txtLabour.Text == string.Empty)
+            {
+                MessageBox.Show("PLEASE PROVIDE LABOUR COST.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
+            }
+            else
+            {
+                float.TryParse(txtWeight.Text, out Gold_R);
+
+                float.TryParse(txtLabour.Text, out Lab);
+                float.TryParse(txtTouchPouch.Text, out touchPouch);
+                total = Gold_R + touchPouch;
+
+
+                txtLabourRs.Text = String.Format("{0:#,##0.000;($#,##0.000);Zero}", ((Gold_R * (Convert.ToDouble(txtLabour.Text) / 99.5)) * currentValue));
+
+                float.TryParse(txtFinalTouch.Text, out _finalToch);
+                G_Receive = total * (_finalToch + Lab) / 99.5;
+
+                txtPure.Text = String.Format("{0:#,##0.000;($#,##0.000);Zero}", G_Receive);
+            }
+
+            //string a=String.Format("{0:$#,##0.00;($#,##0.00);Zero}", (total * Convert.ToDouble(txtLabour.Text) / 100));
+
+        }
 
         //Supplier@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@#$$$$$$$$$$$$$$$$$#
         private void RadioButon_Click(object sender, EventArgs e)
@@ -1659,8 +1645,8 @@ namespace Sample_Projectt
 
         private void cashOutToolStrip_Click(object sender, EventArgs e)
         {
-            Cashout cashout = new Cashout();
-            cashout.ShowDialog();
+        //    Cashout cashout = new Cashout();
+        //    cashout.ShowDialog();
         }
 
         private void txtLabour_Leave(object sender, EventArgs e)
@@ -2156,6 +2142,17 @@ namespace Sample_Projectt
         private void txtProductName_TextChanged(object sender, EventArgs e)
         {
             ProductRadio();
+        }
+
+        private void txtFinalTouch_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void statusToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Current_Inventory _CI = new Current_Inventory();
+            _CI.ShowDialog();
         }
 
         private void listBox2_SelectedIndexChanged(object sender, EventArgs e)
