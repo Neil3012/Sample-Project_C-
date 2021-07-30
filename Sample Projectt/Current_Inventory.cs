@@ -19,6 +19,7 @@ namespace Sample_Projectt
         SqlDataReader rdr;
         SqlConnection con;
         DataTable dt;
+        string select = "";
         public Current_Inventory()
         {
             InitializeComponent();
@@ -29,7 +30,7 @@ namespace Sample_Projectt
             using (con=new SqlConnection(conn))
             {
                 dt = new DataTable();
-                string select = "Select * from Inventory";
+                select = "Select * from Inventory";
                 con.Open();
                 cmd = new SqlCommand(select, con);
                 rdr=cmd.ExecuteReader();
@@ -48,6 +49,17 @@ namespace Sample_Projectt
                 currentGrid.DataSource = dt; currentGrid.Width = 1000;
                 
                 // GridStyle();
+            }
+
+            using (con = new SqlConnection(conn))
+            {
+                dt = new DataTable();
+                select = "select * from MasterTable";
+                con.Open();
+                cmd = new SqlCommand( select,con);
+                rdr=cmd.ExecuteReader();
+                dt.Load(rdr);
+                gridViewCurrent.DataSource = dt;
             }
         }
     }

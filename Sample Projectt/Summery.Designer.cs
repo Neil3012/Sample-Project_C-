@@ -33,6 +33,8 @@
             this.gridPurchasedetails = new System.Windows.Forms.DataGridView();
             this.lbl1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnPrint = new System.Windows.Forms.Button();
+            this.btnShow = new System.Windows.Forms.Button();
             this.lblTo = new System.Windows.Forms.Label();
             this.datePickTo = new System.Windows.Forms.DateTimePicker();
             this.rbMonth = new System.Windows.Forms.RadioButton();
@@ -53,8 +55,8 @@
             this.printDailog = new System.Windows.Forms.PrintDialog();
             this.printDocument = new System.Drawing.Printing.PrintDocument();
             this.lblFinePurchase = new System.Windows.Forms.Label();
-            this.btnPrint = new System.Windows.Forms.Button();
-            this.btnShow = new System.Windows.Forms.Button();
+            this.lblMargin = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.gridInventoryDetails)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridPurchasedetails)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -114,6 +116,38 @@
             this.groupBox1.TabIndex = 6;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Accounting Summery:-";
+            // 
+            // btnPrint
+            // 
+            this.btnPrint.BackColor = System.Drawing.Color.Transparent;
+            this.btnPrint.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnPrint.BackgroundImage")));
+            this.btnPrint.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnPrint.FlatAppearance.BorderSize = 0;
+            this.btnPrint.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPrint.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPrint.Location = new System.Drawing.Point(666, 33);
+            this.btnPrint.Name = "btnPrint";
+            this.btnPrint.Size = new System.Drawing.Size(82, 39);
+            this.btnPrint.TabIndex = 82;
+            this.btnPrint.Text = "Print";
+            this.btnPrint.UseVisualStyleBackColor = false;
+            this.btnPrint.Click += new System.EventHandler(this.btnPrint_Click);
+            // 
+            // btnShow
+            // 
+            this.btnShow.BackColor = System.Drawing.Color.Transparent;
+            this.btnShow.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnShow.BackgroundImage")));
+            this.btnShow.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnShow.FlatAppearance.BorderSize = 0;
+            this.btnShow.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnShow.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnShow.Location = new System.Drawing.Point(765, 33);
+            this.btnShow.Name = "btnShow";
+            this.btnShow.Size = new System.Drawing.Size(82, 39);
+            this.btnShow.TabIndex = 81;
+            this.btnShow.Text = "Show";
+            this.btnShow.UseVisualStyleBackColor = false;
+            this.btnShow.Click += new System.EventHandler(this.btnShow_Click);
             // 
             // lblTo
             // 
@@ -295,44 +329,34 @@
             this.lblFinePurchase.TabIndex = 24;
             this.lblFinePurchase.Text = "-";
             // 
-            // btnPrint
+            // lblMargin
             // 
-            this.btnPrint.BackColor = System.Drawing.Color.Transparent;
-            this.btnPrint.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnPrint.BackgroundImage")));
-            this.btnPrint.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnPrint.FlatAppearance.BorderSize = 0;
-            this.btnPrint.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPrint.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPrint.Location = new System.Drawing.Point(666, 33);
-            this.btnPrint.Name = "btnPrint";
-            this.btnPrint.Size = new System.Drawing.Size(82, 39);
-            this.btnPrint.TabIndex = 82;
-            this.btnPrint.Text = "Print";
-            this.btnPrint.UseVisualStyleBackColor = false;
-            this.btnPrint.Click += new System.EventHandler(this.btnPrint_Click);
+            this.lblMargin.AutoSize = true;
+            this.lblMargin.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMargin.Location = new System.Drawing.Point(487, 730);
+            this.lblMargin.Name = "lblMargin";
+            this.lblMargin.Size = new System.Drawing.Size(13, 17);
+            this.lblMargin.TabIndex = 26;
+            this.lblMargin.Text = ".";
             // 
-            // btnShow
+            // label2
             // 
-            this.btnShow.BackColor = System.Drawing.Color.Transparent;
-            this.btnShow.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnShow.BackgroundImage")));
-            this.btnShow.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnShow.FlatAppearance.BorderSize = 0;
-            this.btnShow.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnShow.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnShow.Location = new System.Drawing.Point(765, 33);
-            this.btnShow.Name = "btnShow";
-            this.btnShow.Size = new System.Drawing.Size(82, 39);
-            this.btnShow.TabIndex = 81;
-            this.btnShow.Text = "Show";
-            this.btnShow.UseVisualStyleBackColor = false;
-            this.btnShow.Click += new System.EventHandler(this.btnShow_Click);
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(364, 730);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(117, 17);
+            this.label2.TabIndex = 25;
+            this.label2.Text = "Sold Quantity:-";
             // 
             // Summery
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Lavender;
-            this.ClientSize = new System.Drawing.Size(953, 736);
+            this.ClientSize = new System.Drawing.Size(963, 759);
+            this.Controls.Add(this.lblMargin);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.lblFinePurchase);
             this.Controls.Add(this.lblPurchasepure);
             this.Controls.Add(this.lble);
@@ -389,5 +413,7 @@
         private System.Windows.Forms.Label lblFinePurchase;
         private System.Windows.Forms.Button btnPrint;
         private System.Windows.Forms.Button btnShow;
+        private System.Windows.Forms.Label lblMargin;
+        private System.Windows.Forms.Label label2;
     }
 }

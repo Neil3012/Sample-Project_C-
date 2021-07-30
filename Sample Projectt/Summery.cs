@@ -120,6 +120,7 @@ namespace Sample_Projectt
             //gridSupplierTransection.Show();
             SumcalInventory();
             SumCalPurchase();
+            SumMarginInventory();
             //SumCalSuplierTransection();
             GridStyle();
 
@@ -277,6 +278,26 @@ namespace Sample_Projectt
                 con.Open();
                 lblfine.Text = cmd.ExecuteScalar().ToString();
             }
+        }
+
+
+        void SumMarginInventory()
+        {
+            if (rbMonth.Enabled == true)
+            {
+                select = "select Sum(Margin) from ClientTransectionHistory where Date between '" + dateFrom + "' and '" + dateTo + "'";
+            }
+            else if (rbDay.Enabled == true)
+                select = "select Sum(Margin) from ClientTransectionHistory where Date= '" + dateFrom + "'";
+
+            using (con = new SqlConnection(conn))
+            {
+                cmd = new SqlCommand(select, con);
+                con.Open();
+                lblMargin.Text = cmd.ExecuteScalar().ToString();
+            }
+
+
         }
         private void dgInvent_RowEnter(object sender, DataGridViewCellEventArgs e)
         {

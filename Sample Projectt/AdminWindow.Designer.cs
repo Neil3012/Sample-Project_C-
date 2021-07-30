@@ -30,7 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdminWindow));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.supplierToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.InventoryToolStrip = new System.Windows.Forms.ToolStripMenuItem();
@@ -67,11 +67,8 @@
             this.btnCancelInventory = new System.Windows.Forms.Button();
             this.txtLabourRs = new System.Windows.Forms.TextBox();
             this.label19 = new System.Windows.Forms.Label();
-            this.rb14 = new System.Windows.Forms.RadioButton();
             this.txtTouchPouch = new System.Windows.Forms.TextBox();
-            this.rb18 = new System.Windows.Forms.RadioButton();
             this.label18 = new System.Windows.Forms.Label();
-            this.rb22 = new System.Windows.Forms.RadioButton();
             this.label16 = new System.Windows.Forms.Label();
             this.txtTransIDmain = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
@@ -126,6 +123,8 @@
             this.txtID = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.cmbSuplierName = new System.Windows.Forms.ComboBox();
+            this.txtCashPaid = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.panelSupplier.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridSupplier)).BeginInit();
@@ -422,11 +421,8 @@
             this.panelInventory.Controls.Add(this.btnCancelInventory);
             this.panelInventory.Controls.Add(this.txtLabourRs);
             this.panelInventory.Controls.Add(this.label19);
-            this.panelInventory.Controls.Add(this.rb14);
             this.panelInventory.Controls.Add(this.txtTouchPouch);
-            this.panelInventory.Controls.Add(this.rb18);
             this.panelInventory.Controls.Add(this.label18);
-            this.panelInventory.Controls.Add(this.rb22);
             this.panelInventory.Controls.Add(this.label16);
             this.panelInventory.Controls.Add(this.txtTransIDmain);
             this.panelInventory.Controls.Add(this.label10);
@@ -574,19 +570,6 @@
             this.label19.TabIndex = 91;
             this.label19.Text = "Labour (Rs)";
             // 
-            // rb14
-            // 
-            this.rb14.AutoSize = true;
-            this.rb14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rb14.Location = new System.Drawing.Point(858, 510);
-            this.rb14.Name = "rb14";
-            this.rb14.Size = new System.Drawing.Size(73, 24);
-            this.rb14.TabIndex = 90;
-            this.rb14.TabStop = true;
-            this.rb14.Text = "14 krt";
-            this.rb14.UseVisualStyleBackColor = true;
-            this.rb14.Click += new System.EventHandler(this.RadioButon_Click);
-            // 
             // txtTouchPouch
             // 
             this.txtTouchPouch.BackColor = System.Drawing.SystemColors.ActiveCaption;
@@ -599,19 +582,6 @@
             this.txtTouchPouch.TextChanged += new System.EventHandler(this.TextChanged);
             this.txtTouchPouch.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.FloatNumbers_KeyPress);
             // 
-            // rb18
-            // 
-            this.rb18.AutoSize = true;
-            this.rb18.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rb18.Location = new System.Drawing.Point(900, 465);
-            this.rb18.Name = "rb18";
-            this.rb18.Size = new System.Drawing.Size(73, 24);
-            this.rb18.TabIndex = 89;
-            this.rb18.TabStop = true;
-            this.rb18.Text = "18 krt";
-            this.rb18.UseVisualStyleBackColor = true;
-            this.rb18.Click += new System.EventHandler(this.RadioButon_Click);
-            // 
             // label18
             // 
             this.label18.AutoSize = true;
@@ -621,19 +591,6 @@
             this.label18.Size = new System.Drawing.Size(113, 20);
             this.label18.TabIndex = 85;
             this.label18.Text = "Touch Pouch";
-            // 
-            // rb22
-            // 
-            this.rb22.AutoSize = true;
-            this.rb22.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rb22.Location = new System.Drawing.Point(812, 465);
-            this.rb22.Name = "rb22";
-            this.rb22.Size = new System.Drawing.Size(73, 24);
-            this.rb22.TabIndex = 88;
-            this.rb22.TabStop = true;
-            this.rb22.Text = "22 krt";
-            this.rb22.UseVisualStyleBackColor = true;
-            this.rb22.Click += new System.EventHandler(this.RadioButon_Click);
             // 
             // label16
             // 
@@ -914,9 +871,9 @@
             this.panelProduct.Controls.Add(this.lblDesc);
             this.panelProduct.Controls.Add(this.label5);
             this.panelProduct.Controls.Add(this.dataGridProduct);
-            this.panelProduct.Location = new System.Drawing.Point(182, 92);
+            this.panelProduct.Location = new System.Drawing.Point(182, 79);
             this.panelProduct.Name = "panelProduct";
-            this.panelProduct.Size = new System.Drawing.Size(602, 495);
+            this.panelProduct.Size = new System.Drawing.Size(602, 508);
             this.panelProduct.TabIndex = 3;
             this.panelProduct.Paint += new System.Windows.Forms.PaintEventHandler(this.panelProduct_Paint);
             // 
@@ -1057,8 +1014,8 @@
             // dataGridProduct
             // 
             this.dataGridProduct.AllowUserToAddRows = false;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.dataGridProduct.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.dataGridProduct.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridProduct.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
             this.dataGridProduct.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridProduct.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
@@ -1088,7 +1045,7 @@
             this.btnClose.FlatAppearance.BorderSize = 0;
             this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnClose.ForeColor = System.Drawing.Color.Transparent;
-            this.btnClose.Location = new System.Drawing.Point(867, 0);
+            this.btnClose.Location = new System.Drawing.Point(1048, 0);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(36, 31);
             this.btnClose.TabIndex = 4;
@@ -1098,6 +1055,8 @@
             // panelPremainInventory
             // 
             this.panelPremainInventory.BackColor = System.Drawing.Color.Transparent;
+            this.panelPremainInventory.Controls.Add(this.txtCashPaid);
+            this.panelPremainInventory.Controls.Add(this.label11);
             this.panelPremainInventory.Controls.Add(this.listBox1);
             this.panelPremainInventory.Controls.Add(this.txtDatePremain);
             this.panelPremainInventory.Controls.Add(this.datePickPremain);
@@ -1111,9 +1070,9 @@
             this.panelPremainInventory.Controls.Add(this.txtID);
             this.panelPremainInventory.Controls.Add(this.label14);
             this.panelPremainInventory.Controls.Add(this.cmbSuplierName);
-            this.panelPremainInventory.Location = new System.Drawing.Point(210, 125);
+            this.panelPremainInventory.Location = new System.Drawing.Point(244, 104);
             this.panelPremainInventory.Name = "panelPremainInventory";
-            this.panelPremainInventory.Size = new System.Drawing.Size(520, 386);
+            this.panelPremainInventory.Size = new System.Drawing.Size(486, 467);
             this.panelPremainInventory.TabIndex = 5;
             this.panelPremainInventory.Paint += new System.Windows.Forms.PaintEventHandler(this.panelPremainInventory_Paint);
             // 
@@ -1132,7 +1091,7 @@
             // 
             this.txtDatePremain.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.txtDatePremain.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDatePremain.Location = new System.Drawing.Point(240, 241);
+            this.txtDatePremain.Location = new System.Drawing.Point(240, 278);
             this.txtDatePremain.Name = "txtDatePremain";
             this.txtDatePremain.Size = new System.Drawing.Size(194, 26);
             this.txtDatePremain.TabIndex = 86;
@@ -1143,7 +1102,7 @@
             this.datePickPremain.CustomFormat = "dd/MM/yyyy";
             this.datePickPremain.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.datePickPremain.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.datePickPremain.Location = new System.Drawing.Point(319, 287);
+            this.datePickPremain.Location = new System.Drawing.Point(319, 325);
             this.datePickPremain.Name = "datePickPremain";
             this.datePickPremain.Size = new System.Drawing.Size(115, 26);
             this.datePickPremain.TabIndex = 85;
@@ -1155,7 +1114,7 @@
             this.label17.AutoSize = true;
             this.label17.BackColor = System.Drawing.Color.Transparent;
             this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(68, 244);
+            this.label17.Location = new System.Drawing.Point(68, 281);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(48, 20);
             this.label17.TabIndex = 83;
@@ -1190,7 +1149,7 @@
             this.btnSubmitInitial.FlatAppearance.BorderSize = 0;
             this.btnSubmitInitial.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSubmitInitial.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSubmitInitial.Location = new System.Drawing.Point(208, 322);
+            this.btnSubmitInitial.Location = new System.Drawing.Point(208, 360);
             this.btnSubmitInitial.Name = "btnSubmitInitial";
             this.btnSubmitInitial.Size = new System.Drawing.Size(75, 34);
             this.btnSubmitInitial.TabIndex = 80;
@@ -1265,13 +1224,33 @@
             this.cmbSuplierName.SelectedIndexChanged += new System.EventHandler(this.cmbSuplierName_SelectedIndexChanged);
             this.cmbSuplierName.TextChanged += new System.EventHandler(this.cmbSuplierName_TextChanged);
             // 
+            // txtCashPaid
+            // 
+            this.txtCashPaid.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.txtCashPaid.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCashPaid.Location = new System.Drawing.Point(240, 238);
+            this.txtCashPaid.Name = "txtCashPaid";
+            this.txtCashPaid.Size = new System.Drawing.Size(194, 26);
+            this.txtCashPaid.TabIndex = 91;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.BackColor = System.Drawing.Color.Transparent;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(68, 241);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(90, 20);
+            this.label11.TabIndex = 90;
+            this.label11.Text = "Cash Paid";
+            // 
             // AdminWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Sample_Projectt.Properties.Resources.metallic_effect_in_photoshop_4b1;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1164, 661);
+            this.ClientSize = new System.Drawing.Size(1164, 717);
             this.ControlBox = false;
             this.Controls.Add(this.panelPremainInventory);
             this.Controls.Add(this.btnClose);
@@ -1379,9 +1358,6 @@
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.TextBox txtDatePremain;
         private System.Windows.Forms.ToolStripMenuItem SummeryToolStrip;
-        private System.Windows.Forms.RadioButton rb14;
-        private System.Windows.Forms.RadioButton rb18;
-        private System.Windows.Forms.RadioButton rb22;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TextBox txtTouchPouch;
         private System.Windows.Forms.Label label18;
@@ -1404,5 +1380,7 @@
         private System.Windows.Forms.ComboBox cmdGR;
         private System.Windows.Forms.TextBox txtFinalTouch;
         private System.Windows.Forms.ToolStripMenuItem statusToolStripMenuItem;
+        private System.Windows.Forms.TextBox txtCashPaid;
+        private System.Windows.Forms.Label label11;
     }
 }

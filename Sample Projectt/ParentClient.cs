@@ -26,7 +26,7 @@ namespace Sample_Projectt
         SqlCommand cmd;
         SqlDataReader rdr;
         SqlConnection con;
-        double G_Receive, _totalGoldIterations, _totalFineGoldIterations,_masterGold;
+        double G_Receive, _totalGoldIterations, _totalFineGoldIterations, _masterGold, _masterFinal, _CombineGoldCash;
 
         double labour;
         float Lab;
@@ -35,7 +35,7 @@ namespace Sample_Projectt
 
         int Numb_count = 0;
         public static int ID = 0;
-
+        double _tempCash = 0, perGram = 0, _equiGold = 0;
 
 
         public static string Word = "CLIENT-";
@@ -358,10 +358,15 @@ namespace Sample_Projectt
                             currentValue = rdr.GetDouble(0);
                         }
                     }
+                    if (currentValue == 0)
+                    {
+                        GoldLive_Popup goldLive_Popup = new GoldLive_Popup();
+                        goldLive_Popup.Show();
+                    }
                 }
                 labour = /*String.Format("{0:#,##0.000;($#,##0.000);Zero}",*/ (Gold_R * (Convert.ToDouble(txtLabour.Text) / 99.5)) * currentValue;
-                labour = Math.Round(labour, 3);
-                Math.Round(((Gold_R * (Convert.ToDouble(txtLabour.Text) / 99.5)) * currentValue), 3);
+                labour = Math.Round(labour, 2);
+                Math.Round(((Gold_R * (Convert.ToDouble(txtLabour.Text) / 99.5)) * currentValue), 2);
                 FinegoldTotal = Convert.ToDouble(txtFinalGold.Text);
 
                 _totalFineGoldIterations += FinegoldTotal;
@@ -378,9 +383,9 @@ namespace Sample_Projectt
                 gridRecord.Rows[n].Cells[8].Value = txtDate.Text;
                 gridRecord.Rows[n].Cells[9].Value = txtTransectionID.Text;
                 gridRecord.Rows[n].Cells[10].Value = labour;
-               gridRecord.Rows[n].Cells[11].Value = txtLabourRS.Text ;
+                gridRecord.Rows[n].Cells[11].Value = txtLabourRS.Text;
 
-                _masterGold += _masterGold;
+                _masterFinal += _masterGold;
                 _totalGoldIterations += Convert.ToDouble(txtWeight.Text);
                 txtWeight.Text = "";
                 txtQuantity.Text = "";
@@ -393,6 +398,7 @@ namespace Sample_Projectt
                 labour = 0.0f;
                 rb14.Checked = false; rb18.Checked = false; rb22.Checked = false;
                 cmbClientNamePre1.Enabled = false;
+               
             }
         }
 
@@ -444,31 +450,19 @@ namespace Sample_Projectt
                 }
             }
 
-            JamaBalanceSupplier();
-            //using (SqlConnection con = new SqlConnection(conn))
-            //{
-
-            //    insert = "insert into ClientTransectionHistory(Client_Transection,Client_Id,Customer_Name,Date,Gold_Paid,Cash_Paid,Gold_Receive,Cash_Receive,PureGold,Jama,Udhar,Balance) values ('" + _Tid + "'," +
-            //        "'" + _Cid + "','" + _Cname + "','" + Convert.ToDateTime(_date).ToString("yyyy-MM-dd") + "','" + _totalFineGoldIterations + "','" + 0 + "','" + 0 + "','" + 0 + "','" + _totalFineGoldIterations + "','" + _totalFineGoldIterations + "','" + 0 + "','" + GetClientBalance(_Cid) + "')";
-            //    cmd = new SqlCommand(insert, con);
-            //    con.Open();
-            //    cmd.ExecuteNonQuery();
-            //    con.Close();
-            //}
-
-
+            // JamaBalanceSupplier();
 
             cash = 0;
             Numb_count = 0;
-            txtcashRcvchk.Enabled = false;
+            //  txtcashRcvchk.Enabled = false;
 
 
 
             found = false;
-        //    DialogResult result = MessageBox.Show("RECORD SAVED SUCCESSFULLY", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-         //   if (result == DialogResult.OK)
+            //    DialogResult result = MessageBox.Show("RECORD SAVED SUCCESSFULLY", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            //   if (result == DialogResult.OK)
             {
-               // TextBoxPanelPostBlank();
+                // TextBoxPanelPostBlank();
                 txtTransectionID.Text = GetLastID();
             }
 
@@ -485,7 +479,7 @@ namespace Sample_Projectt
                 txtTranIdcheck.Text = txtTransectionID.Text;
                 txtCusIDPost.Text = txtIDPost.Text;
                 txtCNPost.Text = cmbClientNamePre1.SelectedItem.ToString();
-                ClientComboFillPost();
+                // ClientComboFillPost();
                 panelPost.Hide();
                 panelcheckout.Show();
                 //DataUpdate();
@@ -504,20 +498,20 @@ namespace Sample_Projectt
                 con.Close();
             }
         }
-        void UdharBalanceSupplier(string _id)
+        void UdharBalanceSupplier()
         {
             using (con = new SqlConnection(conn))
             {
                 con.Open();
-                update = "update Client set Balance_Gold=Balance_Gold - " + txtgoldrecvchk.Text + " where Client_ID ='" + txtCusIDPost.Text + "'";
+                update = "update Client set Balance_Gold=Balance_Gold - " + _CombineGoldCash + " where Client_ID ='" + _Cid + "'";
                 cmd = new SqlCommand(update, con);
                 cmd.ExecuteNonQuery();
                 con.Close();
             }
         }
-        double GetClientBalance(string _id)
+        Decimal GetClientBalance(string _id)
         {
-            double _data = 0;
+            Decimal _data = 0;
             using (con = new SqlConnection(conn))
             {
                 select = "select Balance_Gold from Client where Client_ID='" + _id + "'";
@@ -526,7 +520,7 @@ namespace Sample_Projectt
                 rdr = cmd.ExecuteReader();
                 while (rdr.Read())
                 {
-                    _data = rdr.GetDouble(0);
+                    _data = rdr.GetDecimal(0);
                 }
                 con.Close();
                 return _data;
@@ -534,7 +528,7 @@ namespace Sample_Projectt
             }
 
         }
-      
+
         private void RadioButton_Click(object sender, EventArgs e)
         {
 
@@ -543,7 +537,7 @@ namespace Sample_Projectt
                 float.TryParse(txtWeight.Text, out Gold_R);
                 float.TryParse(txtLabour.Text, out Lab);
                 G_Receive = Gold_R * (92 + Lab) / 99.5;
-                _masterGold = Gold_R * (92 ) / 99.5;
+                _masterGold = Gold_R * (92) / 99.5;
             }
             else if (rb18.Checked == true)
             {
@@ -560,8 +554,8 @@ namespace Sample_Projectt
                 _masterGold = Gold_R * (59) / 99.5;
 
             }
-            _masterGold = Math.Round(_masterGold,3);
-            double var = Math.Round(G_Receive, 3);
+            _masterGold = Math.Round(_masterGold, 2);
+            double var = Math.Round(G_Receive, 2);
             txtFinalGold.Text = var.ToString();
         }
 
@@ -660,7 +654,7 @@ namespace Sample_Projectt
             panelPost.Hide();
             panelcheckout.Hide();
             panelClient.Show();
-           
+
 
             ButtonsEnable();
             gridClientInfo.DataSource = null;
@@ -963,9 +957,9 @@ namespace Sample_Projectt
         {
             TextBoxPanelCheckoutBlank();
             txtTranIdcheck.Text = GetLastID();
-       
-            
-            ClientComboFillPost();
+
+
+            //    ClientComboFillPost();
             panelClient.Hide();
             panelcheckout.Show();
             panelPost.Hide();
@@ -973,33 +967,31 @@ namespace Sample_Projectt
 
         private void cmbClientPost_SelectedIndexChanged(object sender, EventArgs e)
         {
-            txtCusIDPost.Text = SetName(cmbClientPost.SelectedItem.ToString());
-            listClientPost.Visible = false;
+            //txtCusIDPost.Text = SetName(cmbClientPost.SelectedItem.ToString());
+            //listClientPost.Visible = false;
         }
 
         private void cmbClientPost_TextChanged(object sender, EventArgs e)
         {
-            string textToSearch = cmbClientPost.Text.ToLower();
-            listClientPost.Visible = false; // hide the listbox, see below for why doing that
-            if (String.IsNullOrEmpty(textToSearch))
-                return; // return with listbox hidden if the keyword is empty
-                        //search
-            string[] result = (from j in collection
-                               where j.ToLower().Contains(textToSearch)
-                               select j).ToArray();
-            if (result.Length == 0)
-                return; // return with listbox hidden if nothing found
+            //string textToSearch = cmbClientPost.Text.ToLower();
+            //listClientPost.Visible = false; // hide the listbox, see below for why doing that
+            //if (String.IsNullOrEmpty(textToSearch))
+            //    return; // return with listbox hidden if the keyword is empty
+            //            //search
+            //string[] result = (from j in collection
+            //                   where j.ToLower().Contains(textToSearch)
+            //                   select j).ToArray();
+            //if (result.Length == 0)
+            //    return; // return with listbox hidden if nothing found
 
-            listClientPost.Items.Clear(); // remember to Clear before Add
-            listClientPost.Items.AddRange(result);
-            listClientPost.Visible = true; // show the
+            //listClientPost.Items.Clear(); // remember to Clear before Add
+            //listClientPost.Items.AddRange(result);
+            //listClientPost.Visible = true; // show the
         }
 
         private void listClientPost_SelectedIndexChanged(object sender, EventArgs e)
         {
-            cmbClientPost.Text = listClientPost.Text;
-            //SetName(cmbClientNamePre.SelectedItem.ToString());
-            listClientPost.Visible = false;
+
         }
 
 
@@ -1021,14 +1013,35 @@ namespace Sample_Projectt
 
         }
 
+        private void txtcashRcvchk_Leave(object sender, EventArgs e)
+        {
+            if (txtcashRcvchk.Text != string.Empty)
+                _tempCash = Convert.ToDouble(txtcashRcvchk.Text);
+            if (currentValue != 0)
+            {
+                perGram = currentValue / 10;
+            }
+            // if (_tempCash != 0)
+            {
+                _equiGold = _tempCash / perGram;
+            }
+            if (txtgoldrecvchk.Text != string.Empty)
+                _CombineGoldCash = Convert.ToDouble(txtgoldrecvchk.Text) + _equiGold;
+        }
+
         private void datePost_ValueChanged(object sender, EventArgs e)
         {
             txtDateCheck.Text = dateCheck.Text;
         }
 
-        private void Summery_Click(object sender, EventArgs e)
+        private void DT_Summery_Click(object sender, EventArgs e)
         {
             Summery sum = new Summery();
+            sum.ShowDialog();
+        }
+        private void Margin_Summery_Click(object sender, EventArgs e)
+        {
+            MarginReport sum = new MarginReport();
             sum.ShowDialog();
         }
 
@@ -1043,8 +1056,8 @@ namespace Sample_Projectt
 
             while (rdr.Read())
             {
-               
-                txtGoldBalalnce.Text = Convert.ToString(rdr.GetDouble(0));
+
+                txtGoldBalalnce.Text = Convert.ToString(rdr.GetDecimal(0));
                 txtCashBalance.Text = Convert.ToString(rdr.GetDouble(1));
 
             }
@@ -1066,21 +1079,32 @@ namespace Sample_Projectt
             }
             else
             {
-                
+                double _margin = Math.Round((_totalFineGoldIterations - _masterFinal), 2);
                 //double tempCash = 0.0f, tempGold = 0.0f;
-                UdharBalanceSupplier(txtCusIDPost.Text);
+                //UdharBalanceSupplier(txtCusIDPost.Text);
                 DataUpdate();
+                JamaBalanceSupplier();
+                UdharBalanceSupplier();
                 using (SqlConnection con = new SqlConnection(conn))
                 {
 
-                    insert = "insert into ClientTransectionHistory(Client_Transection,Client_Id,Customer_Name,Date,Gold_Paid,Cash_Paid,Gold_Receive,Cash_Receive,PureGold,Jama,Udhar,Balance,Margin) values ('" + _Tid + "'," +
-                        "'" + _Cid + "','" + _Cname + "','" + Convert.ToDateTime(_date).ToString("yyyy-MM-dd") + "','" 
-                        + _totalFineGoldIterations + "','" + 0 + "','" + txtgoldrecvchk.Text + "','" + txtcashRcvchk.Text + "','" + _masterGold + "','" + 0 + "','" + 0 + "','" + GetClientBalance(_Cid) + "','"+(_totalFineGoldIterations-_masterGold)+"')";
+                    insert = "insert into ClientTransectionHistory(Client_Transection,Client_Id,Customer_Name,Date,Gold_Paid,Cash_Paid,Gold_Receive,Cash_Receive,PureGold,Jama,Udhar,Balance,Margin,CC) values ('" + _Tid + "'," +
+                        "'" + _Cid + "','" + _Cname + "','" + Convert.ToDateTime(_date).ToString("yyyy-MM-dd") + "','"
+                        + _totalFineGoldIterations + "','" + 0 + "','" + txtgoldrecvchk.Text + "','" + txtcashRcvchk.Text + "','" + _masterFinal + "','" + 0 + "','" + 0 + "','" + GetClientBalance(_Cid) + "','" + _margin + "','" + 0 + "')";
                     cmd = new SqlCommand(insert, con);
                     con.Open();
                     cmd.ExecuteNonQuery();
                     con.Close();
                 }
+                using (con = new SqlConnection(conn))
+                {
+                    update = "update MasterTable set Gold=Gold+'" + _margin + "'";
+                    cmd = new SqlCommand(update, con);
+                    con.Open();
+                    cmd.ExecuteNonQuery();
+
+                }
+
                 //using (SqlConnection con = new SqlConnection(conn))
                 //{
                 //    select = "insert into ClientTransectionHistory(Client_Transection,Client_Id,Customer_Name,Date,Gold_Paid,Cash_Paid,Gold_Receive,Cash_Receive,PureGold,Jama,Udhar,Balance) values ('" + txtTranIdcheck.Text + 
@@ -1091,94 +1115,96 @@ namespace Sample_Projectt
                 //    con.Open();
                 //    rdr = cmd.ExecuteReader();
                 //}
-                _masterGold = 0; _totalFineGoldIterations = 0;
-                 DialogResult result = MessageBox.Show("RECORD SAVED SUCCESSFULLY", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                _masterFinal = 0; _totalFineGoldIterations = 0; _masterGold = 0;
+                DialogResult result = MessageBox.Show("RECORD SAVED SUCCESSFULLY", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 if (result == DialogResult.OK)
                 {
                     TextBoxPanelCheckoutBlank();
                     txtTranIdcheck.Text = GetLastID();
                 }
-                    #region OLD CODE
-                    //double ab = 0.0f, ba = 0.0f;
-                    //if (txtCashPaidchk.Text == string.Empty)
-                    //{
-                    //    ab = 0.0f;
-                    //}
-                    //else
-                    //    ab = Math.Round(Convert.ToDouble(txtCashPaidchk.Text));
-                    //if (txtcashRcvchk.Text == string.Empty)
-                    //{
-                    //    ba = 0.0f;
-                    //}
-                    //else
-                    //    ba = Math.Round(Convert.ToDouble(txtcashRcvchk.Text));
+                #region OLD CODE
+                //double ab = 0.0f, ba = 0.0f;
+                //if (txtCashPaidchk.Text == string.Empty)
+                //{
+                //    ab = 0.0f;
+                //}
+                //else
+                //    ab = Math.Round(Convert.ToDouble(txtCashPaidchk.Text));
+                //if (txtcashRcvchk.Text == string.Empty)
+                //{
+                //    ba = 0.0f;
+                //}
+                //else
+                //    ba = Math.Round(Convert.ToDouble(txtcashRcvchk.Text));
 
 
 
-                    //if (txtcashRcvchk.Text == string.Empty && txtCashPaidchk.Text == string.Empty || txtcashRcvchk.Text == "0" && txtCashPaidchk.Text == "0")
-                    //{
-                    //    tempGold = (Convert.ToDouble(txtgoldrecvchk.Text) - Convert.ToDouble(txtDateCheck.Text));
-                    //    tempCash = 0;
-                    //}
+                //if (txtcashRcvchk.Text == string.Empty && txtCashPaidchk.Text == string.Empty || txtcashRcvchk.Text == "0" && txtCashPaidchk.Text == "0")
+                //{
+                //    tempGold = (Convert.ToDouble(txtgoldrecvchk.Text) - Convert.ToDouble(txtDateCheck.Text));
+                //    tempCash = 0;
+                //}
 
-                    //else if (_Cash != 0 && ab != 0)
-                    //{
-                    //    _Cash = Math.Round(_Cash);
-                    //    tempCash = _Cash - (Convert.ToDouble(txtCashPaidchk.Text));
-                    //    if (tempCash == 0 && ab != 0)
-                    //    {
-                    //        tempGold = 0;
-                    //    }
-                    //    else
-                    //    {
-                    //        tempCash = _Cash - ab;
+                //else if (_Cash != 0 && ab != 0)
+                //{
+                //    _Cash = Math.Round(_Cash);
+                //    tempCash = _Cash - (Convert.ToDouble(txtCashPaidchk.Text));
+                //    if (tempCash == 0 && ab != 0)
+                //    {
+                //        tempGold = 0;
+                //    }
+                //    else
+                //    {
+                //        tempCash = _Cash - ab;
 
-                    //    }
-                    //}
-                    //else if (_Cash != 0 && ba != 0)
-                    //{
-                    //    _Cash = Math.Round(_Cash);
-                    //    _Cash = -(_Cash);
-                    //    tempCash = _Cash - (Convert.ToDouble(txtcashRcvchk.Text));
-                    //    if (tempCash == 0 && ba != 0)
-                    //    {
-                    //        tempGold = 0;
-                    //    }
-                    //    else
-                    //    {
-                    //        tempCash = _Cash - ba;
-                    //    }
-                    //}
-                    //using (SqlConnection con = new SqlConnection(conn))
-                    //{
-                    //    select = "update Client set Jama_Gold=Jama_Gold+ '" + tempGold + "' where Client_ID='" + txtCusIDPost.Text + "'";
-                    //    cmd = new SqlCommand(select, con);
-                    //    con.Open();
-                    //    rdr = cmd.ExecuteReader();
-                    //}
-                    //using (SqlConnection con = new SqlConnection(conn))
-                    //{
-                    //    select = "update Client set Jama_Cash=Jama_Cash+ '" + tempCash + "' where Client_ID='" + txtCusIDPost.Text + "'";
-                    //    cmd = new SqlCommand(select, con);
-                    //    con.Open();
-                    //    rdr = cmd.ExecuteReader();
-                    //}
-                    //MessageBox.Show("RECORD INSERTED SUCCESSFULLY.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    //txtTranIdcheck.Text = "";
-                    //cmbClientPost.SelectedItem = "";
-                    //txtCusIDPost.Text = "";
-                    //txtgoldrecvchk.Text = "";
-                    //txtgoldrecvchk.Text = "";
-                    //txtcashRcvchk.Text = "";
-                    //txtCashPaidchk.Text = "";
-                    //panelcheckout.Hide();
+                //    }
+                //}
+                //else if (_Cash != 0 && ba != 0)
+                //{
+                //    _Cash = Math.Round(_Cash);
+                //    _Cash = -(_Cash);
+                //    tempCash = _Cash - (Convert.ToDouble(txtcashRcvchk.Text));
+                //    if (tempCash == 0 && ba != 0)
+                //    {
+                //        tempGold = 0;
+                //    }
+                //    else
+                //    {
+                //        tempCash = _Cash - ba;
+                //    }
+                //}
+                //using (SqlConnection con = new SqlConnection(conn))
+                //{
+                //    select = "update Client set Jama_Gold=Jama_Gold+ '" + tempGold + "' where Client_ID='" + txtCusIDPost.Text + "'";
+                //    cmd = new SqlCommand(select, con);
+                //    con.Open();
+                //    rdr = cmd.ExecuteReader();
+                //}
+                //using (SqlConnection con = new SqlConnection(conn))
+                //{
+                //    select = "update Client set Jama_Cash=Jama_Cash+ '" + tempCash + "' where Client_ID='" + txtCusIDPost.Text + "'";
+                //    cmd = new SqlCommand(select, con);
+                //    con.Open();
+                //    rdr = cmd.ExecuteReader();
+                //}
+                //MessageBox.Show("RECORD INSERTED SUCCESSFULLY.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                //txtTranIdcheck.Text = "";
+                //cmbClientPost.SelectedItem = "";
+                //txtCusIDPost.Text = "";
+                //txtgoldrecvchk.Text = "";
+                //txtgoldrecvchk.Text = "";
+                //txtcashRcvchk.Text = "";
+                //txtCashPaidchk.Text = "";
+                //panelcheckout.Hide();
 
-                    //getCountInitial();
-                    //G_Receive = 0; tempGold = 0;
-                    #endregion
-                }
+                //getCountInitial();
+                //G_Receive = 0; tempGold = 0;
+                #endregion
+            }
 
         }
+
+
         private void listBoxClientPre_SelectedIndexChanged(object sender, EventArgs e)
         {
             cmbClientNamePre1.Text = listBoxClientPre1.Text;
@@ -1258,46 +1284,27 @@ namespace Sample_Projectt
 
         }
 
-
+        double _balGold = 0;
         private void txtgoldrecvchk_Leave(object sender, EventArgs e)
         {
-            //lblRate.Text = "";
-            //lblRateClient.Text = "";
-            //using (con = new SqlConnection(conn))
-            //{
-            //    select = "select Gold_Value from Gold_Rate where Date='" + DateTime.Now.Date.ToString("yyyy-MM-dd") + "'";
-            //    cmd = new SqlCommand(select, con);
-            //    con.Open();
-            //    rdr = cmd.ExecuteReader();
-            //    while (rdr.Read())
-            //    {
-            //        currentValue = rdr.GetDouble(0);
-            //    }
-            //}
-            //if (txtCashPaidchk.Text == "" || Convert.ToInt32(txtCashPaidchk.Text) == 0 && txtcashRcvchk.Text == "" || Convert.ToInt32(txtcashRcvchk.Text) == 0)
-            //    if (txtgoldrecvchk.Text != string.Empty)
-            //    {
-            //        _Cash = ((Convert.ToDouble(txtgoldrecvchk.Text) - Convert.ToDouble(txtDateCheck.Text)) * currentValue);
-            //        if (_Cash > 0)
-            //        {
-            //            lblRate.Text = "----";
-            //            lblRate.Text = Math.Round(Convert.ToDouble(_Cash)).ToString();
-            //            txtCashPaidchk.Enabled = true;
-            //            txtcashRcvchk.Enabled = false;
 
-            //        }
+            using (con = new SqlConnection(conn))
+            {
+                select = "select Gold_Value from Gold_Rate where Date='" + DateTime.Now.Date.ToString("yyyy-MM-dd") + "'";
+                cmd = new SqlCommand(select, con);
+                con.Open();
+                rdr = cmd.ExecuteReader();
+                while (rdr.Read())
+                {
+                    currentValue = rdr.GetDouble(0);
+                }
+            }
+            if (txtgoldrecvchk.Text != string.Empty)
+            {
+                _balGold = Convert.ToDouble(txtgoldrecvchk.Text) - _totalFineGoldIterations;
+            }
 
-            //        else if (_Cash < 0)
-            //        {
-            //            lblRateClient.Text = "----";
-            //            lblRateClient.Text = (-Math.Round(Convert.ToDouble(_Cash))).ToString();
-            //            txtcashRcvchk.Enabled = true;
-            //            txtCashPaidchk.Enabled = false;
 
-            //        }
-            //    }
-            //txtCashPaidchk.Text = "";
-            //txtcashRcvchk.Text = "";
         }
 
         string SetName(string name)
@@ -1363,8 +1370,8 @@ namespace Sample_Projectt
             txtQuantity.Text = "";
             txtWeight.Text = "";
             txtLabour.Text = "";
-          //  cmbClientNamePre1.Text = "";
-           // txtIDPost.Text = "";
+            //  cmbClientNamePre1.Text = "";
+            // txtIDPost.Text = "";
             txtFinalGold.Text = "";
             txtGoldBalalnce.Text = "";
             txtCashBalance.Text = "";
@@ -1378,13 +1385,10 @@ namespace Sample_Projectt
         }
         void TextBoxPanelCheckoutBlank()
         {
-            listClientPost.Visible = false;
-           
             txtCusIDPost.Text = "";
             txtcashRcvchk.Text = "";
             txtgoldrecvchk.Text = "";
             txtgoldrecvchk.Text = "";
-            cmbClientPost.Text = "";
             txtTranIdcheck.Text = "";
         }
 
@@ -1396,7 +1400,7 @@ namespace Sample_Projectt
             panelClient.Hide();
             panelcheckout.Hide();
             panelPost.Show();
-          
+
             //txtClientName.Text = cmbClientNamePre.Text;
             //txtTransectionID.Text = txtTransectionIDPre.Text;
             //txtDate.Text = txtDatePre.Text;
@@ -1404,7 +1408,7 @@ namespace Sample_Projectt
             found = false;
 
 
-            
+
             ProductComboFill();
             P_collection = new string[co_P];
             GetProductNameSearch();
@@ -1416,32 +1420,7 @@ namespace Sample_Projectt
             rb14.Checked = false;
 
         }
-        void ClientComboFillPost()
-        {
-            cmbClientPost.Items.Clear();
-            try
-            {
-                SqlConnection con = new SqlConnection(conn);
-                con.Open();
-                string query = "select Client_ID,Customer_Name from Client";
-                SqlCommand command = new SqlCommand(query, con);
-                //using (SqlDataReader reader = command.ExecuteReader())
-                //{
-                SqlDataReader reader = command.ExecuteReader();
-                while (reader.Read())
-                {
-                    //  ClientId = reader.GetString(0);
-                    cmbClientPost.Items.Add(reader.GetString(1));
-                }
-                co = cmbClientPost.Items.Count;
-                con.Close();
-            }
-            catch (Exception ex)
-            {
-                // write exception info to log or anything else
-                MessageBox.Show("ERROR OCCURED DUE TO UNAVAILBILITY OF DATA!", "CHECK DB", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-        }
+
         void ClientComboFill()
         {
             cmbClientNamePre1.Items.Clear();

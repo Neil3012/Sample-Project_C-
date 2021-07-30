@@ -36,7 +36,7 @@ namespace Sample_Projectt
             TransID();
             cmbTransctionID.Text = "";
             txtCurrent.Text = "";
-            txtPureGold.Text = "";
+          
 
         }
         string SetName(string name)
@@ -56,7 +56,7 @@ namespace Sample_Projectt
                     foreach (DataRow dr in dt.Rows)
                     {
                         txtId.Text = dr["Client_ID"].ToString();
-                        txtTotalCash.Text = dr["Jama_Cash"].ToString();
+                     
                     }
 
                 }
@@ -74,7 +74,7 @@ namespace Sample_Projectt
             {
                 con = new SqlConnection(conn);
                 con.Open();
-                string query = "select distinct Client_Transection from Purchase where Client_Name='" + cmbClientName.SelectedItem.ToString() + "'";
+                string query = "select distinct Client_Transection from ClientTransectionHistory where Customer_Name='" + cmbClientName.SelectedItem.ToString() + "' and CC='"+0+"'";
                 SqlCommand command = new SqlCommand(query, con);
                 //using (SqlDataReader reader = command.ExecuteReader())
                 //{
@@ -126,7 +126,7 @@ namespace Sample_Projectt
                 {
                     DataTable dt = new DataTable();
                     select = "select * from Purchase where Client_Transection ='" + cmbTransctionID.SelectedItem.ToString() + "' ";
-                    string select1 = "select * from Purchase Where Client_Transection=" + cmbTransctionID.SelectedItem.ToString();
+                    string select1 = "select * from ClientTransectionHistory Where Client_Transection=" + cmbTransctionID.SelectedItem.ToString();
 
                     cmd = new SqlCommand(select, con);
                     SqlCommand cmd1 = new SqlCommand(select1, con);
@@ -149,7 +149,7 @@ namespace Sample_Projectt
 
         private void btnSubmit_Click(object sender, EventArgs e)
         {
-            if (txtCurrent.Text == string.Empty || txtTotalCash.Text == string.Empty || txtPureGold.Text == string.Empty)
+            if (txtCurrent.Text == string.Empty /*|| txtTotalCash.Text == string.Empty || txtPureGold.Text == string.Empty*/)
             {
                 MessageBox.Show("CASHOUT IS NOT POSSIBLE.", "TRY AGAIN", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
@@ -172,32 +172,39 @@ namespace Sample_Projectt
                 if (found == true)
                 {
 
+                    //using (con = new SqlConnection(conn))
+                    //{
+                    //    //string str = "update Client set Jama_Cash=Jama_Cash-'" + Convert.ToInt32(txtCurrent.Text) + "'where Customer_Name='" + cmbClientName.SelectedItem.ToString() + "'";
+                    //    //cmd = new SqlCommand(str, con);
+                    //    //con.Open();
+                    //    //int ch = cmd.ExecuteNonQuery();
+                    //    //con.Close();
+                    //    //if (ch == 1)
+                    //    {
+                    //        string str1 = "update ClientTransectionHistory" +
+                    //      " set Cash_Receive=Cash_Receive-'" + txtCurrent.Text + "' where Client_Transection='" + reportid + "'";
+                    //        cmd = new SqlCommand(str1, con);
+                    //        con.Open();
+                    //        cmd.ExecuteNonQuery();
+                    //        con.Close();
+                    //    }
+                    //}
                     using (con = new SqlConnection(conn))
                     {
-                        //string str = "update Client set Jama_Cash=Jama_Cash-'" + Convert.ToInt32(txtCurrent.Text) + "'where Customer_Name='" + cmbClientName.SelectedItem.ToString() + "'";
-                        //cmd = new SqlCommand(str, con);
-                        //con.Open();
-                        //int ch = cmd.ExecuteNonQuery();
-                        //con.Close();
-                        //if (ch == 1)
-                        {
-                            string str1 = "update ClientTransectionHistory" +
-                          " set Cash_Receive=Cash_Receive-'" + txtCurrent.Text + "' where Client_Transection='" + reportid + "'";
-                            cmd = new SqlCommand(str1, con);
-                            con.Open();
-                            cmd.ExecuteNonQuery();
-                            con.Close();
-                        }
+                        string str = "update ClientTransectionHistory set CC='" + 1 + "'where Client_Transection='" + cmbTransctionID.SelectedItem.ToString() + "'";
+                         cmd = new SqlCommand(str, con);
+                        con.Open();
+                        cmd.ExecuteNonQuery();
+                       // MessageBox.Show("RECORDS HAS BEEN UPDATED", "SUCCESS", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
                     using (con = new SqlConnection(conn))
                     {
-                        string str = "update Client set Jama_Gold=Jama_Gold+'" + Convert.ToInt32(txtPureGold.Text) + "'where Client_ID='" + txtId.Text + "'";
+                        string str = "update MasterTable set Cash=Cash+'"+txtCurrent.Text+"' where Master_ID='" + 1 + "'";
                         cmd = new SqlCommand(str, con);
                         con.Open();
                         cmd.ExecuteNonQuery();
                         MessageBox.Show("RECORDS HAS BEEN UPDATED", "SUCCESS", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
-
                 }
                 else
                 {
@@ -213,10 +220,10 @@ namespace Sample_Projectt
         {
             txtCurrent.Text = "";
             txtId.Text = "";
-            txtTotalCash.Text = "";
+
             cmbClientName.Text = "";
             cmbTransctionID.Text = "";
-            txtPureGold.Text = "";
+
             lblDate.Text = "";
             lblRate.Text = "";
             dataGridView1.DataSource = "";
@@ -262,8 +269,8 @@ namespace Sample_Projectt
 
                 dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
                 txtCurrent.Text = (dataGridView1.Rows[e.RowIndex].Cells[7].Value.ToString());
-                lblDate.Text = (dataGridView1.Rows[e.RowIndex].Cells[9].Value.ToString());
-                reportid = dataGridView1.Rows[e.RowIndex].Cells[10].Value.ToString();
+                lblDate.Text = (dataGridView1.Rows[e.RowIndex].Cells[3].Value.ToString());
+                reportid = dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString();
                 //txtContact.Text = (dataGridView1.Rows[e.RowIndex].Cells[2].Value.ToString());
                 if (lblDate.Text != null)
                 {

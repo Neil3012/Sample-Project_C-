@@ -57,4 +57,5 @@ E:\Sumit Project 26 oct\Sample Projectt\Sample Projectt\obj\Release\Sample Proje
 E:\Sumit Project 26 oct\Sample Projectt\Sample Projectt\obj\Release\Sample Projectt.exe
 E:\Sumit Project 26 oct\Sample Projectt\Sample Projectt\obj\Release\Sample Projectt.pdb
 E:\Sumit Project 26 oct\Sample Projectt\Sample Projectt\obj\Release\Sample_Projectt.Current_Inventory.resources
+E:\Sumit Project 26 oct\Sample Projectt\Sample Projectt\obj\Release\Sample_Projectt.MarginReport.resources
 E:\Sumit Project 26 oct\Sample Projectt\Sample Projectt\obj\Release\Sample Projectt.csprojAssemblyReference.cache

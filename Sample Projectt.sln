@@ -5,7 +5,7 @@ VisualStudioVersion = 15.0.27428.2037
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sample Projectt", "Sample Projectt\Sample Projectt.csproj", "{3FE0503C-7531-4EAE-9517-0994DE574F7F}"
 EndProject
-Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "SMSetup1.0", "SMSetup1.0\SMSetup1.0.vdproj", "{363F96BA-4469-40B2-8F80-BA40B51B86BB}"
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "SMSetup3.0", "SMSetup3.0\SMSetup3.0.vdproj", "{BC8806A6-185A-4692-9612-652C2F407E57}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,8 +17,8 @@ Global
 		{3FE0503C-7531-4EAE-9517-0994DE574F7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3FE0503C-7531-4EAE-9517-0994DE574F7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3FE0503C-7531-4EAE-9517-0994DE574F7F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{363F96BA-4469-40B2-8F80-BA40B51B86BB}.Debug|Any CPU.ActiveCfg = Debug
-		{363F96BA-4469-40B2-8F80-BA40B51B86BB}.Release|Any CPU.ActiveCfg = Release
+		{BC8806A6-185A-4692-9612-652C2F407E57}.Debug|Any CPU.ActiveCfg = Debug
+		{BC8806A6-185A-4692-9612-652C2F407E57}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

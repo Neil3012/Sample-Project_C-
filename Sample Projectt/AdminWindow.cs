@@ -866,9 +866,9 @@ namespace Sample_Projectt
 
 
 
-                rb14.Checked = false;
-                rb18.Checked = false;
-                rb14.Checked = false;
+                //rb14.Checked = false;
+                //rb18.Checked = false;
+                //rb14.Checked = false;
                 txtQuantity.Text = "";
                 txtProductID.Text = "";
                 cmdID.Text = "";
@@ -1343,9 +1343,9 @@ namespace Sample_Projectt
 
         private void TextChanged(object sender, EventArgs e)
         {
-            rb22.Checked = false;
-            rb18.Checked = false;
-            rb14.Checked = false;
+            //rb22.Checked = false;
+            //rb18.Checked = false;
+            //rb14.Checked = false;
 
         }
 
@@ -1506,9 +1506,9 @@ namespace Sample_Projectt
             if (txtLabour.Text == string.Empty)
             {
                 MessageBox.Show("PLEASE PROVIDE LABOUR COST.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                rb14.Checked = false;
-                rb22.Checked = false;
-                rb18.Checked = false;
+                //rb14.Checked = false;
+                //rb22.Checked = false;
+                //rb18.Checked = false;
 
             }
             else
@@ -1523,28 +1523,28 @@ namespace Sample_Projectt
                 txtLabourRs.Text = String.Format("{0:#,##0.000;($#,##0.000);Zero}", ((Gold_R * (Convert.ToDouble(txtLabour.Text) / 99.5)) * currentValue));
 
 
-                if (rb22.Checked == true)
-                {
-                    rbNam = "22 Krt";
-                    //float.TryParse(txtWeight.Text, out Gold_R);
-                    //float.TryParse(txtLabour.Text, out Lab);
-                    G_Receive = total * (92.7 + Lab) / 99.5;
-                }
-                else if (rb18.Checked == true)
-                {
-                    rbNam = "18 Krt";
-                    //float.TryParse(txtWeight.Text, out Gold_R);
-                    //float.TryParse(txtLabour.Text, out Lab);
-                    G_Receive = total * (75.22 + Lab) / 99.5;
-                }
-                else if (rb14.Checked == true)
-                {
-                    rbNam = "14 Krt";
-                    //float.TryParse(txtWeight.Text, out Gold_R);
-                    //float.TryParse(txtLabour.Text, out Lab);
-                    G_Receive = total * (50 + Lab) / 99.5;
+                //if (rb22.Checked == true)
+                //{
+                //    rbNam = "22 Krt";
+                //    //float.TryParse(txtWeight.Text, out Gold_R);
+                //    //float.TryParse(txtLabour.Text, out Lab);
+                //    G_Receive = total * (92.7 + Lab) / 99.5;
+                //}
+                //else if (rb18.Checked == true)
+                //{
+                //    rbNam = "18 Krt";
+                //    //float.TryParse(txtWeight.Text, out Gold_R);
+                //    //float.TryParse(txtLabour.Text, out Lab);
+                //    G_Receive = total * (75.22 + Lab) / 99.5;
+                //}
+                //else if (rb14.Checked == true)
+                //{
+                //    rbNam = "14 Krt";
+                //    //float.TryParse(txtWeight.Text, out Gold_R);
+                //    //float.TryParse(txtLabour.Text, out Lab);
+                //    G_Receive = total * (50 + Lab) / 99.5;
 
-                }
+                //}
                 txtPure.Text = String.Format("{0:#,##0.000;($#,##0.000);Zero}", G_Receive);
             }
 
@@ -1645,8 +1645,8 @@ namespace Sample_Projectt
 
         private void cashOutToolStrip_Click(object sender, EventArgs e)
         {
-        //    Cashout cashout = new Cashout();
-        //    cashout.ShowDialog();
+            //    Cashout cashout = new Cashout();
+            //    cashout.ShowDialog();
         }
 
         private void txtLabour_Leave(object sender, EventArgs e)
@@ -2347,7 +2347,7 @@ namespace Sample_Projectt
 
 
                                 insert = "insert into SupplierTransection(Transection_ID,Supplier_ID,Gold_Paid,Date,Supplier_Name,Gold_Receive,Cash_Receive,Jama,Udhar,Balance) values ('" + ID + "','" + txtID.Text + "'," +
-                                " '" + txtGoldPaid.Text + "','" + Convert.ToDateTime(datePicker1.Value.Date).ToString("yyyy-MM-dd") + "','" + cmbSuplierName.Text + "','" + 0 + "'," + 0f + ",'" + txtGoldPaid.Text + "'," + 0 + ",'" + GetSupplierBalance(txtID.Text) + "')";
+                                " '" + txtGoldPaid.Text + "','" + Convert.ToDateTime(datePicker1.Value.Date).ToString("yyyy-MM-dd") + "','" + cmbSuplierName.Text + "','"  +txtGoldPaid.Text+ "','" + txtCashPaid.Text + "','" + txtGoldPaid.Text + "'," + 0 + ",'" + GetSupplierBalance(txtID.Text) + "')";
 
                                 //string update = "update Supplier set Cash_Paid='" + txtCashPaid.Text + "', Gold_Paid=" + txtGoldPaid.Text + ", Cash_Receive='" + txtCashReceive.Text + "', Gold_Receive= " + txtGoldReceive.Text + ",Balance_Cash='" + txtBalanceCash.Text + "', Balance_Gold=" + txtBalanceGold.Text + " where Supplier_ID='" + txtID.Text + "'";
 
@@ -2356,7 +2356,14 @@ namespace Sample_Projectt
                                 cmd.ExecuteNonQuery();
                                 con.Close();
                             }
+                            using (con = new SqlConnection(conn))
+                            {
 
+                                string str = "update MasterTable set Gold=Gold -'" + txtGoldPaid.Text + "',Cash=Cash-'"+txtCashPaid.Text+"' where Master_ID='" + 1 + "'";
+                                cmd = new SqlCommand(str, con);
+                                con.Open();
+                                cmd.ExecuteNonQuery();                             
+                            }
 
                         }
                         // groupBox1.Hide();

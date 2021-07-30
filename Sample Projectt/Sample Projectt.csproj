@@ -141,6 +141,12 @@
     <Compile Include="Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
+    <Compile Include="MarginReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MarginReport.Designer.cs">
+      <DependentUpon>MarginReport.cs</DependentUpon>
+    </Compile>
     <Compile Include="ParentClient.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -223,6 +229,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MarginReport.resx">
+      <DependentUpon>MarginReport.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ParentClient.resx">
       <DependentUpon>ParentClient.cs</DependentUpon>

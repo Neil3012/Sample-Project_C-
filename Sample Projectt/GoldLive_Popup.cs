@@ -36,7 +36,7 @@ namespace Sample_Projectt
                 con.Open();
                 rdr = cmd.ExecuteReader();
                 AdminWindow.currentValue = Convert.ToDouble(txtDatePremain.Text);
-        MessageBox.Show("Done", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        MessageBox.Show("YOU HAVE SUCCESSFULLY UPDATE TODAY'S GOLD RATE", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 this.Close();
 
             }

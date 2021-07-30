@@ -37,6 +37,8 @@
             this.reportToolStrip = new System.Windows.Forms.ToolStripMenuItem();
             this.clientStatementToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.Summery = new System.Windows.Forms.ToolStripMenuItem();
+            this.dTSummaryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.marginSummeryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cashoutToolStrip = new System.Windows.Forms.ToolStripMenuItem();
             this.panelClient = new System.Windows.Forms.Panel();
             this.btnCancel = new System.Windows.Forms.Button();
@@ -101,9 +103,8 @@
             this.gridRecord = new System.Windows.Forms.DataGridView();
             this.btnClose = new System.Windows.Forms.Button();
             this.panelcheckout = new System.Windows.Forms.Panel();
+            this.txtCNPost = new System.Windows.Forms.TextBox();
             this.dateCheck = new System.Windows.Forms.DateTimePicker();
-            this.listClientPost = new System.Windows.Forms.ListBox();
-            this.cmbClientPost = new System.Windows.Forms.ComboBox();
             this.txtCusIDPost = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
@@ -120,7 +121,6 @@
             this.txtTranIdcheck = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
             this.goldDataSet1 = new Sample_Projectt.GoldDataSet();
-            this.txtCNPost = new System.Windows.Forms.TextBox();
             this.menuStrip1.SuspendLayout();
             this.panelClient.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridClientInfo)).BeginInit();
@@ -167,16 +167,15 @@
             // sellToolStripMenuItem
             // 
             this.sellToolStripMenuItem.Name = "sellToolStripMenuItem";
-            this.sellToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
+            this.sellToolStripMenuItem.Size = new System.Drawing.Size(148, 26);
             this.sellToolStripMenuItem.Text = "Sell";
             this.sellToolStripMenuItem.Click += new System.EventHandler(this.sellToolStripMenuItem_Click);
             // 
             // paymentToolStripMenuItem
             // 
             this.paymentToolStripMenuItem.Name = "paymentToolStripMenuItem";
-            this.paymentToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
+            this.paymentToolStripMenuItem.Size = new System.Drawing.Size(148, 26);
             this.paymentToolStripMenuItem.Text = "Payment";
-            this.paymentToolStripMenuItem.Click += new System.EventHandler(this.paymentToolStripMenuItem_Click);
             // 
             // reportToolStrip
             // 
@@ -194,10 +193,26 @@
             // 
             // Summery
             // 
+            this.Summery.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.dTSummaryToolStripMenuItem,
+            this.marginSummeryToolStripMenuItem});
             this.Summery.Name = "Summery";
             this.Summery.Size = new System.Drawing.Size(96, 25);
             this.Summery.Text = "Summery";
-            this.Summery.Click += new System.EventHandler(this.Summery_Click);
+            // 
+            // dTSummaryToolStripMenuItem
+            // 
+            this.dTSummaryToolStripMenuItem.Name = "dTSummaryToolStripMenuItem";
+            this.dTSummaryToolStripMenuItem.Size = new System.Drawing.Size(213, 26);
+            this.dTSummaryToolStripMenuItem.Text = "DT Summery";
+            this.dTSummaryToolStripMenuItem.Click += new System.EventHandler(this.DT_Summery_Click);
+            // 
+            // marginSummeryToolStripMenuItem
+            // 
+            this.marginSummeryToolStripMenuItem.Name = "marginSummeryToolStripMenuItem";
+            this.marginSummeryToolStripMenuItem.Size = new System.Drawing.Size(213, 26);
+            this.marginSummeryToolStripMenuItem.Text = "Margin Summery";
+            this.marginSummeryToolStripMenuItem.Click += new System.EventHandler(this.Margin_Summery_Click);
             // 
             // cashoutToolStrip
             // 
@@ -260,7 +275,7 @@
             // 
             this.star13.AutoSize = true;
             this.star13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.star13.Location = new System.Drawing.Point(512, 141);
+            this.star13.Location = new System.Drawing.Point(479, 135);
             this.star13.Name = "star13";
             this.star13.Size = new System.Drawing.Size(15, 20);
             this.star13.TabIndex = 32;
@@ -270,7 +285,7 @@
             // 
             this.star12.AutoSize = true;
             this.star12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.star12.Location = new System.Drawing.Point(512, 71);
+            this.star12.Location = new System.Drawing.Point(479, 84);
             this.star12.Name = "star12";
             this.star12.Size = new System.Drawing.Size(15, 20);
             this.star12.TabIndex = 31;
@@ -280,7 +295,7 @@
             // 
             this.star11.AutoSize = true;
             this.star11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.star11.Location = new System.Drawing.Point(512, 3);
+            this.star11.Location = new System.Drawing.Point(479, 33);
             this.star11.Name = "star11";
             this.star11.Size = new System.Drawing.Size(15, 20);
             this.star11.TabIndex = 30;
@@ -470,9 +485,9 @@
             this.panelPost.Controls.Add(this.label2);
             this.panelPost.Controls.Add(this.cmbProductName);
             this.panelPost.Controls.Add(this.gridRecord);
-            this.panelPost.Location = new System.Drawing.Point(103, 61);
+            this.panelPost.Location = new System.Drawing.Point(103, 75);
             this.panelPost.Name = "panelPost";
-            this.panelPost.Size = new System.Drawing.Size(1093, 564);
+            this.panelPost.Size = new System.Drawing.Size(1093, 550);
             this.panelPost.TabIndex = 2;
             this.panelPost.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
@@ -960,8 +975,6 @@
             this.panelcheckout.BackColor = System.Drawing.Color.Transparent;
             this.panelcheckout.Controls.Add(this.txtCNPost);
             this.panelcheckout.Controls.Add(this.dateCheck);
-            this.panelcheckout.Controls.Add(this.listClientPost);
-            this.panelcheckout.Controls.Add(this.cmbClientPost);
             this.panelcheckout.Controls.Add(this.txtCusIDPost);
             this.panelcheckout.Controls.Add(this.label1);
             this.panelcheckout.Controls.Add(this.label27);
@@ -977,49 +990,32 @@
             this.panelcheckout.Controls.Add(this.label20);
             this.panelcheckout.Controls.Add(this.txtTranIdcheck);
             this.panelcheckout.Controls.Add(this.label15);
-            this.panelcheckout.Location = new System.Drawing.Point(138, 123);
+            this.panelcheckout.Location = new System.Drawing.Point(138, 116);
             this.panelcheckout.Name = "panelcheckout";
-            this.panelcheckout.Size = new System.Drawing.Size(592, 330);
+            this.panelcheckout.Size = new System.Drawing.Size(592, 424);
             this.panelcheckout.TabIndex = 8;
             this.panelcheckout.Paint += new System.Windows.Forms.PaintEventHandler(this.panelcheckout_Paint);
+            // 
+            // txtCNPost
+            // 
+            this.txtCNPost.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.txtCNPost.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCNPost.Location = new System.Drawing.Point(186, 79);
+            this.txtCNPost.Name = "txtCNPost";
+            this.txtCNPost.Size = new System.Drawing.Size(224, 26);
+            this.txtCNPost.TabIndex = 79;
+            this.txtCNPost.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.NOinput_KeyPress);
             // 
             // dateCheck
             // 
             this.dateCheck.CalendarMonthBackground = System.Drawing.SystemColors.HotTrack;
             this.dateCheck.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateCheck.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateCheck.Location = new System.Drawing.Point(428, 164);
+            this.dateCheck.Location = new System.Drawing.Point(428, 254);
             this.dateCheck.Name = "dateCheck";
             this.dateCheck.Size = new System.Drawing.Size(116, 23);
             this.dateCheck.TabIndex = 78;
             this.dateCheck.ValueChanged += new System.EventHandler(this.datePost_ValueChanged);
-            // 
-            // listClientPost
-            // 
-            this.listClientPost.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.listClientPost.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.listClientPost.FormattingEnabled = true;
-            this.listClientPost.ItemHeight = 16;
-            this.listClientPost.Location = new System.Drawing.Point(501, 90);
-            this.listClientPost.Name = "listClientPost";
-            this.listClientPost.Size = new System.Drawing.Size(60, 52);
-            this.listClientPost.TabIndex = 77;
-            this.listClientPost.SelectedIndexChanged += new System.EventHandler(this.listClientPost_SelectedIndexChanged);
-            // 
-            // cmbClientPost
-            // 
-            this.cmbClientPost.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.cmbClientPost.DropDownHeight = 70;
-            this.cmbClientPost.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbClientPost.FormattingEnabled = true;
-            this.cmbClientPost.IntegralHeight = false;
-            this.cmbClientPost.ItemHeight = 20;
-            this.cmbClientPost.Location = new System.Drawing.Point(501, 49);
-            this.cmbClientPost.Name = "cmbClientPost";
-            this.cmbClientPost.Size = new System.Drawing.Size(68, 28);
-            this.cmbClientPost.TabIndex = 76;
-            this.cmbClientPost.SelectedIndexChanged += new System.EventHandler(this.cmbClientPost_SelectedIndexChanged);
-            this.cmbClientPost.TextChanged += new System.EventHandler(this.cmbClientPost_TextChanged);
             // 
             // txtCusIDPost
             // 
@@ -1029,6 +1025,7 @@
             this.txtCusIDPost.Name = "txtCusIDPost";
             this.txtCusIDPost.Size = new System.Drawing.Size(224, 26);
             this.txtCusIDPost.TabIndex = 75;
+            this.txtCusIDPost.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.NOinput_KeyPress);
             // 
             // label1
             // 
@@ -1080,17 +1077,18 @@
             // 
             this.txtcashRcvchk.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.txtcashRcvchk.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtcashRcvchk.Location = new System.Drawing.Point(186, 246);
+            this.txtcashRcvchk.Location = new System.Drawing.Point(186, 207);
             this.txtcashRcvchk.Name = "txtcashRcvchk";
             this.txtcashRcvchk.Size = new System.Drawing.Size(224, 26);
             this.txtcashRcvchk.TabIndex = 65;
             this.txtcashRcvchk.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.FloatNumbersReceive_KeyPress);
+            this.txtcashRcvchk.Leave += new System.EventHandler(this.txtcashRcvchk_Leave);
             // 
             // label25
             // 
             this.label25.AutoSize = true;
             this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.Location = new System.Drawing.Point(33, 249);
+            this.label25.Location = new System.Drawing.Point(33, 210);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(119, 20);
             this.label25.TabIndex = 64;
@@ -1100,7 +1098,7 @@
             // 
             this.txtgoldrecvchk.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.txtgoldrecvchk.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtgoldrecvchk.Location = new System.Drawing.Point(186, 204);
+            this.txtgoldrecvchk.Location = new System.Drawing.Point(186, 165);
             this.txtgoldrecvchk.Name = "txtgoldrecvchk";
             this.txtgoldrecvchk.Size = new System.Drawing.Size(224, 26);
             this.txtgoldrecvchk.TabIndex = 63;
@@ -1111,7 +1109,7 @@
             // 
             this.label24.AutoSize = true;
             this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.Location = new System.Drawing.Point(33, 207);
+            this.label24.Location = new System.Drawing.Point(33, 168);
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(116, 20);
             this.label24.TabIndex = 62;
@@ -1121,7 +1119,7 @@
             // 
             this.txtDateCheck.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.txtDateCheck.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDateCheck.Location = new System.Drawing.Point(186, 163);
+            this.txtDateCheck.Location = new System.Drawing.Point(186, 253);
             this.txtDateCheck.Name = "txtDateCheck";
             this.txtDateCheck.Size = new System.Drawing.Size(224, 26);
             this.txtDateCheck.TabIndex = 59;
@@ -1131,7 +1129,7 @@
             // 
             this.label22.AutoSize = true;
             this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(33, 166);
+            this.label22.Location = new System.Drawing.Point(33, 256);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(48, 20);
             this.label22.TabIndex = 58;
@@ -1182,22 +1180,13 @@
             this.goldDataSet1.DataSetName = "GoldDataSet";
             this.goldDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // txtCNPost
-            // 
-            this.txtCNPost.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.txtCNPost.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCNPost.Location = new System.Drawing.Point(186, 79);
-            this.txtCNPost.Name = "txtCNPost";
-            this.txtCNPost.Size = new System.Drawing.Size(224, 26);
-            this.txtCNPost.TabIndex = 79;
-            // 
             // ParentClient
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Sample_Projectt.Properties.Resources.metallic_effect_in_photoshop_4b1;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1252, 637);
+            this.ClientSize = new System.Drawing.Size(1252, 654);
             this.ControlBox = false;
             this.Controls.Add(this.panelcheckout);
             this.Controls.Add(this.panelPost);
@@ -1310,8 +1299,6 @@
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label26;
         private System.Windows.Forms.DateTimePicker datePickerPost;
-        private System.Windows.Forms.ListBox listClientPost;
-        private System.Windows.Forms.ComboBox cmbClientPost;
         private System.Windows.Forms.TextBox txtCusIDPost;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label27;
@@ -1321,5 +1308,7 @@
         private System.Windows.Forms.Label labourrs;
         private System.Windows.Forms.TextBox txtLabourRS;
         private System.Windows.Forms.TextBox txtCNPost;
+        private System.Windows.Forms.ToolStripMenuItem dTSummaryToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem marginSummeryToolStripMenuItem;
     }
 }
