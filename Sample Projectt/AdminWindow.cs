@@ -768,23 +768,6 @@ namespace Sample_Projectt
 
                 #region DABDHBFASFB
 
-
-
-
-                //using (SqlConnection con = new SqlConnection(conn))
-                //{
-                //    con.Open();
-
-                //    insert = "insert into SupplierTransection(Transection_ID,Supplier_ID,Gold_Paid,Date,Supplier_Name,Gold_Receive,Cash_Receive) values ('" + ID + "','" + txtID.Text + "'," +
-                //    " '" + txtGoldPaid.Text + "','" + Convert.ToDateTime(datePicker1.Value.Date).ToString("yyyy-MM-dd") + "','" + cmbSuplierName.Text + "'," + 0f + "," + 0f + ")";
-
-                //    //string update = "update Supplier set Cash_Paid='" + txtCashPaid.Text + "', Gold_Paid=" + txtGoldPaid.Text + ", Cash_Receive='" + txtCashReceive.Text + "', Gold_Receive= " + txtGoldReceive.Text + ",Balance_Cash='" + txtBalanceCash.Text + "', Balance_Gold=" + txtBalanceGold.Text + " where Supplier_ID='" + txtID.Text + "'";
-                //    cmd = new SqlCommand(insert, con);
-                //    cmd.ExecuteNonQuery();
-                //}
-
-
-
                 for (int row = 0; row < dataGridInventoryComfirm.Rows.Count; row++)
                 {
                     getCountMain();
@@ -859,16 +842,7 @@ namespace Sample_Projectt
                 }
 
 
-
-
-
                 GetSupplierBalances(supplierID);
-
-
-
-                //rb14.Checked = false;
-                //rb18.Checked = false;
-                //rb14.Checked = false;
                 txtQuantity.Text = "";
                 txtProductID.Text = "";
                 cmdID.Text = "";
@@ -876,7 +850,9 @@ namespace Sample_Projectt
                 txtLabourRs.Text = "";
                 txtTouchPouch.Text = "";
                 txtLabour.Text = "";
-
+                cmdGR.Text="";
+                txtSupIDmain.Text = "";
+                txtFinalTouch.Text = "";
                 GetInventoyDetails();
 
 

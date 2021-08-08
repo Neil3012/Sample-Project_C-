@@ -30,7 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdminWindow));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.supplierToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.InventoryToolStrip = new System.Windows.Forms.ToolStripMenuItem();
@@ -110,6 +110,8 @@
             this.goldDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.btnClose = new System.Windows.Forms.Button();
             this.panelPremainInventory = new System.Windows.Forms.Panel();
+            this.txtCashPaid = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.txtDatePremain = new System.Windows.Forms.TextBox();
             this.datePickPremain = new System.Windows.Forms.DateTimePicker();
@@ -123,8 +125,6 @@
             this.txtID = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.cmbSuplierName = new System.Windows.Forms.ComboBox();
-            this.txtCashPaid = new System.Windows.Forms.TextBox();
-            this.label11 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.panelSupplier.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridSupplier)).BeginInit();
@@ -248,9 +248,9 @@
             this.panelSupplier.Controls.Add(this.label3);
             this.panelSupplier.Controls.Add(this.txtName);
             this.panelSupplier.Controls.Add(this.lblname);
-            this.panelSupplier.Location = new System.Drawing.Point(104, 48);
+            this.panelSupplier.Location = new System.Drawing.Point(104, 70);
             this.panelSupplier.Name = "panelSupplier";
-            this.panelSupplier.Size = new System.Drawing.Size(774, 572);
+            this.panelSupplier.Size = new System.Drawing.Size(774, 550);
             this.panelSupplier.TabIndex = 1;
             this.panelSupplier.Paint += new System.Windows.Forms.PaintEventHandler(this.panelSupplier_Paint);
             // 
@@ -1014,8 +1014,8 @@
             // dataGridProduct
             // 
             this.dataGridProduct.AllowUserToAddRows = false;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.dataGridProduct.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.dataGridProduct.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridProduct.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
             this.dataGridProduct.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridProduct.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
@@ -1075,6 +1075,26 @@
             this.panelPremainInventory.Size = new System.Drawing.Size(486, 467);
             this.panelPremainInventory.TabIndex = 5;
             this.panelPremainInventory.Paint += new System.Windows.Forms.PaintEventHandler(this.panelPremainInventory_Paint);
+            // 
+            // txtCashPaid
+            // 
+            this.txtCashPaid.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.txtCashPaid.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCashPaid.Location = new System.Drawing.Point(240, 238);
+            this.txtCashPaid.Name = "txtCashPaid";
+            this.txtCashPaid.Size = new System.Drawing.Size(194, 26);
+            this.txtCashPaid.TabIndex = 91;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.BackColor = System.Drawing.Color.Transparent;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(68, 241);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(90, 20);
+            this.label11.TabIndex = 90;
+            this.label11.Text = "Cash Paid";
             // 
             // listBox1
             // 
@@ -1223,26 +1243,6 @@
             this.cmbSuplierName.TabIndex = 72;
             this.cmbSuplierName.SelectedIndexChanged += new System.EventHandler(this.cmbSuplierName_SelectedIndexChanged);
             this.cmbSuplierName.TextChanged += new System.EventHandler(this.cmbSuplierName_TextChanged);
-            // 
-            // txtCashPaid
-            // 
-            this.txtCashPaid.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.txtCashPaid.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCashPaid.Location = new System.Drawing.Point(240, 238);
-            this.txtCashPaid.Name = "txtCashPaid";
-            this.txtCashPaid.Size = new System.Drawing.Size(194, 26);
-            this.txtCashPaid.TabIndex = 91;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.BackColor = System.Drawing.Color.Transparent;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(68, 241);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(90, 20);
-            this.label11.TabIndex = 90;
-            this.label11.Text = "Cash Paid";
             // 
             // AdminWindow
             // 

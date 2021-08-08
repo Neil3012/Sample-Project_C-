@@ -479,3 +479,35 @@ D:\office\Sample Projectt\Sample Projectt\obj\Debug\Sample Projectt.csproj.Gener
 D:\office\Sample Projectt\Sample Projectt\bin\Debug\Sample Projectt.exe
 D:\office\Sample Projectt\Sample Projectt\bin\Debug\Sample Projectt.pdb
 C:\Users\USER\Desktop\office\Sample Projectt\Sample Projectt\obj\Debug\Sample_Projectt.GoldLive_Popup.resources
+D:\My Projects\Sample-Project_C-\Sample Projectt\bin\Debug\Sample Projectt.exe.config
+D:\My Projects\Sample-Project_C-\Sample Projectt\bin\Debug\Sample Projectt.exe.manifest
+D:\My Projects\Sample-Project_C-\Sample Projectt\bin\Debug\Sample Projectt.application
+D:\My Projects\Sample-Project_C-\Sample Projectt\bin\Debug\Sample Projectt.exe
+D:\My Projects\Sample-Project_C-\Sample Projectt\bin\Debug\Sample Projectt.pdb
+D:\My Projects\Sample-Project_C-\Sample Projectt\obj\Debug\Sample Projectt.csprojAssemblyReference.cache
+D:\My Projects\Sample-Project_C-\Sample Projectt\obj\Debug\Sample_Projectt.AdminWindow.resources
+D:\My Projects\Sample-Project_C-\Sample Projectt\obj\Debug\Sample_Projectt.Cashout.resources
+D:\My Projects\Sample-Project_C-\Sample Projectt\obj\Debug\Sample_Projectt.CashoutClint.resources
+D:\My Projects\Sample-Project_C-\Sample Projectt\obj\Debug\Sample_Projectt.ClientReport.resources
+D:\My Projects\Sample-Project_C-\Sample Projectt\obj\Debug\Sample_Projectt.ClientStatement.resources
+D:\My Projects\Sample-Project_C-\Sample Projectt\obj\Debug\Sample_Projectt.Current_Inventory.resources
+D:\My Projects\Sample-Project_C-\Sample Projectt\obj\Debug\Sample_Projectt.Form1.resources
+D:\My Projects\Sample-Project_C-\Sample Projectt\obj\Debug\Sample_Projectt.GoldLive_Popup.resources
+D:\My Projects\Sample-Project_C-\Sample Projectt\obj\Debug\Sample_Projectt.Login.resources
+D:\My Projects\Sample-Project_C-\Sample Projectt\obj\Debug\Sample_Projectt.MarginReport.resources
+D:\My Projects\Sample-Project_C-\Sample Projectt\obj\Debug\Sample_Projectt.ParentClient.resources
+D:\My Projects\Sample-Project_C-\Sample Projectt\obj\Debug\Sample_Projectt.PopupClientForm.resources
+D:\My Projects\Sample-Project_C-\Sample Projectt\obj\Debug\Sample_Projectt.Product.resources
+D:\My Projects\Sample-Project_C-\Sample Projectt\obj\Debug\Sample_Projectt.Properties.Resources.resources
+D:\My Projects\Sample-Project_C-\Sample Projectt\obj\Debug\Sample_Projectt.Report.resources
+D:\My Projects\Sample-Project_C-\Sample Projectt\obj\Debug\Sample_Projectt.SplassScreen.resources
+D:\My Projects\Sample-Project_C-\Sample Projectt\obj\Debug\Sample_Projectt.Summery.resources
+D:\My Projects\Sample-Project_C-\Sample Projectt\obj\Debug\Sample_Projectt.SuppilerPopUP.resources
+D:\My Projects\Sample-Project_C-\Sample Projectt\obj\Debug\Sample_Projectt.SupplierStatement.resources
+D:\My Projects\Sample-Project_C-\Sample Projectt\obj\Debug\Sample_Projectt.TransectionSupplier.resources
+D:\My Projects\Sample-Project_C-\Sample Projectt\obj\Debug\Sample Projectt.csproj.GenerateResource.cache
+D:\My Projects\Sample-Project_C-\Sample Projectt\obj\Debug\Sample Projectt.csproj.CoreCompileInputs.cache
+D:\My Projects\Sample-Project_C-\Sample Projectt\obj\Debug\Sample Projectt.exe.manifest
+D:\My Projects\Sample-Project_C-\Sample Projectt\obj\Debug\Sample Projectt.application
+D:\My Projects\Sample-Project_C-\Sample Projectt\obj\Debug\Sample Projectt.exe
+D:\My Projects\Sample-Project_C-\Sample Projectt\obj\Debug\Sample Projectt.pdb

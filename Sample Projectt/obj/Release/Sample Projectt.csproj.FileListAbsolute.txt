@@ -59,3 +59,35 @@ E:\Sumit Project 26 oct\Sample Projectt\Sample Projectt\obj\Release\Sample Proje
 E:\Sumit Project 26 oct\Sample Projectt\Sample Projectt\obj\Release\Sample_Projectt.Current_Inventory.resources
 E:\Sumit Project 26 oct\Sample Projectt\Sample Projectt\obj\Release\Sample_Projectt.MarginReport.resources
 E:\Sumit Project 26 oct\Sample Projectt\Sample Projectt\obj\Release\Sample Projectt.csprojAssemblyReference.cache
+D:\My Projects\Sample-Project_C-\Sample Projectt\bin\Release\Sample Projectt.exe.config
+D:\My Projects\Sample-Project_C-\Sample Projectt\bin\Release\Sample Projectt.exe.manifest
+D:\My Projects\Sample-Project_C-\Sample Projectt\bin\Release\Sample Projectt.application
+D:\My Projects\Sample-Project_C-\Sample Projectt\bin\Release\Sample Projectt.exe
+D:\My Projects\Sample-Project_C-\Sample Projectt\bin\Release\Sample Projectt.pdb
+D:\My Projects\Sample-Project_C-\Sample Projectt\obj\Release\Sample Projectt.csprojAssemblyReference.cache
+D:\My Projects\Sample-Project_C-\Sample Projectt\obj\Release\Sample_Projectt.AdminWindow.resources
+D:\My Projects\Sample-Project_C-\Sample Projectt\obj\Release\Sample_Projectt.Cashout.resources
+D:\My Projects\Sample-Project_C-\Sample Projectt\obj\Release\Sample_Projectt.CashoutClint.resources
+D:\My Projects\Sample-Project_C-\Sample Projectt\obj\Release\Sample_Projectt.ClientReport.resources
+D:\My Projects\Sample-Project_C-\Sample Projectt\obj\Release\Sample_Projectt.ClientStatement.resources
+D:\My Projects\Sample-Project_C-\Sample Projectt\obj\Release\Sample_Projectt.Current_Inventory.resources
+D:\My Projects\Sample-Project_C-\Sample Projectt\obj\Release\Sample_Projectt.Form1.resources
+D:\My Projects\Sample-Project_C-\Sample Projectt\obj\Release\Sample_Projectt.GoldLive_Popup.resources
+D:\My Projects\Sample-Project_C-\Sample Projectt\obj\Release\Sample_Projectt.Login.resources
+D:\My Projects\Sample-Project_C-\Sample Projectt\obj\Release\Sample_Projectt.MarginReport.resources
+D:\My Projects\Sample-Project_C-\Sample Projectt\obj\Release\Sample_Projectt.ParentClient.resources
+D:\My Projects\Sample-Project_C-\Sample Projectt\obj\Release\Sample_Projectt.PopupClientForm.resources
+D:\My Projects\Sample-Project_C-\Sample Projectt\obj\Release\Sample_Projectt.Product.resources
+D:\My Projects\Sample-Project_C-\Sample Projectt\obj\Release\Sample_Projectt.Properties.Resources.resources
+D:\My Projects\Sample-Project_C-\Sample Projectt\obj\Release\Sample_Projectt.Report.resources
+D:\My Projects\Sample-Project_C-\Sample Projectt\obj\Release\Sample_Projectt.SplassScreen.resources
+D:\My Projects\Sample-Project_C-\Sample Projectt\obj\Release\Sample_Projectt.Summery.resources
+D:\My Projects\Sample-Project_C-\Sample Projectt\obj\Release\Sample_Projectt.SuppilerPopUP.resources
+D:\My Projects\Sample-Project_C-\Sample Projectt\obj\Release\Sample_Projectt.SupplierStatement.resources
+D:\My Projects\Sample-Project_C-\Sample Projectt\obj\Release\Sample_Projectt.TransectionSupplier.resources
+D:\My Projects\Sample-Project_C-\Sample Projectt\obj\Release\Sample Projectt.csproj.GenerateResource.cache
+D:\My Projects\Sample-Project_C-\Sample Projectt\obj\Release\Sample Projectt.csproj.CoreCompileInputs.cache
+D:\My Projects\Sample-Project_C-\Sample Projectt\obj\Release\Sample Projectt.exe.manifest
+D:\My Projects\Sample-Project_C-\Sample Projectt\obj\Release\Sample Projectt.application
+D:\My Projects\Sample-Project_C-\Sample Projectt\obj\Release\Sample Projectt.exe
+D:\My Projects\Sample-Project_C-\Sample Projectt\obj\Release\Sample Projectt.pdb

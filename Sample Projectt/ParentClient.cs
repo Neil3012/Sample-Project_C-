@@ -492,7 +492,7 @@ namespace Sample_Projectt
             using (con = new SqlConnection(conn))
             {
                 con.Open();
-                update = "update Client set Balance_Gold=Balance_Gold + " + _totalFineGoldIterations + " where Client_ID ='" + _Cid + "'";
+                update = "update Client set Balance_Gold=Balance_Gold + " +(Convert.ToDouble(txtgoldrecvchk.Text)- _totalFineGoldIterations) + " where Client_ID ='" + _Cid + "'";
                 cmd = new SqlCommand(update, con);
                 cmd.ExecuteNonQuery();
                 con.Close();
@@ -1084,7 +1084,7 @@ namespace Sample_Projectt
                 //UdharBalanceSupplier(txtCusIDPost.Text);
                 DataUpdate();
                 JamaBalanceSupplier();
-                UdharBalanceSupplier();
+             //  UdharBalanceSupplier();
                 using (SqlConnection con = new SqlConnection(conn))
                 {
 

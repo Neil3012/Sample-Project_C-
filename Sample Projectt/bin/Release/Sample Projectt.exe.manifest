@@ -50,7 +50,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>Z+gXEZ5hWCl8E8fNKH7BRb3xXqLyXEaYUFziB7PGQQE=</dsig:DigestValue>
+        <dsig:DigestValue>hvxLD52xWXoi9kp7jPsLJWKXA4uqJ2itCQoK5QHb05A=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -63,13 +63,13 @@
       <dsig:DigestValue>osxvZ/ptpkcvW489OXE75hxLF2HMJXqawS38S4z+7jU=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="Sample Projectt.exe.config" size="403">
+  <file name="Sample Projectt.exe.config" size="401">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>DYBrU5lbzB60l1wrQnuGoH6kCfiigB5NPi6yBfMMCrY=</dsig:DigestValue>
+      <dsig:DigestValue>PILAod7tGFcVhsCIRysqOQdAY5BJTcsNAsl/1/4LrO8=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Sm.ico" size="209762">
