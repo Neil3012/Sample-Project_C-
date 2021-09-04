@@ -64,7 +64,6 @@ D:\My Projects\Sample-Project_C-\Sample Projectt\bin\Release\Sample Projectt.exe
 D:\My Projects\Sample-Project_C-\Sample Projectt\bin\Release\Sample Projectt.application
 D:\My Projects\Sample-Project_C-\Sample Projectt\bin\Release\Sample Projectt.exe
 D:\My Projects\Sample-Project_C-\Sample Projectt\bin\Release\Sample Projectt.pdb
-D:\My Projects\Sample-Project_C-\Sample Projectt\obj\Release\Sample Projectt.csprojAssemblyReference.cache
 D:\My Projects\Sample-Project_C-\Sample Projectt\obj\Release\Sample_Projectt.AdminWindow.resources
 D:\My Projects\Sample-Project_C-\Sample Projectt\obj\Release\Sample_Projectt.Cashout.resources
 D:\My Projects\Sample-Project_C-\Sample Projectt\obj\Release\Sample_Projectt.CashoutClint.resources
